@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-04T08:59:27.500Z</updated>
+  <updated>2022-10-04T11:10:41.463Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,19 +17,21 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>js</title>
+    <title>数据类型基础</title>
     <link href="http://example.com/2018/05/20/%E7%AC%AC%E4%B8%80/"/>
     <id>http://example.com/2018/05/20/%E7%AC%AC%E4%B8%80/</id>
     <published>2018-05-20T08:55:34.000Z</published>
-    <updated>2022-10-04T08:59:27.500Z</updated>
+    <updated>2022-10-04T11:10:41.463Z</updated>
     
-    <content type="html"><![CDATA[<p>撒旦法撒旦法是撒旦法安抚阿斯蒂芬安抚阿萨德发生发送到阿斯蒂芬按时撒发顺丰阿瑟</p>]]></content>
+    <content type="html"><![CDATA[<ul><li><p><input disabled="" type="checkbox">  一 <code>JS</code> 中分为七种内置类型，七种内置类型又分为两大类型：基本类型和对象（<code>Object</code>）。</p></li><li><p><input disabled="" type="checkbox">  基本类型有七种：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">null</span><br></pre></td></tr></table></figure><p>，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">undefined</span><br></pre></td></tr></table></figure><p>，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">boolean</span><br></pre></td></tr></table></figure><p>，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">number</span><br></pre></td></tr></table></figure><p>，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string</span><br></pre></td></tr></table></figure><p>，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">symbol</span><br></pre></td></tr></table></figure><p>,</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bigint</span><br></pre></td></tr></table></figure><ul><li>其中 <code>Symbo</code>l 和 <code>BigInt</code> 是 <code>ES6</code> 新增的数据类型</li><li><code>Symbol</code> 代表独一无二的值，最大的用法是用来定义对象的唯一属性名。</li><li><code>BigInt</code> 可以表示任意大小的整数。</li></ul></li><li><p><input disabled="" type="checkbox">  其中 <code>JS</code> 的数字类型是浮点类型的，没有整型。并且浮点类型基于 <code>IEEE 754</code>标准实现，在使用中会遇到某些 Bug。<code>NaN</code> 也属于 <code>number</code> 类型，并且 <code>NaN</code> 不等于自身。</p></li><li><p><input disabled="" type="checkbox">  对于基本类型来说，如果使用字面量的方式，那么这个变量只是个字面量，只有在必要的时候才会转换为对应的类型</p></li></ul><p><strong>引用数据类型:</strong></p><ul><li>对象<code>Object</code>（包含普通对象-<code>Object</code>，数组对象-<code>Array</code>，正则对象-<code>RegExp</code>，日期对象-<code>Date</code>，数学函数-<code>Math</code>，函数对象-<code>Function</code>）</li></ul><p>​    对象（<code>Object</code>）是引用类型，在使用过程中会遇到浅拷贝和深拷贝的问题。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;撒旦法撒旦法是撒旦法安抚阿斯蒂芬安抚阿萨德发生发送到阿斯蒂芬按时撒发顺丰阿瑟&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&gt;  一 &lt;code&gt;JS&lt;/code&gt; 中分为七种内置类型，七种内置类型又分为两大类型：基本类型和对象（&lt;code&gt;Object&lt;/code&gt;）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i</summary>
       
     
     
