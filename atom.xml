@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-04T11:43:31.264Z</updated>
+  <updated>2022-10-04T13:33:50.864Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何理解Bight</title>
+    <link href="http://example.com/2022/05/20/%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3Bight/"/>
+    <id>http://example.com/2022/05/20/%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3Bight/</id>
+    <published>2022-05-19T16:00:00.000Z</published>
+    <updated>2022-10-04T13:33:50.864Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="如何理解BigInt"><a href="#如何理解BigInt" class="headerlink" title="如何理解BigInt"></a>如何理解BigInt</h3><p><strong>什么是BigInt?</strong></p><blockquote><p><code>BigInt</code>是一种新的数据类型，用于当整数值大于Number数据类型支持的范围时。这种数据类型允许我们安全地对大整数执行算术操作，表示高分辨率的时间戳，使用大整数id，等等，而不需要使用库。</p></blockquote><p><strong>为什么需要BigInt?</strong></p><p>在JS中，所有的数字都以双精度64位浮点格式表示，那这会带来什么问题呢？</p><blockquote><p>这导致JS中的Number无法精确表示非常大的整数，它会将非常大的整数四舍五入，确切地说，JS中的<code>Number</code>类型只能安全地表示<code>-9007199254740991(-(2^53-1))和9007199254740991（(2^53-1)）</code>，任何超出此范围的整数值都可能失去精度。</p></blockquote><p><strong>如何创建并使用BigInt？</strong></p><p>要创建<code>BigInt</code>，只需要在数字末尾追加<code>n</code>即可</p><p>console.log( 9007199254740995n );    // → 9007199254740995n<br>console.log( 9007199254740995 );     // → 9007199254740996</p><p>另一种创建<code>BigInt</code>的方法是用<code>BigInt()</code>构造函数</p><p>BigInt(“9007199254740995”);    // → 9007199254740995n</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;如何理解BigInt&quot;&gt;&lt;a href=&quot;#如何理解BigInt&quot; class=&quot;headerlink&quot; title=&quot;如何理解BigInt&quot;&gt;&lt;/a&gt;如何理解BigInt&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;什么是BigInt?&lt;/strong&gt;&lt;/p&gt;
+&lt;block</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>数据类型基础</title>
@@ -32,6 +53,47 @@
 &lt;li&gt;&lt;p&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&gt;  一 &lt;code&gt;JS&lt;/code&gt; 中分为七种内置类型，七种内置类型又分为两大类型：基本类型和对象（&lt;code&gt;Object&lt;/code&gt;）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;i</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>null和undefined的区别</title>
+    <link href="http://example.com/2018/05/20/null%E5%92%8Cundefined%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://example.com/2018/05/20/null%E5%92%8Cundefined%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+    <published>2018-05-19T16:00:00.000Z</published>
+    <updated>2022-10-04T13:30:24.824Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="null和undefined区别"><a href="#null和undefined区别" class="headerlink" title="null和undefined区别"></a>null和undefined区别</h3><blockquote><p><code>Undefined</code>类型只有一个值，即<code>undefined</code>。当声明的变量还未被初始化时，变量的默认值为<code>undefined</code>。用法</p></blockquote><ul><li>变量被声明了，但没有赋值时，就等于<code>undefined</code>。</li><li>调用函数时，应该提供的参数没有提供，该参数等于<code>undefined</code>。</li><li>对象没有赋值的属性，该属性的值为<code>undefined</code>。</li><li>函数没有返回值时，默认返回<code>undefined</code></li></ul><blockquote><p><code>Null</code>类型也只有一个值，即<code>null</code>。<code>null</code>用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。用法</p></blockquote><ul><li>作为函数的参数，表示该函数的参数不是对象。</li><li>作为对象原型链的终点</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;null和undefined区别&quot;&gt;&lt;a href=&quot;#null和undefined区别&quot; class=&quot;headerlink&quot; title=&quot;null和undefined区别&quot;&gt;&lt;/a&gt;null和undefined区别&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>null是对象吗为什么？</title>
+    <link href="http://example.com/2018/05/20/null%E6%98%AF%E5%AF%B9%E8%B1%A1%E5%90%97%E4%B8%BA%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
+    <id>http://example.com/2018/05/20/null%E6%98%AF%E5%AF%B9%E8%B1%A1%E5%90%97%E4%B8%BA%E4%BB%80%E4%B9%88%EF%BC%9F/</id>
+    <published>2018-05-19T16:00:00.000Z</published>
+    <updated>2022-10-04T13:32:03.851Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="null是对象吗？为什么？"><a href="#null是对象吗？为什么？" class="headerlink" title="null是对象吗？为什么？"></a>null是对象吗？为什么？</h3><p>结论: <code>null</code>不是对象。</p><blockquote><p>解释: 虽然 <code>typeof null</code> 会输出 object，但是这只是 JS 存在的一个悠久 Bug。在 JS 的最初版本中使用的是 32 位系统，为了性能考虑使用低位存储变量的类型信息，000 开头代表是对象然而 null 表示为全零，所以将它错误的判断为 object 。</p></blockquote><h3 id="0-1-0-2为什么不等于0-3？如何让其相等"><a href="#0-1-0-2为什么不等于0-3？如何让其相等" class="headerlink" title="0.1+0.2为什么不等于0.3？如何让其相等"></a>0.1+0.2为什么不等于0.3？如何让其相等</h3><blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0.1`和`0.2`在转换成二进制后会无限循环，由于标准位数的限制后面多余的位数会被截掉，此时就已经出现了精度的损失，相加后因浮点数小数位的限制而截断的二进制数字在转换为十进制就会变成`0.30000000000000004</span><br></pre></td></tr></table></figure></blockquote><p>我们都知道计算机时是通过二进制来进行计算的，即 <code>0</code> 和 <code>1</code></p><ul><li>就拿 <code>0.1 + 0.2</code> 来说，<code>0.1</code>表示为<code>0.0001100110011001...</code>，而<code>0.2</code>表示为<code>0.0011001100110011...</code></li><li>而在二进制中 <code>1 + 1 = 10</code>，所以 <code>0.1 + 0.2 = 0.0100110011001100...</code></li><li>转成<code>10</code>进制就近似表示为 <code>0.30000000000000004</code></li></ul><blockquote><p>简单来说就是，<strong>浮点数转成二进制时丢失了精度，因此在二进制计算完再转回十进制时可能会和理论结果不同</strong></p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;null是对象吗？为什么？&quot;&gt;&lt;a href=&quot;#null是对象吗？为什么？&quot; class=&quot;headerlink&quot; title=&quot;null是对象吗？为什么？&quot;&gt;&lt;/a&gt;null是对象吗？为什么？&lt;/h3&gt;&lt;p&gt;结论: &lt;code&gt;null&lt;/code&gt;不是对象。</summary>
       
     
     
