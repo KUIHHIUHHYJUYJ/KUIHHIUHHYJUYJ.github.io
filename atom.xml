@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-04T13:33:50.864Z</updated>
+  <updated>2022-10-04T14:03:36.247Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,89 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>let有什么用 有了var为什么还要用let</title>
+    <link href="http://example.com/2022/05/21/let%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8-%E6%9C%89%E4%BA%86var%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E8%A6%81%E7%94%A8let/"/>
+    <id>http://example.com/2022/05/21/let%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8-%E6%9C%89%E4%BA%86var%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E8%A6%81%E7%94%A8let/</id>
+    <published>2022-05-20T16:00:00.000Z</published>
+    <updated>2022-10-04T14:03:36.247Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    <a href="https://interview2.poetries.top/docs/excellent-docs/4-ES6%E6%A8%A1%E5%9D%97.html#_3-let%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8-%E6%9C%89%E4%BA%86var%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E8%A6%81%E7%94%A8let">#</a>3 let有什么用，有了var为什么还要用let？</p><blockquote><p>在<code>ES6</code>之前，声明变量只能用<code>var</code>，<code>var</code>方式声明变量其实是很不合理的，准确的说，是因为<code>ES5</code>里面没有块级作用域是很不合理的。没有块级作用域回来带很多难以理解的问题，比如<code>for</code>循环<code>var</code>变量泄露，变量覆盖等问题。<code>let</code>声明的变量拥有自己的块级作用域，且修复了<code>var</code>声明变量带来的变量提升问题。</p></blockquote><p>let和const是<a href="https://so.csdn.net/so/search?q=ES6&spm=1001.2101.3001.7020">ES6</a>新增的声明变量的关键词，之前声明变量的关键词是var。</p><p>let<br>var定义的变量，可以预解析提前调用的结果是undefined，let定义的变量不能预解析，提前调用的结果是 报错。<br>var定义的变量，变量名称可以重复，效果是重复赋值，let定义的变量不能重复，否则执行报错。<br>var定义的变量作用域是全局/局部作用域。let定义的变量如果在{}中只能在{}中调用。<br>在循环语句中var定义的循环变量和使用let定义的循环变量。执行原理和执行效果不同。</p><p>const<br> var定义的变量，可以预解析提前调用的结果是undefined，const定义的变量不能预解析，提前调用的结果是 报错。<br>var定义的变量，变量名称可以重复，效果是重复赋值，const定义的变量不能重复，否则执行报错。<br>var定义的变量作用域是全局/局部作用域。let定义的变量如果在{}中只能在{}中调用。<br>const 定义的变量存储的数据数值不能改变，也就是const定义的变量，不能重复赋值。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;​    &lt;a href=&quot;https://interview2.poetries.top/docs/excellent-docs/4-ES6%E6%A8%A1%E5%9D%97.html#_3-let%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Proxy是什么，有什么作用？</title>
+    <link href="http://example.com/2022/05/21/Proxy%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F/"/>
+    <id>http://example.com/2022/05/21/Proxy%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F/</id>
+    <published>2022-05-20T16:00:00.000Z</published>
+    <updated>2022-10-04T14:10:45.043Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Proxy是什么，有什么作用？"><a href="#Proxy是什么，有什么作用？" class="headerlink" title="Proxy是什么，有什么作用？"></a>Proxy是什么，有什么作用？</h2><blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Proxy`是`ES6`新增的一个构造函数，可以理解为JS语言的一个代理，用来改变JS默认的一些语言行为，包括拦截默认的`get/set`等底层方法，使得JS的使用自由度更高，可以最大限度的满足开发者的需求。比如通过拦截对象的`get/set`方法，可以轻松地定制自己想要的`key`或者`value`。下面的例子可以看到，随便定义一个`myOwnObj`的`key`,都可以变成自己想要的函数</span><br></pre></td></tr></table></figure></blockquote><h2 id="Promise是什么，有什么作用？"><a href="#Promise是什么，有什么作用？" class="headerlink" title="Promise是什么，有什么作用？"></a>Promise是什么，有什么作用？</h2><blockquote><p><code>Promise</code>是<code>ES6</code>引入的一个新的对象，他的主要作用是用来解决JS异步机制里，回调机制产生的“回调地狱”。它并不是什么突破性的<code>API</code>，只是封装了异步回调形式，使得异步回调可以写的更加优雅，可读性更高，而且可以链式调用</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Proxy是什么，有什么作用？&quot;&gt;&lt;a href=&quot;#Proxy是什么，有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;Proxy是什么，有什么作用？&quot;&gt;&lt;/a&gt;Proxy是什么，有什么作用？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;figure </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Set是什么，有什么作用？</title>
+    <link href="http://example.com/2022/05/21/Set%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F/"/>
+    <id>http://example.com/2022/05/21/Set%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F/</id>
+    <published>2022-05-20T16:00:00.000Z</published>
+    <updated>2022-10-04T14:09:55.188Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Set是什么，有什么作用？"><a href="#Set是什么，有什么作用？" class="headerlink" title="Set是什么，有什么作用？"></a>Set是什么，有什么作用？</h2><blockquote><p><code>Set</code>是<code>ES6</code>引入的一种类似<code>Array</code>的新的数据结构，<code>Set</code>实例的成员类似于数组<code>item</code>成员，区别是<code>Set</code>实例的成员都是唯一，不重复的。这个特性可以轻松地实现数组去重</p></blockquote><h2 id="Map是什么，有什么作用？"><a href="#Map是什么，有什么作用？" class="headerlink" title="Map是什么，有什么作用？"></a>Map是什么，有什么作用？</h2><blockquote><p><code>Map</code>是<code>ES6</code>引入的一种类似<code>Object</code>的新的数据结构，<code>Map</code>可以理解为是<code>Object</code>的超集，打破了以传统键值对形式定义对象，对象的<code>key</code>不再局限于字符串，也可以是<code>Object</code>。可以更加全面的描述对象的属性</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Set是什么，有什么作用？&quot;&gt;&lt;a href=&quot;#Set是什么，有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;Set是什么，有什么作用？&quot;&gt;&lt;/a&gt;Set是什么，有什么作用？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Set&lt;/co</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Symbol是什么，有什么作用？</title>
+    <link href="http://example.com/2022/05/21/Symbol%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F/"/>
+    <id>http://example.com/2022/05/21/Symbol%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F/</id>
+    <published>2022-05-20T16:00:00.000Z</published>
+    <updated>2022-10-04T14:09:01.357Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Symbol是什么，有什么作用？"><a href="#Symbol是什么，有什么作用？" class="headerlink" title="Symbol是什么，有什么作用？"></a>Symbol是什么，有什么作用？</h2><blockquote><p><code>Symbol</code>是<code>ES6</code>引入的第七种原始数据类型（说法不准确，应该是第七种数据类型，Object不是原始数据类型之一，已更正），所有Symbol()生成的值都是独一无二的，可以从根本上解决对象属性太多导致属性名冲突覆盖的问题。对象中<code>Symbol()</code>属性不能被<code>for...in</code>遍历，但是也不是私有属性</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Symbol是什么，有什么作用？&quot;&gt;&lt;a href=&quot;#Symbol是什么，有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;Symbol是什么，有什么作用？&quot;&gt;&lt;/a&gt;Symbol是什么，有什么作用？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>如何理解Bight</title>
@@ -30,6 +113,131 @@
       
     <summary type="html">&lt;h3 id=&quot;如何理解BigInt&quot;&gt;&lt;a href=&quot;#如何理解BigInt&quot; class=&quot;headerlink&quot; title=&quot;如何理解BigInt&quot;&gt;&lt;/a&gt;如何理解BigInt&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;什么是BigInt?&lt;/strong&gt;&lt;/p&gt;
 &lt;block</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Dom常用方法</title>
+    <link href="http://example.com/2022/05/20/Dom%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    <id>http://example.com/2022/05/20/Dom%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</id>
+    <published>2022-05-19T16:00:00.000Z</published>
+    <updated>2022-10-04T13:48:22.488Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="说说有几种类型的DOM节点"><a href="#说说有几种类型的DOM节点" class="headerlink" title="说说有几种类型的DOM节点"></a>说说有几种类型的DOM节点</h3><ul><li><p><code>Document</code>节点，整个文档是一个文档节点；</p></li><li><p><code>Element</code>节点，每个HTML标签是一个元素节点；</p></li><li><p><code>Attribute</code>节点，每一个HTML属性是一个属性节点；</p></li><li><p><code>Text</code>节点，包含在HTML元素中的文本是文本节点</p><h3 id="操作DOM节点方法"><a href="#操作DOM节点方法" class="headerlink" title="操作DOM节点方法"></a>操作DOM节点方法</h3><p>创建新节点</p><p>​        createDocumentFragment()    //创建一个DOM片段<br>​        createElement()   //创建一个具体的元素<br>​        createTextNode()   //创建一个文本节点</p><p>添加、移除、替换、插入**</p><p>​        appendChild()      //添加<br>​        removeChild()      //移除<br>​        replaceChild()      //替换<br>​        insertBefore()      //插入</p></li></ul><p>​    <strong>查找</strong></p><pre><code>        getElementsByTagName()    //通过标签名称</code></pre><p>​                    getElementsByName()     //通过元素的Name属性的值<br>​                    getElementById()        //通过元素Id，唯一性</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;说说有几种类型的DOM节点&quot;&gt;&lt;a href=&quot;#说说有几种类型的DOM节点&quot; class=&quot;headerlink&quot; title=&quot;说说有几种类型的DOM节点&quot;&gt;&lt;/a&gt;说说有几种类型的DOM节点&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Document&lt;/c</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>js类型判断</title>
+    <link href="http://example.com/2022/05/20/js%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD/"/>
+    <id>http://example.com/2022/05/20/js%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD/</id>
+    <published>2022-05-19T16:00:00.000Z</published>
+    <updated>2022-10-04T13:38:57.474Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="typeof类型判断"><a href="#typeof类型判断" class="headerlink" title="typeof类型判断"></a>typeof类型判断</h3><p>​    在写业务逻辑的时候，经常要用到JS数据类型的判断，面试常见的案例深浅拷贝也要用到数据类型的判断。</p><p><strong>typeof</strong></p><pre><code>console.log(typeof 2);               // number</code></pre><p>console.log(typeof true);            // boolean<br>console.log(typeof ‘str’);           // string<br>console.log(typeof undefined);       // undefined<br>console.log(typeof function(){});    // function<br>console.log(typeof Symbol(“foo”)); // symbol<br>console.log(typeof 2172141653n); // bigint</p><p>// 不能判别<br>console.log(typeof []); // object<br>console.log(typeof {}); // object<br>console.log(typeof null); // object</p><p>优点：能够快速区分基本数据类型 缺点：不能将<code>Object</code>、<code>Array</code>和<code>Null</code>区分，都返回<code>object</code></p><p><strong>instanceof</strong></p><pre><code>console.log(2 instanceof Number);                    // false</code></pre><p>console.log(true instanceof Boolean);                // false<br>console.log(‘str’ instanceof String);                // false<br>console.log([] instanceof Array);                    // true<br>console.log(function(){} instanceof Function);       // true<br>console.log({} instanceof Object);                   // true</p><ul><li>优点：能够区分<code>Array</code>、<code>Object</code>和<code>Function</code>，适合用于判断自定义的类实例对象</li><li>缺点：<code>Number</code>，<code>Boolean</code>，<code>String</code>基本数据类型不能判断</li></ul><blockquote><p>其内部运行机制是判断在其原型链中能否找到该类型的原型其实现就是顺着原型链去找，如果能找到对应的 <code>Xxxxx.prototype</code> 即为 <code>true</code> 。比如这里的 <code>stu</code> 作为实例，顺着原型链能找到 <code>Student.prototype</code> 及 <code>People.prototype</code> ，所以都为 <code>true</code></p></blockquote><p><strong>Object.prototype.toString.call()</strong></p><pre><code>var toString = Object.prototype.toString;</code></pre><p>console.log(toString.call(2));                      //[object Number]<br>console.log(toString.call(true));                   //[object Boolean]<br>console.log(toString.call(‘str’));                  //[object String]<br>console.log(toString.call([]));                     //[object Array]<br>console.log(toString.call(function(){}));           //[object Function]<br>console.log(toString.call({}));                     //[object Object]<br>console.log(toString.call(undefined));              //[object Undefined]<br>console.log(toString.call(null));                   //[object Null]</p><p>优点：精准判断数据类型，所有原始数据类型都是能判断的，还有 <code>Error</code> 对象，<code>Date</code> 对象等</p><p>缺点：写法繁琐不容易记，推荐进行封装后使用</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;typeof类型判断&quot;&gt;&lt;a href=&quot;#typeof类型判断&quot; class=&quot;headerlink&quot; title=&quot;typeof类型判断&quot;&gt;&lt;/a&gt;typeof类型判断&lt;/h3&gt;&lt;p&gt;​    在写业务逻辑的时候，经常要用到JS数据类型的判断，面试常见的案例深</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>typeof和instanceof的区别</title>
+    <link href="http://example.com/2022/05/20/typeof%E5%92%8Cinstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://example.com/2022/05/20/typeof%E5%92%8Cinstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+    <published>2022-05-19T16:00:00.000Z</published>
+    <updated>2022-10-04T13:42:20.412Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="typeof-于-instanceof-区别"><a href="#typeof-于-instanceof-区别" class="headerlink" title="typeof 于 instanceof 区别"></a>typeof 于 instanceof 区别</h3><blockquote><p><code>typeof</code> 对于基本类型，除了 <code>null</code>都可以显示正确的类型    </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">typeof` 对于对象，除了函数都会显示 `object</span><br></pre></td></tr></table></figure></blockquote><p>​    对于 <code>null</code> 来说，虽然它是基本类型，但是会显示 <code>object</code>，这是一个存在很久了的 <code>Bug</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">instanceof` 可以正确的判断对象的类型，因为内部机制是通过判断对象的原型链中是不是能找到类型的 `iprototype</span><br></pre></td></tr></table></figure><h3 id="和-有什么区别"><a href="#和-有什么区别" class="headerlink" title="== 和 ===有什么区别"></a>== 和 ===有什么区别</h3><p>​        </p><blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">===`叫做严格相等，是指：左右两边不仅值要相等，类型也要相等，例如`&#x27;1&#x27;===1`的结果是`false`，因为一边是`string`，另一边是`number</span><br></pre></td></tr></table></figure></blockquote><p><strong>==不像===那样严格，对于一般情况，只要值相等，就返回true，但==还涉及一些类型转换，它的转换规则如下</strong></p><ul><li>两边的类型是否相同，相同的话就比较值的大小，例如<code>1==2</code>，返回<code>false</code></li><li>判断的是否是<code>null</code>和<code>undefined</code>，是的话就返回true</li><li>判断的类型是否是<code>String</code>和<code>Number</code>，是的话，把<code>String</code>类型转换成<code>Number</code>，再进行比较</li><li>判断其中一方是否是<code>Boolean</code>，是的话就把<code>Boolean</code>转换成<code>N</code>umber`，再进行比较</li><li>如果其中一方为<code>Object</code>，且另一方为<code>String</code>、<code>Number</code>或者<code>Symbol</code>，会将<code>Object</code>转换成字符串，再进行比较</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;typeof-于-instanceof-区别&quot;&gt;&lt;a href=&quot;#typeof-于-instanceof-区别&quot; class=&quot;headerlink&quot; title=&quot;typeof 于 instanceof 区别&quot;&gt;&lt;/a&gt;typeof 于 instanceof </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数组常用的方法</title>
+    <link href="http://example.com/2022/05/20/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://example.com/2022/05/20/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</id>
+    <published>2022-05-19T16:00:00.000Z</published>
+    <updated>2022-10-04T13:45:23.628Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="数组常用方法"><a href="#数组常用方法" class="headerlink" title="数组常用方法"></a>数组常用方法</h3><ul><li><code>map</code>: 遍历数组，返回回调返回值组成的新数组</li><li><code>forEach</code>: 无法<code>break</code>，可以用<code>try/catch</code>中<code>throw new Error</code>来停止</li><li><code>filter</code>: 过滤</li><li><code>some</code>: 有一项返回<code>true</code>，则整体为<code>true</code></li><li><code>every</code>: 有一项返回<code>false</code>，则整体为<code>false</code></li><li><code>join</code>: 通过指定连接符生成字符串</li><li><code>push / pop</code>: 末尾推入和弹出，改变原数组， 返回推入/弹出项</li><li><code>unshift / shift</code>: 头部推入和弹出，改变原数组，返回操作项</li><li><code>sort(fn) / reverse</code>: 排序与反转，改变原数组</li><li><code>concat</code>: 连接数组，不影响原数组， 浅拷贝</li><li><code>slice(start, end)</code>: 返回截断后的新数组，不改变原数组</li><li><code>splice(start, number, value...)</code>: 返回删除元素组成的数组，<code>value</code>为插入项，改变原数组</li><li><code>indexOf / lastIndexOf(value, fromIndex)</code>: 查找数组项，返回对应的下标</li><li><code>reduce / reduceRight(fn(prev, cur)</code>， <code>defaultPrev)</code>: 两两执行，<code>prev</code> 为上次化简函数的<code>return</code>值，<code>cur</code>为当前值(从第二项开始)</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;数组常用方法&quot;&gt;&lt;a href=&quot;#数组常用方法&quot; class=&quot;headerlink&quot; title=&quot;数组常用方法&quot;&gt;&lt;/a&gt;数组常用方法&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;map&lt;/code&gt;: 遍历数组，返回回调返回值组成的新数组&lt;/li&gt;
+&lt;li&gt;&lt;c</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ajax有哪些有缺点</title>
+    <link href="http://example.com/2022/05/20/Ajax%E6%9C%89%E5%93%AA%E4%BA%9B%E6%9C%89%E7%BC%BA%E7%82%B9/"/>
+    <id>http://example.com/2022/05/20/Ajax%E6%9C%89%E5%93%AA%E4%BA%9B%E6%9C%89%E7%BC%BA%E7%82%B9/</id>
+    <published>2022-05-19T16:00:00.000Z</published>
+    <updated>2022-10-04T13:59:04.527Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Ajax-有那些优缺点"><a href="#Ajax-有那些优缺点" class="headerlink" title="Ajax 有那些优缺点"></a>Ajax 有那些优缺点</h3><p><strong>优点：</strong></p><ul><li>通过异步模式，提升了用户体验.</li><li>优化了浏览器和服务器之间的传输，减少不必要的数据往返，减少了带宽占用.</li><li><code>Ajax</code>在客户端运行，承担了一部分本来由服务器承担的工作，减少了大用户量下的服务器负载。</li><li><code>Ajax</code>可以实现动态不刷新（局部刷新）</li></ul><p><strong>缺点：</strong></p><ul><li>安全问题 <code>AJAX</code>暴露了与服务器交互的细节。</li><li>对搜索引擎的支持比较弱。</li><li>不容易调试。</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Ajax-有那些优缺点&quot;&gt;&lt;a href=&quot;#Ajax-有那些优缺点&quot; class=&quot;headerlink&quot; title=&quot;Ajax 有那些优缺点&quot;&gt;&lt;/a&gt;Ajax 有那些优缺点&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Es5 Es6和E2015有什么区别</title>
+    <link href="http://example.com/2022/05/20/Es5-Es6%E5%92%8CE2015%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/"/>
+    <id>http://example.com/2022/05/20/Es5-Es6%E5%92%8CE2015%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/</id>
+    <published>2022-05-19T16:00:00.000Z</published>
+    <updated>2022-10-04T14:01:24.384Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-ES5、ES6和ES2015有什么区别"><a href="#1-ES5、ES6和ES2015有什么区别" class="headerlink" title="#1 ES5、ES6和ES2015有什么区别?"></a><a href="https://interview2.poetries.top/docs/excellent-docs/4-ES6%E6%A8%A1%E5%9D%97.html#_1-es5%E3%80%81es6%E5%92%8Ces2015%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB">#</a>1 ES5、ES6和ES2015有什么区别?</h2><blockquote><p><code>ES2015</code>特指在<code>2015</code>年发布的新一代<code>JS</code>语言标准，<code>ES6</code>泛指下一代JS语言标准，包含<code>ES2015</code>、<code>ES2016</code>、<code>ES2017</code>、<code>ES2018</code>等。现阶段在绝大部分场景下，<code>ES2015</code>默认等同<code>ES6</code>。<code>ES5</code>泛指上一代语言标准。<code>ES2015</code>可以理解为<code>ES5</code>和<code>ES6</code>的时间分界线</p></blockquote><h2 id="2-babel是什么，有什么作用"><a href="#2-babel是什么，有什么作用" class="headerlink" title="#2 babel是什么，有什么作用?"></a><a href="https://interview2.poetries.top/docs/excellent-docs/4-ES6%E6%A8%A1%E5%9D%97.html#_2-babel%E6%98%AF%E4%BB%80%E4%B9%88-%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8">#</a>2 babel是什么，有什么作用?</h2><blockquote><p><code>babel</code>是一个 <code>ES6</code> 转码器，可以将 <code>ES6</code> 代码转为 <code>ES5</code> 代码，以便兼容那些还没支持<code>ES6</code>的平台</p></blockquote><h2 id="3-举一些ES6对Array数组类型做的常用升级优化"><a href="#3-举一些ES6对Array数组类型做的常用升级优化" class="headerlink" title="3 举一些ES6对Array数组类型做的常用升级优化"></a>3 举一些ES6对Array数组类型做的常用升级优化</h2><p><strong>优化部分</strong></p><ul><li>数组解构赋值。<code>ES6</code>可以直接以<code>let [a,b,c] = [1,2,3]</code>形式进行变量赋值，在声明较多变量时，不用再写很多<code>let(var),</code>且映射关系清晰，且支持赋默认值</li><li>扩展运算符。<code>ES6</code>新增的扩展运算符(<code>...</code>)(重要),可以轻松的实现数组和松散序列的相互转化，可以取代<code>arguments</code>对象和<code>apply</code>方法，轻松获取未知参数个数情况下的参数集合。（尤其是在<code>ES5</code>中，<code>arguments</code>并不是一个真正的数组，而是一个类数组的对象，但是扩展运算符的逆运算却可以返回一个真正的数组）。扩展运算符还可以轻松方便的实现数组的复制和解构赋值（<code>let a = [2,3,4]</code>; <code>let b = [...a]</code>）</li></ul><p><strong>升级部分</strong></p><blockquote><p><code>ES6</code>在<code>Array</code>原型上新增了<code>find()</code>方法，用于取代传统的只能用<code>indexOf</code>查找包含数组项目的方法,且修复了<code>indexOf</code>查找不到<code>NaN的bug([NaN].indexOf(NaN) === -1)</code>.此外还新增了<code>copyWithin()</code>,<code>includes()</code>, <code>fill()</code>,<code>flat()</code>等方法，可方便的用于字符串的查找，补全,转换等</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;1-ES5、ES6和ES2015有什么区别&quot;&gt;&lt;a href=&quot;#1-ES5、ES6和ES2015有什么区别&quot; class=&quot;headerlink&quot; title=&quot;#1 ES5、ES6和ES2015有什么区别?&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://inte</summary>
       
     
     
