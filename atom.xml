@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-05T11:17:46.373Z</updated>
+  <updated>2022-10-05T11:26:01.690Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,92 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>6.如果要做优化，CSS提高性能的方法有哪些？</title>
+    <link href="http://example.com/2018/06/05/6-%E5%A6%82%E6%9E%9C%E8%A6%81%E5%81%9A%E4%BC%98%E5%8C%96%EF%BC%8CCSS%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"/>
+    <id>http://example.com/2018/06/05/6-%E5%A6%82%E6%9E%9C%E8%A6%81%E5%81%9A%E4%BC%98%E5%8C%96%EF%BC%8CCSS%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/</id>
+    <published>2018-06-04T16:00:00.000Z</published>
+    <updated>2022-10-05T11:26:01.690Z</updated>
+    
+    <content type="html"><![CDATA[<p>加载性能：</p><p>（1）css压缩：将写好的css进行打包压缩，可以减少很多的体积。</p><p>（2）css单一样式：当需要下边距和左边距的时候，很多时候选择:margin:top 0 bottom 0;但margin-bottom:bot</p><p>tom;margin-left:left;执行的效率更高。</p><p>（3）减少使用@import,而建议使用link，因为后者在页面加载时一起加载，前者是等待页面加载完成之后再进行加载。</p><p><a href="https://so.csdn.net/so/search?q=%E9%80%89%E6%8B%A9%E5%99%A8&spm=1001.2101.3001.7020">选择器</a>性能：</p><p>减少标签选择，多用class选择器。</p><p>尽量少的去使用后代选择器，降低选择器的权重值。后代选择器的开销是最高的，尽量将选择器的深度降到最低，最高不要超过三层，更多的使用类来关联每一个标签元素。</p><p>了解哪些属性是可以通过继承而来的，然后避免对这些属性重复指定规则。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;加载性能：&lt;/p&gt;
+&lt;p&gt;（1）css压缩：将写好的css进行打包压缩，可以减少很多的体积。&lt;/p&gt;
+&lt;p&gt;（2）css单一样式：当需要下边距和左边距的时候，很多时候选择:margin:top 0 bottom 0;但margin-bottom:bot&lt;/p&gt;
+&lt;p&gt;tom</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>什么是响应式设计？响应式设计的基本原理是什么？如何做？</title>
+    <link href="http://example.com/2018/06/05/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%EF%BC%9F%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%81%9A%EF%BC%9F/"/>
+    <id>http://example.com/2018/06/05/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%EF%BC%9F%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%81%9A%EF%BC%9F/</id>
+    <published>2018-06-04T16:00:00.000Z</published>
+    <updated>2022-10-05T11:25:10.521Z</updated>
+    
+    <content type="html"><![CDATA[<p>响应式⽹站设计（Responsive Web design）是⼀种⽹络页⾯设计布局，页⾯的设计与开发应当根据⽤户⾏为以及设备环境(系统平台、屏幕尺⼨、屏幕定向等)进⾏相应的响应和调整</p><p>响应式设计的基本原理是通过媒体查询检测不同的设备屏幕尺⼨做处理，为了处理移动端，页⾯头部必须有meta声明viewport</p><p>实现响应式布局的⽅式有如下：</p><p>媒体查询 媒体查询（Media Query）是CSS3新语法。 将不同的终端设备划分为不同的类型，称为媒体类型   关键字将媒体类型或多个特性连接到一起做为媒体查询的条件</p><p>百分⽐  百分比是一种相对于包含块的计量单位。利用对属性设置百分比来适配不同屏幕，注意这里的百分比是相对于父元素；</p><p>vw/vh </p><p> vw和vh是视口（viewport units）单位，</p><p>何谓视口，就是根据你浏览器窗口的大小的单位，不受显示器分辨率的影响，是不是很神奇，这就代表了，我们不需要顾虑到现在那么多不同电脑有关分辨率的自适应问题。</p><p>vw是可视窗口的宽度单位，和百分比有点一样，1vw = 可视窗口的宽度的百分之一。比如窗口宽度大小是1800px，那么1vw = 18px。和百分比不一样的是，vw始终相对于可视窗口的宽度，而百分比和其父元素的宽度有关。</p><p>vh就是可视窗口的高度了。</p><p>vmin和vmax，vmin是指选择vw和vh中最小的那个，而vmax是选择最大的那个</p><p>Rem <em><strong>*当前页面中元素的REM单位的样式值都是针对于HTML元素的font-size的值进行动态计算的*</strong></em> <em><strong>*手动设置 js*</strong></em> </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;响应式⽹站设计（Responsive Web design）是⼀种⽹络页⾯设计布局，页⾯的设计与开发应当根据⽤户⾏为以及设备环境(系统平台、屏幕尺⼨、屏幕定向等)进⾏相应的响应和调整&lt;/p&gt;
+&lt;p&gt;响应式设计的基本原理是通过媒体查询检测不同的设备屏幕尺⼨做处理，为了处理移动</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>元素水平垂直居中的方法有哪些？如果元素不定宽高呢?</title>
+    <link href="http://example.com/2018/06/03/%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E6%9E%9C%E5%85%83%E7%B4%A0%E4%B8%8D%E5%AE%9A%E5%AE%BD%E9%AB%98%E5%91%A2/"/>
+    <id>http://example.com/2018/06/03/%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E6%9E%9C%E5%85%83%E7%B4%A0%E4%B8%8D%E5%AE%9A%E5%AE%BD%E9%AB%98%E5%91%A2/</id>
+    <published>2018-06-02T16:00:00.000Z</published>
+    <updated>2022-10-05T11:22:43.012Z</updated>
+    
+    <content type="html"><![CDATA[<p>实现元素水平垂直居中的方式：</p><p>利用定位+<a href="https://so.csdn.net/so/search?q=margin&spm=1001.2101.3001.7020">margin</a>:auto</p><p>利用定位+margin:负值</p><p>利用定位+transform</p><p>table布局</p><p><a href="https://so.csdn.net/so/search?q=flex&spm=1001.2101.3001.7020">flex</a>布局</p><p>.content {</p><p>​     /<em>转为flex弹性盒布局</em>/</p><p>​    display: flex;</p><p>​    /<em>主轴上的对齐方式为居中</em>/</p><p>​    justify-content: center;</p><p>​    /<em>交叉轴上对齐方式为居中</em>/</p><p>​    align-items: center;</p><p>}</p><p>grid布局</p><p>上述方法中，不知道元素宽高大小仍能实现水平垂直居中的方法有：</p><p>利用定位+margin:auto</p><p>利用定位+transform</p><p>利用定位+margin:负值</p><p>flex布局</p><p>grid布局</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;实现元素水平垂直居中的方式：&lt;/p&gt;
+&lt;p&gt;利用定位+&lt;a href=&quot;https://so.csdn.net/so/search?q=margin&amp;spm=1001.2101.3001.7020&quot;&gt;margin&lt;/a&gt;:auto&lt;/p&gt;
+&lt;p&gt;利用定位+margin:负值</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>怎么理解回流跟重绘？什么场景下会触发？</title>
+    <link href="http://example.com/2018/06/03/%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%E5%9B%9E%E6%B5%81%E8%B7%9F%E9%87%8D%E7%BB%98%EF%BC%9F%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%E4%BC%9A%E8%A7%A6%E5%8F%91%EF%BC%9F/"/>
+    <id>http://example.com/2018/06/03/%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%E5%9B%9E%E6%B5%81%E8%B7%9F%E9%87%8D%E7%BB%98%EF%BC%9F%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%E4%BC%9A%E8%A7%A6%E5%8F%91%EF%BC%9F/</id>
+    <published>2018-06-02T16:00:00.000Z</published>
+    <updated>2022-10-05T11:23:57.367Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="21-4-重绘（Repaint）和回流（Reflow）"><a href="#21-4-重绘（Repaint）和回流（Reflow）" class="headerlink" title="21.4 重绘（Repaint）和回流（Reflow）"></a>21.4 重绘（Repaint）和回流（Reflow）</h3><p>重绘和回流会在我们设置节点样式时频繁出现，同时也会很大程度上影响性能。</p><p>重绘是当节点需要更改外观而不会影响布局的，比如改变 color 就叫称为重绘</p><p>回流是布局或者几何属性需要改变就称为回流。</p><p>什么场景下会触发</p><p>回流必定会发生重绘，重绘不一定会引发回流。回流所需的成本比重绘高的多，改变父节点里的子节点很可能会导致父节点的一系列回流。    </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;21-4-重绘（Repaint）和回流（Reflow）&quot;&gt;&lt;a href=&quot;#21-4-重绘（Repaint）和回流（Reflow）&quot; class=&quot;headerlink&quot; title=&quot;21.4 重绘（Repaint）和回流（Reflow）&quot;&gt;&lt;/a&gt;21.4 </summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>css选择器有哪些？优先级？哪些属性可以继承？</title>
@@ -349,92 +435,6 @@
       
       
     <summary type="html">&lt;h3 id=&quot;typeof类型判断&quot;&gt;&lt;a href=&quot;#typeof类型判断&quot; class=&quot;headerlink&quot; title=&quot;typeof类型判断&quot;&gt;&lt;/a&gt;typeof类型判断&lt;/h3&gt;&lt;p&gt;​    在写业务逻辑的时候，经常要用到JS数据类型的判断，面试常见的案例深</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Ajax有哪些有缺点</title>
-    <link href="http://example.com/2018/05/22/Ajax%E6%9C%89%E5%93%AA%E4%BA%9B%E6%9C%89%E7%BC%BA%E7%82%B9/"/>
-    <id>http://example.com/2018/05/22/Ajax%E6%9C%89%E5%93%AA%E4%BA%9B%E6%9C%89%E7%BC%BA%E7%82%B9/</id>
-    <published>2018-05-21T16:00:00.000Z</published>
-    <updated>2022-10-04T23:56:26.561Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Ajax-有那些优缺点"><a href="#Ajax-有那些优缺点" class="headerlink" title="Ajax 有那些优缺点"></a>Ajax 有那些优缺点</h3><p><strong>优点：</strong></p><ul><li>通过异步模式，提升了用户体验.</li><li>优化了浏览器和服务器之间的传输，减少不必要的数据往返，减少了带宽占用.</li><li><code>Ajax</code>在客户端运行，承担了一部分本来由服务器承担的工作，减少了大用户量下的服务器负载。</li><li><code>Ajax</code>可以实现动态不刷新（局部刷新）</li></ul><p><strong>缺点：</strong></p><ul><li>安全问题 <code>AJAX</code>暴露了与服务器交互的细节。</li><li>对搜索引擎的支持比较弱。</li><li>不容易调试。</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;Ajax-有那些优缺点&quot;&gt;&lt;a href=&quot;#Ajax-有那些优缺点&quot; class=&quot;headerlink&quot; title=&quot;Ajax 有那些优缺点&quot;&gt;&lt;/a&gt;Ajax 有那些优缺点&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Es5 Es6和E2015有什么区别</title>
-    <link href="http://example.com/2018/05/22/Es5-Es6%E5%92%8CE2015%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/"/>
-    <id>http://example.com/2018/05/22/Es5-Es6%E5%92%8CE2015%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/</id>
-    <published>2018-05-21T16:00:00.000Z</published>
-    <updated>2022-10-04T23:56:58.322Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="1-ES5、ES6和ES2015有什么区别"><a href="#1-ES5、ES6和ES2015有什么区别" class="headerlink" title="#1 ES5、ES6和ES2015有什么区别?"></a><a href="https://interview2.poetries.top/docs/excellent-docs/4-ES6%E6%A8%A1%E5%9D%97.html#_1-es5%E3%80%81es6%E5%92%8Ces2015%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB">#</a>1 ES5、ES6和ES2015有什么区别?</h2><blockquote><p><code>ES2015</code>特指在<code>2015</code>年发布的新一代<code>JS</code>语言标准，<code>ES6</code>泛指下一代JS语言标准，包含<code>ES2015</code>、<code>ES2016</code>、<code>ES2017</code>、<code>ES2018</code>等。现阶段在绝大部分场景下，<code>ES2015</code>默认等同<code>ES6</code>。<code>ES5</code>泛指上一代语言标准。<code>ES2015</code>可以理解为<code>ES5</code>和<code>ES6</code>的时间分界线</p></blockquote><h2 id="2-babel是什么，有什么作用"><a href="#2-babel是什么，有什么作用" class="headerlink" title="#2 babel是什么，有什么作用?"></a><a href="https://interview2.poetries.top/docs/excellent-docs/4-ES6%E6%A8%A1%E5%9D%97.html#_2-babel%E6%98%AF%E4%BB%80%E4%B9%88-%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8">#</a>2 babel是什么，有什么作用?</h2><blockquote><p><code>babel</code>是一个 <code>ES6</code> 转码器，可以将 <code>ES6</code> 代码转为 <code>ES5</code> 代码，以便兼容那些还没支持<code>ES6</code>的平台</p></blockquote><h2 id="3-举一些ES6对Array数组类型做的常用升级优化"><a href="#3-举一些ES6对Array数组类型做的常用升级优化" class="headerlink" title="3 举一些ES6对Array数组类型做的常用升级优化"></a>3 举一些ES6对Array数组类型做的常用升级优化</h2><p><strong>优化部分</strong></p><ul><li>数组解构赋值。<code>ES6</code>可以直接以<code>let [a,b,c] = [1,2,3]</code>形式进行变量赋值，在声明较多变量时，不用再写很多<code>let(var),</code>且映射关系清晰，且支持赋默认值</li><li>扩展运算符。<code>ES6</code>新增的扩展运算符(<code>...</code>)(重要),可以轻松的实现数组和松散序列的相互转化，可以取代<code>arguments</code>对象和<code>apply</code>方法，轻松获取未知参数个数情况下的参数集合。（尤其是在<code>ES5</code>中，<code>arguments</code>并不是一个真正的数组，而是一个类数组的对象，但是扩展运算符的逆运算却可以返回一个真正的数组）。扩展运算符还可以轻松方便的实现数组的复制和解构赋值（<code>let a = [2,3,4]</code>; <code>let b = [...a]</code>）</li></ul><p><strong>升级部分</strong></p><blockquote><p><code>ES6</code>在<code>Array</code>原型上新增了<code>find()</code>方法，用于取代传统的只能用<code>indexOf</code>查找包含数组项目的方法,且修复了<code>indexOf</code>查找不到<code>NaN的bug([NaN].indexOf(NaN) === -1)</code>.此外还新增了<code>copyWithin()</code>,<code>includes()</code>, <code>fill()</code>,<code>flat()</code>等方法，可方便的用于字符串的查找，补全,转换等</p></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;1-ES5、ES6和ES2015有什么区别&quot;&gt;&lt;a href=&quot;#1-ES5、ES6和ES2015有什么区别&quot; class=&quot;headerlink&quot; title=&quot;#1 ES5、ES6和ES2015有什么区别?&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://inte</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>数据类型基础</title>
-    <link href="http://example.com/2018/05/20/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    <id>http://example.com/2018/05/20/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</id>
-    <published>2018-05-20T08:55:34.000Z</published>
-    <updated>2022-10-04T11:43:31.264Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li><p><input disabled="" type="checkbox">  一 <code>JS</code> 中分为七种内置类型，七种内置类型又分为两大类型：基本类型和对象（<code>Object</code>）。</p></li><li><p><input disabled="" type="checkbox">  基本类型有七种：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">null</span><br></pre></td></tr></table></figure><p>，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">undefined</span><br></pre></td></tr></table></figure><p>，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">boolean</span><br></pre></td></tr></table></figure><p>，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">number</span><br></pre></td></tr></table></figure><p>，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string</span><br></pre></td></tr></table></figure><p>，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">symbol</span><br></pre></td></tr></table></figure><p>,</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bigint</span><br></pre></td></tr></table></figure><ul><li>其中 <code>Symbo</code>l 和 <code>BigInt</code> 是 <code>ES6</code> 新增的数据类型</li><li><code>Symbol</code> 代表独一无二的值，最大的用法是用来定义对象的唯一属性名。</li><li><code>BigInt</code> 可以表示任意大小的整数。</li></ul></li><li><p><input disabled="" type="checkbox">  其中 <code>JS</code> 的数字类型是浮点类型的，没有整型。并且浮点类型基于 <code>IEEE 754</code>标准实现，在使用中会遇到某些 Bug。<code>NaN</code> 也属于 <code>number</code> 类型，并且 <code>NaN</code> 不等于自身。</p></li><li><p><input disabled="" type="checkbox">  对于基本类型来说，如果使用字面量的方式，那么这个变量只是个字面量，只有在必要的时候才会转换为对应的类型</p></li></ul><p><strong>引用数据类型:</strong></p><ul><li>对象<code>Object</code>（包含普通对象-<code>Object</code>，数组对象-<code>Array</code>，正则对象-<code>RegExp</code>，日期对象-<code>Date</code>，数学函数-<code>Math</code>，函数对象-<code>Function</code>）</li></ul><p>​    对象（<code>Object</code>）是引用类型，在使用过程中会遇到浅拷贝和深拷贝的问题。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&gt;  一 &lt;code&gt;JS&lt;/code&gt; 中分为七种内置类型，七种内置类型又分为两大类型：基本类型和对象（&lt;code&gt;Object&lt;/code&gt;）。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;i</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>null和undefined的区别</title>
-    <link href="http://example.com/2018/05/20/null%E5%92%8Cundefined%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>http://example.com/2018/05/20/null%E5%92%8Cundefined%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
-    <published>2018-05-19T16:00:00.000Z</published>
-    <updated>2022-10-04T13:30:24.824Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="null和undefined区别"><a href="#null和undefined区别" class="headerlink" title="null和undefined区别"></a>null和undefined区别</h3><blockquote><p><code>Undefined</code>类型只有一个值，即<code>undefined</code>。当声明的变量还未被初始化时，变量的默认值为<code>undefined</code>。用法</p></blockquote><ul><li>变量被声明了，但没有赋值时，就等于<code>undefined</code>。</li><li>调用函数时，应该提供的参数没有提供，该参数等于<code>undefined</code>。</li><li>对象没有赋值的属性，该属性的值为<code>undefined</code>。</li><li>函数没有返回值时，默认返回<code>undefined</code></li></ul><blockquote><p><code>Null</code>类型也只有一个值，即<code>null</code>。<code>null</code>用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。用法</p></blockquote><ul><li>作为函数的参数，表示该函数的参数不是对象。</li><li>作为对象原型链的终点</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;null和undefined区别&quot;&gt;&lt;a href=&quot;#null和undefined区别&quot; class=&quot;headerlink&quot; title=&quot;null和undefined区别&quot;&gt;&lt;/a&gt;null和undefined区别&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;</summary>
       
     
     
