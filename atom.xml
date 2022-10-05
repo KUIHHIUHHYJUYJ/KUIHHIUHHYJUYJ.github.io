@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-04T23:58:57.472Z</updated>
+  <updated>2022-10-05T11:17:46.373Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,159 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css选择器有哪些？优先级？哪些属性可以继承？</title>
+    <link href="http://example.com/2018/06/02/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF%EF%BC%9F/"/>
+    <id>http://example.com/2018/06/02/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF%EF%BC%9F/</id>
+    <published>2018-06-01T16:00:00.000Z</published>
+    <updated>2022-10-05T11:17:46.373Z</updated>
+    
+    <content type="html"><![CDATA[<p>关于css属性选择器常用的有：</p><p>id选择器（#box），选择id为box的元素</p><p>类选择器（.one），选择类名为one的所有元素</p><p>标签选择器（div），选择标签为div的所有元素</p><p>伪类选择器</p><p>伪元素选择器</p><p>属性选择器</p><p>优先级：内联 &gt; ID选择器 &gt; 类选择器 &gt; 标签选择器</p><p>关于继承属性，可以分成：</p><p>字体系列属性</p><p>文本系列属性</p><p>元素可见性</p><p>表格布局属性</p><p>列表属性</p><p>光标属性</p><p>继承中比较特殊的几点：</p><p>a 标签的字体颜色不能被继承</p><p>h1-h6标签字体的大下也是不能被继承的</p><p>无继承的属性</p><p>display</p><p>文本属性：vertical-align、text-decoration</p><p>盒子模型的属性：宽度、高度、内外边距、边框等</p><p>背景属性：背景图片、颜色、位置等</p><p>定位属性：浮动、清除浮动、定位position等</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;关于css属性选择器常用的有：&lt;/p&gt;
+&lt;p&gt;id选择器（#box），选择id为box的元素&lt;/p&gt;
+&lt;p&gt;类选择器（.one），选择类名为one的所有元素&lt;/p&gt;
+&lt;p&gt;标签选择器（div），选择标签为div的所有元素&lt;/p&gt;
+&lt;p&gt;伪类选择器&lt;/p&gt;
+&lt;p&gt;伪元素选择器</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>什么是模块化</title>
+    <link href="http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E6%A8%A1%E5%9D%97%E5%8C%96/"/>
+    <id>http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E6%A8%A1%E5%9D%97%E5%8C%96/</id>
+    <published>2018-06-01T16:00:00.000Z</published>
+    <updated>2022-10-05T11:15:20.711Z</updated>
+    
+    <content type="html"><![CDATA[<p>模块化是指 解决一个复杂问题时自顶向下逐层把系统划分成若干模块的过程, 有多种属性,分别反映其内部特性 (百度)</p><p> 　 模块化一般是指 可以被<strong>抽象封装的最小或最优代码的集合 ,</strong> 模块化用于解决<strong>功能耦合问题</strong></p><p>   前端模块化 一般是指javaScript 的模块化 比较常见的就是 node.js 的NPM包 每个模块可以是最小或最优的代码组合 也可以是为了解决某些问题多个小模块合并的一个大的模块 </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;模块化是指 解决一个复杂问题时自顶向下逐层把系统划分成若干模块的过程, 有多种属性,分别反映其内部特性 (百度)&lt;/p&gt;
+&lt;p&gt; 　 模块化一般是指 可以被&lt;strong&gt;抽象封装的最小或最优代码的集合 ,&lt;/strong&gt; 模块化用于解决&lt;strong&gt;功能耦合问题&lt;/s</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>什么是盒子模型</title>
+    <link href="http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</id>
+    <published>2018-06-01T16:00:00.000Z</published>
+    <updated>2022-10-05T11:16:42.392Z</updated>
+    
+    <content type="html"><![CDATA[<p>IE盒模型又叫怪异盒模型。在IE8以上以及其他的浏览器中使用的盒模型都是标准盒模型，但是IE低版本使用的是IE盒模型。</p><p>有两种， IE盒子模型（怪异盒子模型）、W3C盒子模型（标准盒子模型）；</p><p>盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；</p><p>区 别： IE的content部分把 border 和 padding计算了进去;</p><p>盒子模型构成：内容(content)、内填充(padding)、 边框(border)、外边距(margin)</p><p>IE8及其以下版本浏览器，未声明 DOCTYPE，内容宽高会包含内填充和边框，称为怪异盒模型(IE盒模型)</p><p>标准(W3C)盒模型：元素宽度 = width + padding + border + margin</p><p>怪异(IE)盒模型：元素宽度 = width + margin</p><p>标准浏览器通过设置 css3 的 box-sizing: border-box 属性，触发“怪异模式”解析计算宽高</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;IE盒模型又叫怪异盒模型。在IE8以上以及其他的浏览器中使用的盒模型都是标准盒模型，但是IE低版本使用的是IE盒模型。&lt;/p&gt;
+&lt;p&gt;有两种， IE盒子模型（怪异盒子模型）、W3C盒子模型（标准盒子模型）；&lt;/p&gt;
+&lt;p&gt;盒模型： 内容(content)、填充(paddin</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>什么是组件化</title>
+    <link href="http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BB%84%E4%BB%B6%E5%8C%96/"/>
+    <id>http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BB%84%E4%BB%B6%E5%8C%96/</id>
+    <published>2018-06-01T16:00:00.000Z</published>
+    <updated>2022-10-05T11:13:01.698Z</updated>
+    
+    <content type="html"><![CDATA[<p>组件化就是将一个页面拆分成一个个小的功能模块，每个功能模块完成属于自己这部分独立的功能，使得整个页面的管理和维护变得非常容易</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;组件化就是将一个页面拆分成一个个小的功能模块，每个功能模块完成属于自己这部分独立的功能，使得整个页面的管理和维护变得非常容易&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器的缓存机制</title>
+    <link href="http://example.com/2018/06/02/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/"/>
+    <id>http://example.com/2018/06/02/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</id>
+    <published>2018-06-01T16:00:00.000Z</published>
+    <updated>2022-10-05T11:10:54.486Z</updated>
+    
+    <content type="html"><![CDATA[<p>浏览器缓存分为:强缓存和协商缓存</p><h3 id="强缓存"><a href="#强缓存" class="headerlink" title="*强缓存*"></a><em><strong>*强缓存*</strong></em></h3><p>这里的’强’是强制的意思,当浏览器去请求某个文件的时候,服务端就在响应头里面对该文件做了缓存配置,缓存的时间,缓存类型都由服务端控制</p><p>可以简单的理解为 ：强缓存会去本地进行请求不会去服务器进行请求</p><p>协商缓存：会先去服务器请求数据 但 服务器没有发生变化的时候在去本地进行请求</p><p>协商缓存</p><p>上面说到的强缓存就是给资源设置个过期时间，客户端每次请求资源时都会看是否过期；只有在过期才会去询问服务器。所以，强缓存就是为了给客户端自给自足用的。而当某天，客户端请求该资源时发现其过期了，这是就会去请求服务器了，而这时候去请求服务器的这过程就可以设置协商缓存。这时候，协商缓存就是需要客户端和服务器两端进行交互的。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;浏览器缓存分为:强缓存和协商缓存&lt;/p&gt;
+&lt;h3 id=&quot;强缓存&quot;&gt;&lt;a href=&quot;#强缓存&quot; class=&quot;headerlink&quot; title=&quot;*强缓存*&quot;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;*强缓存*&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;p&gt;这里的’强’是强制的意思</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Promise是什么，有什么作用？</title>
+    <link href="http://example.com/2018/05/30/Promise%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F/"/>
+    <id>http://example.com/2018/05/30/Promise%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F/</id>
+    <published>2018-05-29T16:00:00.000Z</published>
+    <updated>2022-10-05T11:05:35.557Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>Promise</code>是<code>ES6</code>引入的一个新的对象，他的主要作用是用来解决JS异步机制里，回调机制产生的“回调地狱”。它并不是什么突破性的<code>API</code>，只是封装了异步回调形式，使得异步回调可以写的更加优雅，可读性更高，而且可以链式调用</p><p>1.异步操作的解决方案</p><p>Promise 是一种异步操作的解决方案，将写法复杂的传统的回调函数和监听事件的异</p><p>步操作，用同步代码的形式表达出来。避免了多级异步操作的回调函数嵌套。</p><p>主要用于异步计算</p><ol start="2"><li>作为对象，内部有三种状态</li></ol><p>初始状态（ pending ）。</p><p>已完成（ resolve）：resolve 方法可以使 Promise 对象的状态改变成成功</p><p>已拒绝（ reject ）：reject 方法则是将 Promise 对象的状态改变为失败</p><p>3.常用的三种方法</p><p>第一种：then 表示异步成功执行后的数据状态变为 resolve</p><p>第二种：catch 表示异步失败后执行的数据状态变为 reject</p><p>第三种：all 表示把多个没有关系的 Promise 封装成一个 Promise 对象，使用</p><p>then 返回一个数组数据。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;code&gt;Promise&lt;/code&gt;是&lt;code&gt;ES6&lt;/code&gt;引入的一个新的对象，他的主要作用是用来解决JS异步机制里，回调机制产生的“回调地狱”。它并不是什么突破性的&lt;code&gt;API&lt;/code&gt;，只是封装了异步回调形式，使得异步回调可以写的更加优雅，可读性</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vue中的data为什么不是一个对象而是一个函数？</title>
+    <link href="http://example.com/2018/05/30/vue%E4%B8%AD%E7%9A%84data%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E8%80%8C%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%EF%BC%9F/"/>
+    <id>http://example.com/2018/05/30/vue%E4%B8%AD%E7%9A%84data%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E8%80%8C%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%EF%BC%9F/</id>
+    <published>2018-05-29T16:00:00.000Z</published>
+    <updated>2022-10-05T11:07:53.909Z</updated>
+    
+    <content type="html"><![CDATA[<p>因为组件是用来复用的，且JS对象是引用关系，如果组件中的data是对象，那么作用域没有隔离</p><p>组件中的data值会相互影响；如果组件中data是函数，那么每个实例可以维护一份被返回对象</p><p>的独立拷贝，组件实例之间的data值不会相互影响。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;因为组件是用来复用的，且JS对象是引用关系，如果组件中的data是对象，那么作用域没有隔离&lt;/p&gt;
+&lt;p&gt;组件中的data值会相互影响；如果组件中data是函数，那么每个实例可以维护一份被返回对象&lt;/p&gt;
+&lt;p&gt;的独立拷贝，组件实例之间的data值不会相互影响。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>如何理解Bight</title>
@@ -282,26 +435,6 @@
       
     <summary type="html">&lt;h3 id=&quot;null和undefined区别&quot;&gt;&lt;a href=&quot;#null和undefined区别&quot; class=&quot;headerlink&quot; title=&quot;null和undefined区别&quot;&gt;&lt;/a&gt;null和undefined区别&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>null是对象吗为什么？</title>
-    <link href="http://example.com/2018/05/20/null%E6%98%AF%E5%AF%B9%E8%B1%A1%E5%90%97%E4%B8%BA%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
-    <id>http://example.com/2018/05/20/null%E6%98%AF%E5%AF%B9%E8%B1%A1%E5%90%97%E4%B8%BA%E4%BB%80%E4%B9%88%EF%BC%9F/</id>
-    <published>2018-05-19T16:00:00.000Z</published>
-    <updated>2022-10-04T13:32:03.851Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="null是对象吗？为什么？"><a href="#null是对象吗？为什么？" class="headerlink" title="null是对象吗？为什么？"></a>null是对象吗？为什么？</h3><p>结论: <code>null</code>不是对象。</p><blockquote><p>解释: 虽然 <code>typeof null</code> 会输出 object，但是这只是 JS 存在的一个悠久 Bug。在 JS 的最初版本中使用的是 32 位系统，为了性能考虑使用低位存储变量的类型信息，000 开头代表是对象然而 null 表示为全零，所以将它错误的判断为 object 。</p></blockquote><h3 id="0-1-0-2为什么不等于0-3？如何让其相等"><a href="#0-1-0-2为什么不等于0-3？如何让其相等" class="headerlink" title="0.1+0.2为什么不等于0.3？如何让其相等"></a>0.1+0.2为什么不等于0.3？如何让其相等</h3><blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0.1`和`0.2`在转换成二进制后会无限循环，由于标准位数的限制后面多余的位数会被截掉，此时就已经出现了精度的损失，相加后因浮点数小数位的限制而截断的二进制数字在转换为十进制就会变成`0.30000000000000004</span><br></pre></td></tr></table></figure></blockquote><p>我们都知道计算机时是通过二进制来进行计算的，即 <code>0</code> 和 <code>1</code></p><ul><li>就拿 <code>0.1 + 0.2</code> 来说，<code>0.1</code>表示为<code>0.0001100110011001...</code>，而<code>0.2</code>表示为<code>0.0011001100110011...</code></li><li>而在二进制中 <code>1 + 1 = 10</code>，所以 <code>0.1 + 0.2 = 0.0100110011001100...</code></li><li>转成<code>10</code>进制就近似表示为 <code>0.30000000000000004</code></li></ul><blockquote><p>简单来说就是，<strong>浮点数转成二进制时丢失了精度，因此在二进制计算完再转回十进制时可能会和理论结果不同</strong></p></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;null是对象吗？为什么？&quot;&gt;&lt;a href=&quot;#null是对象吗？为什么？&quot; class=&quot;headerlink&quot; title=&quot;null是对象吗？为什么？&quot;&gt;&lt;/a&gt;null是对象吗？为什么？&lt;/h3&gt;&lt;p&gt;结论: &lt;code&gt;null&lt;/code&gt;不是对象。</summary>
       
     
     
