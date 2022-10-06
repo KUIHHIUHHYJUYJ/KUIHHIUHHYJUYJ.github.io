@@ -41,6 +41,73 @@
   </entry>
   
   <entry>
+    <title>session,cookie和token的区别</title>
+    <link href="http://example.com/2018/06/06/session-cookie%E5%92%8Ctoken%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://example.com/2018/06/06/session-cookie%E5%92%8Ctoken%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+    <published>2018-06-05T16:00:00.000Z</published>
+    <updated>2022-10-06T13:45:09.785Z</updated>
+    
+    <content type="html"><![CDATA[<p><em><strong>*1.session和cookie区别：*</strong></em></p><p>·   数据存放位置不同：Session数据是存在服务器中的，cookie数据存放在浏览器当中。</p><p>·   安全程度不同：cookie放在服务器中不是很安全，session放在服务器中，相对安全。</p><p>·   性能使用程度不同：session放在服务器上，访问增多会占用服务器的性能；考虑到减轻服务器性能方面，应使用cookie。</p><p>·   数据存储大小不同：单个cookie保存的数据不能超过4K，session存储在服务端，根据服务器大小来定。</p><p><em><strong>*2.token和session区别：*</strong></em></p><p>·   token是开发定义的，session是http协议规定的；</p><p>·   token不一定存储，session存在服务器中；</p><p>·   token可以跨域，session不可以跨域，它是与域名绑定的</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;*1.session和cookie区别：*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;·   数据存放位置不同：Session数据是存在服务器中的，cookie数据存放在浏览器当中。&lt;/p&gt;
+&lt;p&gt;·   安全程度不同：cookie放在服务器中不是很</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>bind、call、apply 区别？如何实现一个bind?</title>
+    <link href="http://example.com/2018/06/06/bind%E3%80%81call%E3%80%81apply-%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAbind/"/>
+    <id>http://example.com/2018/06/06/bind%E3%80%81call%E3%80%81apply-%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAbind/</id>
+    <published>2018-06-05T16:00:00.000Z</published>
+    <updated>2022-10-06T13:47:04.786Z</updated>
+    
+    <content type="html"><![CDATA[<p>区别</p><p>三者都可以改变函数的this对象指向</p><p>三者第一个参数都是this要指向的对象，如果如果没有这个参数或参数为undefined或null，则默认指向全局window</p><p>三者都可以传参，但是apply是数组，而call是参数列表，且apply和call是一次性传入参数，而bind可以分为多次传入</p><p>bind是返回绑定this之后的函数，apply、call 则是立即执行</p><p>三、实现</p><p>实现bind的步骤，我们可以分解成为三部分：</p><p>修改this指向</p><p>动态传递参数</p><p>// 方式一：只在bind中传递函数参数</p><p>// 方式二：返回函数中传递参数</p><p>兼容new关键字</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;区别&lt;/p&gt;
+&lt;p&gt;三者都可以改变函数的this对象指向&lt;/p&gt;
+&lt;p&gt;三者第一个参数都是this要指向的对象，如果如果没有这个参数或参数为undefined或null，则默认指向全局window&lt;/p&gt;
+&lt;p&gt;三者都可以传参，但是apply是数组，而call是参数列表，且</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>说说你对闭包的理解？闭包使用场景</title>
+    <link href="http://example.com/2018/06/06/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E9%97%AD%E5%8C%85%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E9%97%AD%E5%8C%85%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/"/>
+    <id>http://example.com/2018/06/06/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E9%97%AD%E5%8C%85%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E9%97%AD%E5%8C%85%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</id>
+    <published>2018-06-05T16:00:00.000Z</published>
+    <updated>2022-10-06T13:46:21.367Z</updated>
+    
+    <content type="html"><![CDATA[<p>说说你对闭包的理解</p><p>闭包就是能够读取其他函数内部的函数，是指有权访问拎一个函数作用域中变量的函数，闭包就是在一个函数内创建另一个函数，通过另一个函数访问这个这个函数内部的局部变量</p><p>使用闭包主要是为了设计私有的方法和变量。利用闭包可以突破作用链域</p><p>闭包的特性：</p><p>函数内再嵌套函数    </p><p>内部函数可以引用外层的参数和变量</p><p>参数和变量不会被垃圾回收机制回收</p><p>闭包 的最大用处有两个，一个是可以读取函数内部的变量，让这些变量始终保持在内存中</p><p>闭包的另一个用处，是封装对象的私有属性和私有方法</p><p>好处：能够实现封装和缓存等；</p><p>坏处：就是消耗内存、不正当使用会造成内存溢出的问题</p><p>闭包的使用场景：</p><ol><li><p>创建私有变量，</p></li><li><p>延长生命周期</p></li><li><p>例如计数器，延迟调用，回调等闭包的应用</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;说说你对闭包的理解&lt;/p&gt;
+&lt;p&gt;闭包就是能够读取其他函数内部的函数，是指有权访问拎一个函数作用域中变量的函数，闭包就是在一个函数内创建另一个函数，通过另一个函数访问这个这个函数内部的局部变量&lt;/p&gt;
+&lt;p&gt;使用闭包主要是为了设计私有的方法和变量。利用闭包可以突破作用链域&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>什么是响应式设计？响应式设计的基本原理是什么？如何做？</title>
     <link href="http://example.com/2018/06/05/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%EF%BC%9F%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%81%9A%EF%BC%9F/"/>
     <id>http://example.com/2018/06/05/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%EF%BC%9F%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%81%9A%EF%BC%9F/</id>
@@ -374,68 +441,6 @@
       
     <summary type="html">&lt;h2 id=&quot;Proxy是什么，有什么作用？&quot;&gt;&lt;a href=&quot;#Proxy是什么，有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;Proxy是什么，有什么作用？&quot;&gt;&lt;/a&gt;Proxy是什么，有什么作用？&lt;/h2&gt;&lt;blockquote&gt;
 &lt;figure </summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Set是什么，有什么作用？</title>
-    <link href="http://example.com/2018/05/23/Set%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F/"/>
-    <id>http://example.com/2018/05/23/Set%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%9F/</id>
-    <published>2018-05-22T16:00:00.000Z</published>
-    <updated>2022-10-04T23:58:11.648Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Set是什么，有什么作用？"><a href="#Set是什么，有什么作用？" class="headerlink" title="Set是什么，有什么作用？"></a>Set是什么，有什么作用？</h2><blockquote><p><code>Set</code>是<code>ES6</code>引入的一种类似<code>Array</code>的新的数据结构，<code>Set</code>实例的成员类似于数组<code>item</code>成员，区别是<code>Set</code>实例的成员都是唯一，不重复的。这个特性可以轻松地实现数组去重</p></blockquote><h2 id="Map是什么，有什么作用？"><a href="#Map是什么，有什么作用？" class="headerlink" title="Map是什么，有什么作用？"></a>Map是什么，有什么作用？</h2><blockquote><p><code>Map</code>是<code>ES6</code>引入的一种类似<code>Object</code>的新的数据结构，<code>Map</code>可以理解为是<code>Object</code>的超集，打破了以传统键值对形式定义对象，对象的<code>key</code>不再局限于字符串，也可以是<code>Object</code>。可以更加全面的描述对象的属性</p></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;Set是什么，有什么作用？&quot;&gt;&lt;a href=&quot;#Set是什么，有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;Set是什么，有什么作用？&quot;&gt;&lt;/a&gt;Set是什么，有什么作用？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Set&lt;/co</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Dom常用方法</title>
-    <link href="http://example.com/2018/05/22/Dom%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/"/>
-    <id>http://example.com/2018/05/22/Dom%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</id>
-    <published>2018-05-21T16:00:00.000Z</published>
-    <updated>2022-10-04T23:56:44.023Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="说说有几种类型的DOM节点"><a href="#说说有几种类型的DOM节点" class="headerlink" title="说说有几种类型的DOM节点"></a>说说有几种类型的DOM节点</h3><ul><li><p><code>Document</code>节点，整个文档是一个文档节点；</p></li><li><p><code>Element</code>节点，每个HTML标签是一个元素节点；</p></li><li><p><code>Attribute</code>节点，每一个HTML属性是一个属性节点；</p></li><li><p><code>Text</code>节点，包含在HTML元素中的文本是文本节点</p><h3 id="操作DOM节点方法"><a href="#操作DOM节点方法" class="headerlink" title="操作DOM节点方法"></a>操作DOM节点方法</h3><p>创建新节点</p><p>​        createDocumentFragment()    //创建一个DOM片段<br>​        createElement()   //创建一个具体的元素<br>​        createTextNode()   //创建一个文本节点</p><p>添加、移除、替换、插入**</p><p>​        appendChild()      //添加<br>​        removeChild()      //移除<br>​        replaceChild()      //替换<br>​        insertBefore()      //插入</p></li></ul><p>​    <strong>查找</strong></p><pre><code>        getElementsByTagName()    //通过标签名称</code></pre><p>​                    getElementsByName()     //通过元素的Name属性的值<br>​                    getElementById()        //通过元素Id，唯一性</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;说说有几种类型的DOM节点&quot;&gt;&lt;a href=&quot;#说说有几种类型的DOM节点&quot; class=&quot;headerlink&quot; title=&quot;说说有几种类型的DOM节点&quot;&gt;&lt;/a&gt;说说有几种类型的DOM节点&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;Document&lt;/c</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>js类型判断</title>
-    <link href="http://example.com/2018/05/22/js%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD/"/>
-    <id>http://example.com/2018/05/22/js%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD/</id>
-    <published>2018-05-21T16:00:00.000Z</published>
-    <updated>2022-10-04T23:57:18.324Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="typeof类型判断"><a href="#typeof类型判断" class="headerlink" title="typeof类型判断"></a>typeof类型判断</h3><p>​    在写业务逻辑的时候，经常要用到JS数据类型的判断，面试常见的案例深浅拷贝也要用到数据类型的判断。</p><p><strong>typeof</strong></p><pre><code>console.log(typeof 2);               // number</code></pre><p>console.log(typeof true);            // boolean<br>console.log(typeof ‘str’);           // string<br>console.log(typeof undefined);       // undefined<br>console.log(typeof function(){});    // function<br>console.log(typeof Symbol(“foo”)); // symbol<br>console.log(typeof 2172141653n); // bigint</p><p>// 不能判别<br>console.log(typeof []); // object<br>console.log(typeof {}); // object<br>console.log(typeof null); // object</p><p>优点：能够快速区分基本数据类型 缺点：不能将<code>Object</code>、<code>Array</code>和<code>Null</code>区分，都返回<code>object</code></p><p><strong>instanceof</strong></p><pre><code>console.log(2 instanceof Number);                    // false</code></pre><p>console.log(true instanceof Boolean);                // false<br>console.log(‘str’ instanceof String);                // false<br>console.log([] instanceof Array);                    // true<br>console.log(function(){} instanceof Function);       // true<br>console.log({} instanceof Object);                   // true</p><ul><li>优点：能够区分<code>Array</code>、<code>Object</code>和<code>Function</code>，适合用于判断自定义的类实例对象</li><li>缺点：<code>Number</code>，<code>Boolean</code>，<code>String</code>基本数据类型不能判断</li></ul><blockquote><p>其内部运行机制是判断在其原型链中能否找到该类型的原型其实现就是顺着原型链去找，如果能找到对应的 <code>Xxxxx.prototype</code> 即为 <code>true</code> 。比如这里的 <code>stu</code> 作为实例，顺着原型链能找到 <code>Student.prototype</code> 及 <code>People.prototype</code> ，所以都为 <code>true</code></p></blockquote><p><strong>Object.prototype.toString.call()</strong></p><pre><code>var toString = Object.prototype.toString;</code></pre><p>console.log(toString.call(2));                      //[object Number]<br>console.log(toString.call(true));                   //[object Boolean]<br>console.log(toString.call(‘str’));                  //[object String]<br>console.log(toString.call([]));                     //[object Array]<br>console.log(toString.call(function(){}));           //[object Function]<br>console.log(toString.call({}));                     //[object Object]<br>console.log(toString.call(undefined));              //[object Undefined]<br>console.log(toString.call(null));                   //[object Null]</p><p>优点：精准判断数据类型，所有原始数据类型都是能判断的，还有 <code>Error</code> 对象，<code>Date</code> 对象等</p><p>缺点：写法繁琐不容易记，推荐进行封装后使用</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;typeof类型判断&quot;&gt;&lt;a href=&quot;#typeof类型判断&quot; class=&quot;headerlink&quot; title=&quot;typeof类型判断&quot;&gt;&lt;/a&gt;typeof类型判断&lt;/h3&gt;&lt;p&gt;​    在写业务逻辑的时候，经常要用到JS数据类型的判断，面试常见的案例深</summary>
       
     
     
