@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-07T05:40:33.336Z</updated>
+  <updated>2022-10-07T06:55:35.931Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,99 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何解决跨域问题</title>
+    <link href="http://example.com/2018/06/30/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/2018/06/30/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</id>
+    <published>2018-06-29T16:00:00.000Z</published>
+    <updated>2022-10-07T06:55:35.931Z</updated>
+    
+    <content type="html"><![CDATA[<p>代理跨域的原理 通过一些方法设置代理，在请求发送(接收)之前加入中间层，</p><p>客户端发送请求时</p><p>不直接到服务器</p><p>而是先到代理的中间层</p><p>再将请求发送到服务器</p><p>同理，当服务器返回数据的时候，也是先到代理的中间层</p><p> 出于浏览器的同源策略限制。同源策略（Sameoriginpolicy）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。</p><p>通过jsonp跨域</p><p>document.domain + iframe跨域</p><p>nginx代理跨域</p><p>nodejs中间件代理跨域</p><p>后端在头部信息里面设置安全域名</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;代理跨域的原理 通过一些方法设置代理，在请求发送(接收)之前加入中间层，&lt;/p&gt;
+&lt;p&gt;客户端发送请求时&lt;/p&gt;
+&lt;p&gt;不直接到服务器&lt;/p&gt;
+&lt;p&gt;而是先到代理的中间层&lt;/p&gt;
+&lt;p&gt;再将请求发送到服务器&lt;/p&gt;
+&lt;p&gt;同理，当服务器返回数据的时候，也是先到代理的中间层&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>谈一谈箭头函数与普通函数的区别</title>
+    <link href="http://example.com/2018/06/21/%E8%B0%88%E4%B8%80%E8%B0%88%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E4%B8%8E%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://example.com/2018/06/21/%E8%B0%88%E4%B8%80%E8%B0%88%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E4%B8%8E%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+    <published>2018-06-20T16:00:00.000Z</published>
+    <updated>2022-10-07T06:46:49.526Z</updated>
+    
+    <content type="html"><![CDATA[<p>1：写法不一样</p><p>2：普通函数存在变量提升的现象</p><p>3：箭头函数是匿名函数，不能作为构造函数使用，不能使用new。</p><p>匿名函数它是matlab中定义的一种函数形式，出现在matlab中，匿名函数不以文件形式驻留在文件夹上；他的生成方式最简捷，可在指令窗或任何函数体内通过指令直接生成。</p><p>匿名函数的作用主要是实现自己定义matlab中的函数，从而扩大函数的使用功能</p><p>4：两者this的指向不同</p><p>5：箭头函数的arguments指向它的父级函数所在作用域的arguments</p><p>6：箭头函数没有new.target</p><p>箭头函数</p><p>箭头函数的this指向父级作用域的this，</p><p>箭头函数没有prototype原型.</p><p>箭头函数不能作为构造函数。</p><p>普通函数的this</p><p>1、普通函数最终指向调用它的对象，也就是说谁调用就指向谁。</p><p>2、没有被对象调用的函数默认指向windows</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1：写法不一样&lt;/p&gt;
+&lt;p&gt;2：普通函数存在变量提升的现象&lt;/p&gt;
+&lt;p&gt;3：箭头函数是匿名函数，不能作为构造函数使用，不能使用new。&lt;/p&gt;
+&lt;p&gt;匿名函数它是matlab中定义的一种函数形式，出现在matlab中，匿名函数不以文件形式驻留在文件夹上；他的生成方式最简</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>javascript 代码中的use strict;是什么意思</title>
+    <link href="http://example.com/2018/06/20/javascript-%E4%BB%A3%E7%A0%81%E4%B8%AD%E7%9A%84use-strict-%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/"/>
+    <id>http://example.com/2018/06/20/javascript-%E4%BB%A3%E7%A0%81%E4%B8%AD%E7%9A%84use-strict-%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/</id>
+    <published>2018-06-19T16:00:00.000Z</published>
+    <updated>2022-10-07T06:45:35.671Z</updated>
+    
+    <content type="html"><![CDATA[<p>use strict是es5中的严格模式，利用严格模式使代码编写更加规范，避免不合理的语法，和一些异常操作</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;use strict是es5中的严格模式，利用严格模式使代码编写更加规范，避免不合理的语法，和一些异常操作&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>new操作符具体干了什么</title>
+    <link href="http://example.com/2018/06/16/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/"/>
+    <id>http://example.com/2018/06/16/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/</id>
+    <published>2018-06-15T16:00:00.000Z</published>
+    <updated>2022-10-07T06:40:11.658Z</updated>
+    
+    <content type="html"><![CDATA[<p>创建一个新对象 作为返回的实列对象</p><p>将空对象的原型proto指向构造函数的prototype属性</p><p>对象连接到构造函数原型上 并绑定this （this指向新对象）</p><p>执行构造函数代码（为这个新对象添加属性）</p><p>返回新对象</p><p>（1）首先创建一个新的对象</p><p>（2）设置原型 将对象的原型设置为函数的prototype对象</p><p>（3） 让函数的this指向这个对象 执行构造函数的代码（为这个新对象添加属性）</p><p>(4) 判断函数的返回值类型 ，如果是值类型 返回创建的对象 如果是引用数据类型 就返回</p><p>这个引用数据类型</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;创建一个新对象 作为返回的实列对象&lt;/p&gt;
+&lt;p&gt;将空对象的原型proto指向构造函数的prototype属性&lt;/p&gt;
+&lt;p&gt;对象连接到构造函数原型上 并绑定this （this指向新对象）&lt;/p&gt;
+&lt;p&gt;执行构造函数代码（为这个新对象添加属性）&lt;/p&gt;
+&lt;p&gt;返回新对象&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>谈谈This对象的理解</title>
@@ -367,91 +460,6 @@
 &lt;p&gt;标签选择器（div），选择标签为div的所有元素&lt;/p&gt;
 &lt;p&gt;伪类选择器&lt;/p&gt;
 &lt;p&gt;伪元素选择器</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>什么是模块化</title>
-    <link href="http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E6%A8%A1%E5%9D%97%E5%8C%96/"/>
-    <id>http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E6%A8%A1%E5%9D%97%E5%8C%96/</id>
-    <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2022-10-05T11:15:20.711Z</updated>
-    
-    <content type="html"><![CDATA[<p>模块化是指 解决一个复杂问题时自顶向下逐层把系统划分成若干模块的过程, 有多种属性,分别反映其内部特性 (百度)</p><p> 　 模块化一般是指 可以被<strong>抽象封装的最小或最优代码的集合 ,</strong> 模块化用于解决<strong>功能耦合问题</strong></p><p>   前端模块化 一般是指javaScript 的模块化 比较常见的就是 node.js 的NPM包 每个模块可以是最小或最优的代码组合 也可以是为了解决某些问题多个小模块合并的一个大的模块 </p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;模块化是指 解决一个复杂问题时自顶向下逐层把系统划分成若干模块的过程, 有多种属性,分别反映其内部特性 (百度)&lt;/p&gt;
-&lt;p&gt; 　 模块化一般是指 可以被&lt;strong&gt;抽象封装的最小或最优代码的集合 ,&lt;/strong&gt; 模块化用于解决&lt;strong&gt;功能耦合问题&lt;/s</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>什么是盒子模型</title>
-    <link href="http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
-    <id>http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</id>
-    <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2022-10-05T11:16:42.392Z</updated>
-    
-    <content type="html"><![CDATA[<p>IE盒模型又叫怪异盒模型。在IE8以上以及其他的浏览器中使用的盒模型都是标准盒模型，但是IE低版本使用的是IE盒模型。</p><p>有两种， IE盒子模型（怪异盒子模型）、W3C盒子模型（标准盒子模型）；</p><p>盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；</p><p>区 别： IE的content部分把 border 和 padding计算了进去;</p><p>盒子模型构成：内容(content)、内填充(padding)、 边框(border)、外边距(margin)</p><p>IE8及其以下版本浏览器，未声明 DOCTYPE，内容宽高会包含内填充和边框，称为怪异盒模型(IE盒模型)</p><p>标准(W3C)盒模型：元素宽度 = width + padding + border + margin</p><p>怪异(IE)盒模型：元素宽度 = width + margin</p><p>标准浏览器通过设置 css3 的 box-sizing: border-box 属性，触发“怪异模式”解析计算宽高</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;IE盒模型又叫怪异盒模型。在IE8以上以及其他的浏览器中使用的盒模型都是标准盒模型，但是IE低版本使用的是IE盒模型。&lt;/p&gt;
-&lt;p&gt;有两种， IE盒子模型（怪异盒子模型）、W3C盒子模型（标准盒子模型）；&lt;/p&gt;
-&lt;p&gt;盒模型： 内容(content)、填充(paddin</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>什么是组件化</title>
-    <link href="http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BB%84%E4%BB%B6%E5%8C%96/"/>
-    <id>http://example.com/2018/06/02/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BB%84%E4%BB%B6%E5%8C%96/</id>
-    <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2022-10-05T11:13:01.698Z</updated>
-    
-    <content type="html"><![CDATA[<p>组件化就是将一个页面拆分成一个个小的功能模块，每个功能模块完成属于自己这部分独立的功能，使得整个页面的管理和维护变得非常容易</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;组件化就是将一个页面拆分成一个个小的功能模块，每个功能模块完成属于自己这部分独立的功能，使得整个页面的管理和维护变得非常容易&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>浏览器的缓存机制</title>
-    <link href="http://example.com/2018/06/02/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/"/>
-    <id>http://example.com/2018/06/02/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</id>
-    <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2022-10-05T11:10:54.486Z</updated>
-    
-    <content type="html"><![CDATA[<p>浏览器缓存分为:强缓存和协商缓存</p><h3 id="强缓存"><a href="#强缓存" class="headerlink" title="*强缓存*"></a><em><strong>*强缓存*</strong></em></h3><p>这里的’强’是强制的意思,当浏览器去请求某个文件的时候,服务端就在响应头里面对该文件做了缓存配置,缓存的时间,缓存类型都由服务端控制</p><p>可以简单的理解为 ：强缓存会去本地进行请求不会去服务器进行请求</p><p>协商缓存：会先去服务器请求数据 但 服务器没有发生变化的时候在去本地进行请求</p><p>协商缓存</p><p>上面说到的强缓存就是给资源设置个过期时间，客户端每次请求资源时都会看是否过期；只有在过期才会去询问服务器。所以，强缓存就是为了给客户端自给自足用的。而当某天，客户端请求该资源时发现其过期了，这是就会去请求服务器了，而这时候去请求服务器的这过程就可以设置协商缓存。这时候，协商缓存就是需要客户端和服务器两端进行交互的。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;浏览器缓存分为:强缓存和协商缓存&lt;/p&gt;
-&lt;h3 id=&quot;强缓存&quot;&gt;&lt;a href=&quot;#强缓存&quot; class=&quot;headerlink&quot; title=&quot;*强缓存*&quot;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;*强缓存*&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;p&gt;这里的’强’是强制的意思</summary>
       
     
     
