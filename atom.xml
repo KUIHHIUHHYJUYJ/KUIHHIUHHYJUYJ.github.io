@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-07T06:55:35.931Z</updated>
+  <updated>2022-10-07T08:07:35.316Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2018/06/30/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/"/>
     <id>http://example.com/2018/06/30/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</id>
     <published>2018-06-29T16:00:00.000Z</published>
-    <updated>2022-10-07T06:55:35.931Z</updated>
+    <updated>2022-10-07T08:07:35.316Z</updated>
     
     <content type="html"><![CDATA[<p>代理跨域的原理 通过一些方法设置代理，在请求发送(接收)之前加入中间层，</p><p>客户端发送请求时</p><p>不直接到服务器</p><p>而是先到代理的中间层</p><p>再将请求发送到服务器</p><p>同理，当服务器返回数据的时候，也是先到代理的中间层</p><p> 出于浏览器的同源策略限制。同源策略（Sameoriginpolicy）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。</p><p>通过jsonp跨域</p><p>document.domain + iframe跨域</p><p>nginx代理跨域</p><p>nodejs中间件代理跨域</p><p>后端在头部信息里面设置安全域名</p>]]></content>
     
@@ -38,6 +38,10 @@
     
     
     
+    <category term="-JS Vue" scheme="http://example.com/categories/JS-Vue/"/>
+    
+    
+    <category term="-JS Vue" scheme="http://example.com/tags/JS-Vue/"/>
     
   </entry>
   
@@ -46,7 +50,7 @@
     <link href="http://example.com/2018/06/21/%E8%B0%88%E4%B8%80%E8%B0%88%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E4%B8%8E%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>http://example.com/2018/06/21/%E8%B0%88%E4%B8%80%E8%B0%88%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E4%B8%8E%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
     <published>2018-06-20T16:00:00.000Z</published>
-    <updated>2022-10-07T06:46:49.526Z</updated>
+    <updated>2022-10-07T08:09:42.811Z</updated>
     
     <content type="html"><![CDATA[<p>1：写法不一样</p><p>2：普通函数存在变量提升的现象</p><p>3：箭头函数是匿名函数，不能作为构造函数使用，不能使用new。</p><p>匿名函数它是matlab中定义的一种函数形式，出现在matlab中，匿名函数不以文件形式驻留在文件夹上；他的生成方式最简捷，可在指令窗或任何函数体内通过指令直接生成。</p><p>匿名函数的作用主要是实现自己定义matlab中的函数，从而扩大函数的使用功能</p><p>4：两者this的指向不同</p><p>5：箭头函数的arguments指向它的父级函数所在作用域的arguments</p><p>6：箭头函数没有new.target</p><p>箭头函数</p><p>箭头函数的this指向父级作用域的this，</p><p>箭头函数没有prototype原型.</p><p>箭头函数不能作为构造函数。</p><p>普通函数的this</p><p>1、普通函数最终指向调用它的对象，也就是说谁调用就指向谁。</p><p>2、没有被对象调用的函数默认指向windows</p>]]></content>
     
@@ -61,6 +65,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -69,7 +77,7 @@
     <link href="http://example.com/2018/06/20/javascript-%E4%BB%A3%E7%A0%81%E4%B8%AD%E7%9A%84use-strict-%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/"/>
     <id>http://example.com/2018/06/20/javascript-%E4%BB%A3%E7%A0%81%E4%B8%AD%E7%9A%84use-strict-%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/</id>
     <published>2018-06-19T16:00:00.000Z</published>
-    <updated>2022-10-07T06:45:35.671Z</updated>
+    <updated>2022-10-07T08:04:36.016Z</updated>
     
     <content type="html"><![CDATA[<p>use strict是es5中的严格模式，利用严格模式使代码编写更加规范，避免不合理的语法，和一些异常操作</p>]]></content>
     
@@ -82,6 +90,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -90,7 +102,7 @@
     <link href="http://example.com/2018/06/16/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/"/>
     <id>http://example.com/2018/06/16/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/</id>
     <published>2018-06-15T16:00:00.000Z</published>
-    <updated>2022-10-07T06:40:11.658Z</updated>
+    <updated>2022-10-07T08:05:22.048Z</updated>
     
     <content type="html"><![CDATA[<p>创建一个新对象 作为返回的实列对象</p><p>将空对象的原型proto指向构造函数的prototype属性</p><p>对象连接到构造函数原型上 并绑定this （this指向新对象）</p><p>执行构造函数代码（为这个新对象添加属性）</p><p>返回新对象</p><p>（1）首先创建一个新的对象</p><p>（2）设置原型 将对象的原型设置为函数的prototype对象</p><p>（3） 让函数的this指向这个对象 执行构造函数的代码（为这个新对象添加属性）</p><p>(4) 判断函数的返回值类型 ，如果是值类型 返回创建的对象 如果是引用数据类型 就返回</p><p>这个引用数据类型</p>]]></content>
     
@@ -106,6 +118,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -114,7 +130,7 @@
     <link href="http://example.com/2018/06/15/%E8%B0%88%E8%B0%88This%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/"/>
     <id>http://example.com/2018/06/15/%E8%B0%88%E8%B0%88This%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</id>
     <published>2018-06-14T16:00:00.000Z</published>
-    <updated>2022-10-07T05:40:33.336Z</updated>
+    <updated>2022-10-07T08:09:34.815Z</updated>
     
     <content type="html"><![CDATA[<p>在浏览器里，在全局范围内 指向window对象；</p><p>在函数中，this永远指向最后调用他的那个对象；</p><p>构造函数中，this指向new出来的那个新的对象；</p><p>call、apply、bind中的this被强绑定在指定的那个对象上；</p><p>箭头函数中this比较特殊,箭头函数this为父作用域的this，而箭头函数的this指向是静态的,声明的时候就确定了下来；</p>]]></content>
     
@@ -130,6 +146,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -138,7 +158,7 @@
     <link href="http://example.com/2018/06/14/%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E4%BB%B6%E4%BB%A3%E7%90%86/"/>
     <id>http://example.com/2018/06/14/%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E4%BB%B6%E4%BB%A3%E7%90%86/</id>
     <published>2018-06-13T16:00:00.000Z</published>
-    <updated>2022-10-07T05:39:36.999Z</updated>
+    <updated>2022-10-07T08:08:25.973Z</updated>
     
     <content type="html"><![CDATA[<p>事件代理（Event Delegation），又称之为事件委托。是 JavaScript 中常用绑定事件的常用技巧。顾名思义，“事件代理”即是把原本需要绑定的事件 委托给父元素，让父元素担当事件监听的职务。事件代理的原理是DOM元素的事件冒泡。</p><p>使用事件代理的好处是可以提高性能可以大量节省内存占用，减少事件注册</p><p>可以实现当新增子对象时无需再次对其绑定</p>]]></content>
     
@@ -151,6 +171,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -159,7 +183,7 @@
     <link href="http://example.com/2018/06/13/JavaScript%E5%8E%9F%E5%9E%8B%EF%BC%8C%E5%8E%9F%E5%9E%8B%E9%93%BE-%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9%EF%BC%9F/"/>
     <id>http://example.com/2018/06/13/JavaScript%E5%8E%9F%E5%9E%8B%EF%BC%8C%E5%8E%9F%E5%9E%8B%E9%93%BE-%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9%EF%BC%9F/</id>
     <published>2018-06-12T16:00:00.000Z</published>
-    <updated>2022-10-07T05:38:42.256Z</updated>
+    <updated>2022-10-07T08:04:44.456Z</updated>
     
     <content type="html"><![CDATA[<p><em><strong>*原型：*</strong></em></p><p>JavaScript的所有对象中都包含了一个 [<strong>proto</strong>] 内部属性，这个属性所对应的就是该对象的原型</p><p>JavaScript的函数对象，除了原型 [<strong>proto</strong>] 之外，还预置了 prototype 属性</p><p>当函数对象作为构造函数创建实例时，该 prototype 属性值将被作为实例对象的原型 [<strong>proto</strong>]。</p><p><em><strong>*原型链：*</strong></em></p><p>当一个对象调用的属性/方法自身不存在时，就会去自己 [<strong>proto</strong>] 关联的前辈 prototype 对象上去找</p><p>如果没找到，就会去该 prototype 原型 [<strong>proto</strong>] 关联的前辈 prototype 去找。依次类推，直到找到属性/方法或 undefined 为止。从而形成了所谓的“原型链”</p><p><em><strong>*原型特点：*</strong></em></p><p>JavaScript对象是通过引用来传递的，当修改原型时，与之相关的对象也会继承这一改变</p>]]></content>
     
@@ -173,6 +197,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -181,7 +209,7 @@
     <link href="http://example.com/2018/06/13/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E7%90%86%E8%A7%A3/"/>
     <id>http://example.com/2018/06/13/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E7%90%86%E8%A7%A3/</id>
     <published>2018-06-12T16:00:00.000Z</published>
-    <updated>2022-10-07T03:26:18.601Z</updated>
+    <updated>2022-10-07T08:09:23.295Z</updated>
     
     <content type="html"><![CDATA[<p>作用域就是变量 变量又称上下文 </p><p>简单来说 作用域的就是变量和函数的可访问行 即控制着 变量和函数的可见性和生命周期</p><p>在Es5 之间 作用域分为俩种 全局作用域和函数作用域</p><p>全局作用域：全局作用域中的对象在代码中的任何一个地方都可以被访问到</p><p>函数作用域：就是在函数内部定义变量和参数 且只能在函数内部被访问到</p><p>块级作用域：就是被有段大括号包裹的一段代码 比如：函数  判断语句 循环语句  </p>]]></content>
     
@@ -196,6 +224,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -204,7 +236,7 @@
     <link href="http://example.com/2018/06/12/%E9%80%9A%E8%BF%87js%E5%88%A4%E6%96%AD%E6%95%B0%E7%BB%84/"/>
     <id>http://example.com/2018/06/12/%E9%80%9A%E8%BF%87js%E5%88%A4%E6%96%AD%E6%95%B0%E7%BB%84/</id>
     <published>2018-06-11T16:00:00.000Z</published>
-    <updated>2022-10-07T03:20:28.354Z</updated>
+    <updated>2022-10-07T08:09:51.158Z</updated>
     
     <content type="html"><![CDATA[<p>1.Es5 新增的方法IsArray（）、</p><p>2.Instanceof 方法 是用来检测一个对象是否在其原型链原型构造函数的属性  </p><p>​    用于检验构造函数的prototype属性是否出现在对象的原型链中的属性</p><ol start="3"><li>Constructor 方法 返回对创建此对象的数组函数的引用 就是返回对象对应的构造函数</li><li>JQuery 正在使用的 object.protype.tostring.call（）返回数据类型的方法</li><li></li></ol>]]></content>
     
@@ -219,6 +251,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -227,7 +263,7 @@
     <link href="http://example.com/2018/06/11/16-%E4%BB%80%E4%B9%88%E6%98%AF%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%EF%BC%9F/"/>
     <id>http://example.com/2018/06/11/16-%E4%BB%80%E4%B9%88%E6%98%AF%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%EF%BC%9F/</id>
     <published>2018-06-10T16:00:00.000Z</published>
-    <updated>2022-10-07T07:38:32.082Z</updated>
+    <updated>2022-10-07T08:02:56.428Z</updated>
     
     <content type="html"><![CDATA[<p>防抖：某一高频事件不断被触发时，仅在最后一次真正执行事件处理代码。</p><p>节流：某一高频事件被触发时，确保在每一个特定的时间段内被执行一次。</p><p>相似点：都是为应对事件持续频繁发生，造成前端性能下降或对后端服务造成的压力。</p><p>区别：节流会不断的触发，而防抖仅在最后一次触发。防抖适用于，如搜索输入框提</p><p>示，仅在输入停止后进行一次提示更新，以减少后台压力。节流适用于，如窗体以拖动的方式调整大小，在每次特定的时间片结束后触发一次窗体大小调整。</p><p>节流的实现：</p><p>俩者都是通过setTimeout实现的</p><p>可以使用事件戳和定时器</p><p> 使用事件戳写法，事件会立即执行，停止触发后没有办法再次执行</p><p> 使用定时器的写法，自己决定多少毫秒后第一次执行，第二次事件停止触发后依然会在执行一次</p><p>防抖的实现：</p><p>在处理一段连续操作结束后，处理回调，利用clearTimeout和setTimeout实现</p>]]></content>
     
@@ -242,10 +278,10 @@
     
     
     
-    <category term="JS" scheme="http://example.com/categories/JS/"/>
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
     
     
-    <category term="JS" scheme="http://example.com/tags/JS/"/>
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -254,7 +290,7 @@
     <link href="http://example.com/2018/06/07/14-%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9BOM%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E5%B8%B8%E8%A7%81%E7%9A%84BOM%E5%AF%B9%E8%B1%A1%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B%EF%BC%9F/"/>
     <id>http://example.com/2018/06/07/14-%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9BOM%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E5%B8%B8%E8%A7%81%E7%9A%84BOM%E5%AF%B9%E8%B1%A1%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B%EF%BC%9F/</id>
     <published>2018-06-07T13:54:27.000Z</published>
-    <updated>2022-10-07T07:36:59.227Z</updated>
+    <updated>2022-10-07T08:02:33.893Z</updated>
     
     <content type="html"><![CDATA[<p>javascript由3个部分组成：1、ECMAScript，js语言核心部分，描述了该语言的语法和基本对象；2、文档对象模型（DOM）,网页文档操作标准；3、浏览器对象模型（BOM），客户端和浏览器窗口操作基础。</p><p>Bom（浏览器对象模型）是浏览器本身的一些信息的设置和获取，其作⽤就是跟浏览器做⼀些交互效果,⽐如如何进⾏页⾯的后退，前进，刷新，浏览器的窗⼝发⽣变化，滚动条的滚动，以及获取客户的⼀些信息如：浏览器品牌版本，屏幕分辨率，浏览器的全部内容可以看成dom整个浏览器可以看成bom</p><p>Window 对象：浏览器窗口对象</p><p>Navigator 耐飞杆得 ：浏览器对象</p><p>Screen 死亏 ：浏览器所处客户端的显示器屏幕对象</p><p>History：浏览器当前窗口的访问历史记录对象</p><p>Location：浏览器当前窗口的地址栏对象</p>]]></content>
     
@@ -267,10 +303,10 @@
     
     
     
-    <category term="JS" scheme="http://example.com/categories/JS/"/>
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
     
     
-    <category term="JS" scheme="http://example.com/tags/JS/"/>
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -279,7 +315,7 @@
     <link href="http://example.com/2018/06/07/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%E7%9A%84%E7%90%86%E8%A7%A3/"/>
     <id>http://example.com/2018/06/07/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%E7%9A%84%E7%90%86%E8%A7%A3/</id>
     <published>2018-06-06T16:00:00.000Z</published>
-    <updated>2022-10-06T13:53:11.628Z</updated>
+    <updated>2022-10-07T08:09:15.294Z</updated>
     
     <content type="html"><![CDATA[<p>JavaScript 在设计之初便是单线程，即指程序运行时，只有一个线程存在，同一时间只能做一件事，</p><p>为了解决单线程运行阻塞问题，JavaScript用到了计算机系统的一种运行机制，这种机制就叫做事件循环</p><p>同步：在主线程上排队执行的任务 当一个任务执行完毕 才会执行下一个任务</p><p>异步 ：不会直接进入主线程  首先会进入任务队列 当任务队列函数主线程这个异步任务可以执行的时候 </p><p>才会进入 任务队列</p><p>执行一个宏任务，然后执行清空微任务列表，循环再执行宏任务，再清微任务列表过程的不断重复就是事件循环</p><p>****宏任务：****script (可以理解为外层同步代码)</p><p>setTimeout/setInterval</p><p>UI rendering/UI事件</p><p>postMessage、MessageChannel</p><p>setImmediate、I/O（Node.js）</p><p>****微任务：****Promise.then  MutaionObserver  Object.observe（已废弃；Proxy 对象替代process.nextTick（Node.js）</p>]]></content>
     
@@ -293,6 +329,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -301,7 +341,7 @@
     <link href="http://example.com/2018/06/06/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%BA%8E%E6%B5%85%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>http://example.com/2018/06/06/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%BA%8E%E6%B5%85%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2022-10-06T03:13:36.851Z</updated>
+    <updated>2022-10-07T08:07:52.363Z</updated>
     
     <content type="html"><![CDATA[<p>深拷贝和浅拷贝的区别</p><p>​    1.浅拷贝 </p><p>​            浅拷贝只复制某个对象的引用，而不是对象本身 新旧对象还是共享一块内存</p><p>​            当其中一个对象发生变化是另一个对象也会随之变化 </p><p>​        object.assign（） 拷贝的是对象的属性的引用 而不是对象本身</p><p>​    2.深拷贝</p><p>​            深拷贝会创建一个一模一样的对象  新对象和旧对象不会共享内存 当修改新对象时 </p><p>不会改变原对象 。</p>]]></content>
     
@@ -317,6 +357,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -325,7 +369,7 @@
     <link href="http://example.com/2018/06/06/session-cookie%E5%92%8Ctoken%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>http://example.com/2018/06/06/session-cookie%E5%92%8Ctoken%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2022-10-06T13:45:09.785Z</updated>
+    <updated>2022-10-07T08:06:16.551Z</updated>
     
     <content type="html"><![CDATA[<p><em><strong>*1.session和cookie区别：*</strong></em></p><p>·   数据存放位置不同：Session数据是存在服务器中的，cookie数据存放在浏览器当中。</p><p>·   安全程度不同：cookie放在服务器中不是很安全，session放在服务器中，相对安全。</p><p>·   性能使用程度不同：session放在服务器上，访问增多会占用服务器的性能；考虑到减轻服务器性能方面，应使用cookie。</p><p>·   数据存储大小不同：单个cookie保存的数据不能超过4K，session存储在服务端，根据服务器大小来定。</p><p><em><strong>*2.token和session区别：*</strong></em></p><p>·   token是开发定义的，session是http协议规定的；</p><p>·   token不一定存储，session存在服务器中；</p><p>·   token可以跨域，session不可以跨域，它是与域名绑定的</p>]]></content>
     
@@ -339,6 +383,10 @@
     
     
     
+    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
+    
+    
+    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
     
   </entry>
   
@@ -347,7 +395,7 @@
     <link href="http://example.com/2018/06/06/bind%E3%80%81call%E3%80%81apply-%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAbind/"/>
     <id>http://example.com/2018/06/06/bind%E3%80%81call%E3%80%81apply-%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAbind/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2022-10-06T13:47:04.786Z</updated>
+    <updated>2022-10-07T08:03:11.033Z</updated>
     
     <content type="html"><![CDATA[<p>区别</p><p>三者都可以改变函数的this对象指向</p><p>三者第一个参数都是this要指向的对象，如果如果没有这个参数或参数为undefined或null，则默认指向全局window</p><p>三者都可以传参，但是apply是数组，而call是参数列表，且apply和call是一次性传入参数，而bind可以分为多次传入</p><p>bind是返回绑定this之后的函数，apply、call 则是立即执行</p><p>三、实现</p><p>实现bind的步骤，我们可以分解成为三部分：</p><p>修改this指向</p><p>动态传递参数</p><p>// 方式一：只在bind中传递函数参数</p><p>// 方式二：返回函数中传递参数</p><p>兼容new关键字</p>]]></content>
     
@@ -362,6 +410,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -370,7 +422,7 @@
     <link href="http://example.com/2018/06/06/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E9%97%AD%E5%8C%85%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E9%97%AD%E5%8C%85%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/"/>
     <id>http://example.com/2018/06/06/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E9%97%AD%E5%8C%85%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E9%97%AD%E5%8C%85%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2022-10-07T07:45:27.896Z</updated>
+    <updated>2022-10-07T08:09:07.640Z</updated>
     
     <content type="html"><![CDATA[<p>说说你对闭包的理解</p><p>闭包就是能够读取其他函数内部的函数，是指有权访问拎一个函数作用域中变量的函数，闭包就是在一个函数内创建另一个函数，通过另一个函数访问这个这个函数内部的局部变量</p><p>使用闭包主要是为了设计私有的方法和变量。利用闭包可以突破作用链域</p><p>闭包的特性：</p><p>函数内再嵌套函数    </p><p>内部函数可以引用外层的参数和变量</p><p>参数和变量不会被垃圾回收机制回收</p><p>闭包 的最大用处有两个，一个是可以读取函数内部的变量，让这些变量始终保持在内存中</p><p>闭包的另一个用处，是封装对象的私有属性和私有方法</p><p>好处：能够实现封装和缓存等；</p><p>坏处：就是消耗内存、不正当使用会造成内存溢出的问题</p><p>闭包的使用场景：</p><ol><li><p>创建私有变量，</p></li><li><p>延长生命周期</p></li><li><p>例如计数器，延迟调用，回调等闭包的应用</p></li></ol>]]></content>
     
@@ -384,6 +436,10 @@
     
     
     
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
@@ -392,7 +448,7 @@
     <link href="http://example.com/2018/06/05/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%EF%BC%9F%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%81%9A%EF%BC%9F/"/>
     <id>http://example.com/2018/06/05/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%EF%BC%9F%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%81%9A%EF%BC%9F/</id>
     <published>2018-06-04T16:00:00.000Z</published>
-    <updated>2022-10-05T11:25:10.521Z</updated>
+    <updated>2022-10-07T08:08:40.457Z</updated>
     
     <content type="html"><![CDATA[<p>响应式⽹站设计（Responsive Web design）是⼀种⽹络页⾯设计布局，页⾯的设计与开发应当根据⽤户⾏为以及设备环境(系统平台、屏幕尺⼨、屏幕定向等)进⾏相应的响应和调整</p><p>响应式设计的基本原理是通过媒体查询检测不同的设备屏幕尺⼨做处理，为了处理移动端，页⾯头部必须有meta声明viewport</p><p>实现响应式布局的⽅式有如下：</p><p>媒体查询 媒体查询（Media Query）是CSS3新语法。 将不同的终端设备划分为不同的类型，称为媒体类型   关键字将媒体类型或多个特性连接到一起做为媒体查询的条件</p><p>百分⽐  百分比是一种相对于包含块的计量单位。利用对属性设置百分比来适配不同屏幕，注意这里的百分比是相对于父元素；</p><p>vw/vh </p><p> vw和vh是视口（viewport units）单位，</p><p>何谓视口，就是根据你浏览器窗口的大小的单位，不受显示器分辨率的影响，是不是很神奇，这就代表了，我们不需要顾虑到现在那么多不同电脑有关分辨率的自适应问题。</p><p>vw是可视窗口的宽度单位，和百分比有点一样，1vw = 可视窗口的宽度的百分之一。比如窗口宽度大小是1800px，那么1vw = 18px。和百分比不一样的是，vw始终相对于可视窗口的宽度，而百分比和其父元素的宽度有关。</p><p>vh就是可视窗口的高度了。</p><p>vmin和vmax，vmin是指选择vw和vh中最小的那个，而vmax是选择最大的那个</p><p>Rem <em><strong>*当前页面中元素的REM单位的样式值都是针对于HTML元素的font-size的值进行动态计算的*</strong></em> <em><strong>*手动设置 js*</strong></em> </p>]]></content>
     
@@ -405,6 +461,10 @@
     
     
     
+    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
+    
+    
+    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
     
   </entry>
   
@@ -413,7 +473,7 @@
     <link href="http://example.com/2018/06/03/%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E6%9E%9C%E5%85%83%E7%B4%A0%E4%B8%8D%E5%AE%9A%E5%AE%BD%E9%AB%98%E5%91%A2/"/>
     <id>http://example.com/2018/06/03/%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E6%9E%9C%E5%85%83%E7%B4%A0%E4%B8%8D%E5%AE%9A%E5%AE%BD%E9%AB%98%E5%91%A2/</id>
     <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2022-10-05T11:22:43.012Z</updated>
+    <updated>2022-10-07T08:10:04.456Z</updated>
     
     <content type="html"><![CDATA[<p>实现元素水平垂直居中的方式：</p><p>利用定位+<a href="https://so.csdn.net/so/search?q=margin&spm=1001.2101.3001.7020">margin</a>:auto</p><p>利用定位+margin:负值</p><p>利用定位+transform</p><p>table布局</p><p><a href="https://so.csdn.net/so/search?q=flex&spm=1001.2101.3001.7020">flex</a>布局</p><p>.content {</p><p>​     /<em>转为flex弹性盒布局</em>/</p><p>​    display: flex;</p><p>​    /<em>主轴上的对齐方式为居中</em>/</p><p>​    justify-content: center;</p><p>​    /<em>交叉轴上对齐方式为居中</em>/</p><p>​    align-items: center;</p><p>}</p><p>grid布局</p><p>上述方法中，不知道元素宽高大小仍能实现水平垂直居中的方法有：</p><p>利用定位+margin:auto</p><p>利用定位+transform</p><p>利用定位+margin:负值</p><p>flex布局</p><p>grid布局</p>]]></content>
     
@@ -427,6 +487,10 @@
     
     
     
+    <category term="-Css" scheme="http://example.com/categories/Css/"/>
+    
+    
+    <category term="-Css" scheme="http://example.com/tags/Css/"/>
     
   </entry>
   
@@ -435,7 +499,7 @@
     <link href="http://example.com/2018/06/03/%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%E5%9B%9E%E6%B5%81%E8%B7%9F%E9%87%8D%E7%BB%98%EF%BC%9F%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%E4%BC%9A%E8%A7%A6%E5%8F%91%EF%BC%9F/"/>
     <id>http://example.com/2018/06/03/%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%E5%9B%9E%E6%B5%81%E8%B7%9F%E9%87%8D%E7%BB%98%EF%BC%9F%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%E4%BC%9A%E8%A7%A6%E5%8F%91%EF%BC%9F/</id>
     <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2022-10-05T11:23:57.367Z</updated>
+    <updated>2022-10-07T08:10:14.779Z</updated>
     
     <content type="html"><![CDATA[<h3 id="21-4-重绘（Repaint）和回流（Reflow）"><a href="#21-4-重绘（Repaint）和回流（Reflow）" class="headerlink" title="21.4 重绘（Repaint）和回流（Reflow）"></a>21.4 重绘（Repaint）和回流（Reflow）</h3><p>重绘和回流会在我们设置节点样式时频繁出现，同时也会很大程度上影响性能。</p><p>重绘是当节点需要更改外观而不会影响布局的，比如改变 color 就叫称为重绘</p><p>回流是布局或者几何属性需要改变就称为回流。</p><p>什么场景下会触发</p><p>回流必定会发生重绘，重绘不一定会引发回流。回流所需的成本比重绘高的多，改变父节点里的子节点很可能会导致父节点的一系列回流。    </p>]]></content>
     
@@ -447,6 +511,10 @@
     
     
     
+    <category term="-Css" scheme="http://example.com/categories/Css/"/>
+    
+    
+    <category term="-Css" scheme="http://example.com/tags/Css/"/>
     
   </entry>
   
@@ -455,7 +523,7 @@
     <link href="http://example.com/2018/06/02/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF%EF%BC%9F/"/>
     <id>http://example.com/2018/06/02/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF%EF%BC%9F/</id>
     <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2022-10-05T11:17:46.373Z</updated>
+    <updated>2022-10-07T08:03:24.467Z</updated>
     
     <content type="html"><![CDATA[<p>关于css属性选择器常用的有：</p><p>id选择器（#box），选择id为box的元素</p><p>类选择器（.one），选择类名为one的所有元素</p><p>标签选择器（div），选择标签为div的所有元素</p><p>伪类选择器</p><p>伪元素选择器</p><p>属性选择器</p><p>优先级：内联 &gt; ID选择器 &gt; 类选择器 &gt; 标签选择器</p><p>关于继承属性，可以分成：</p><p>字体系列属性</p><p>文本系列属性</p><p>元素可见性</p><p>表格布局属性</p><p>列表属性</p><p>光标属性</p><p>继承中比较特殊的几点：</p><p>a 标签的字体颜色不能被继承</p><p>h1-h6标签字体的大下也是不能被继承的</p><p>无继承的属性</p><p>display</p><p>文本属性：vertical-align、text-decoration</p><p>盒子模型的属性：宽度、高度、内外边距、边框等</p><p>背景属性：背景图片、颜色、位置等</p><p>定位属性：浮动、清除浮动、定位position等</p>]]></content>
     
@@ -472,6 +540,10 @@
     
     
     
+    <category term="-HTML" scheme="http://example.com/categories/HTML/"/>
+    
+    
+    <category term="-HTML" scheme="http://example.com/tags/HTML/"/>
     
   </entry>
   
