@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-07T06:55:35.931Z</updated>
+  <updated>2022-10-07T07:27:06.142Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Categories</title>
+    <link href="http://example.com/2022/10/07/Categories/"/>
+    <id>http://example.com/2022/10/07/Categories/</id>
+    <published>2022-10-07T07:27:06.000Z</published>
+    <updated>2022-10-07T07:27:06.142Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>如何解决跨域问题</title>
@@ -435,31 +448,6 @@
       
       
     <summary type="html">&lt;h3 id=&quot;21-4-重绘（Repaint）和回流（Reflow）&quot;&gt;&lt;a href=&quot;#21-4-重绘（Repaint）和回流（Reflow）&quot; class=&quot;headerlink&quot; title=&quot;21.4 重绘（Repaint）和回流（Reflow）&quot;&gt;&lt;/a&gt;21.4 </summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>css选择器有哪些？优先级？哪些属性可以继承？</title>
-    <link href="http://example.com/2018/06/02/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF%EF%BC%9F/"/>
-    <id>http://example.com/2018/06/02/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF%EF%BC%9F/</id>
-    <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2022-10-05T11:17:46.373Z</updated>
-    
-    <content type="html"><![CDATA[<p>关于css属性选择器常用的有：</p><p>id选择器（#box），选择id为box的元素</p><p>类选择器（.one），选择类名为one的所有元素</p><p>标签选择器（div），选择标签为div的所有元素</p><p>伪类选择器</p><p>伪元素选择器</p><p>属性选择器</p><p>优先级：内联 &gt; ID选择器 &gt; 类选择器 &gt; 标签选择器</p><p>关于继承属性，可以分成：</p><p>字体系列属性</p><p>文本系列属性</p><p>元素可见性</p><p>表格布局属性</p><p>列表属性</p><p>光标属性</p><p>继承中比较特殊的几点：</p><p>a 标签的字体颜色不能被继承</p><p>h1-h6标签字体的大下也是不能被继承的</p><p>无继承的属性</p><p>display</p><p>文本属性：vertical-align、text-decoration</p><p>盒子模型的属性：宽度、高度、内外边距、边框等</p><p>背景属性：背景图片、颜色、位置等</p><p>定位属性：浮动、清除浮动、定位position等</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;关于css属性选择器常用的有：&lt;/p&gt;
-&lt;p&gt;id选择器（#box），选择id为box的元素&lt;/p&gt;
-&lt;p&gt;类选择器（.one），选择类名为one的所有元素&lt;/p&gt;
-&lt;p&gt;标签选择器（div），选择标签为div的所有元素&lt;/p&gt;
-&lt;p&gt;伪类选择器&lt;/p&gt;
-&lt;p&gt;伪元素选择器</summary>
       
     
     
