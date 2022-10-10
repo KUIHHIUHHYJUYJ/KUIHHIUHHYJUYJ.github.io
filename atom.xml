@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-07T08:07:35.316Z</updated>
+  <updated>2022-10-10T08:44:30.683Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,168 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>async 函数是什么 有什么作用</title>
+    <link href="http://example.com/2018/07/07/async-%E5%87%BD%E6%95%B0%E6%98%AF%E4%BB%80%E4%B9%88-%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8/"/>
+    <id>http://example.com/2018/07/07/async-%E5%87%BD%E6%95%B0%E6%98%AF%E4%BB%80%E4%B9%88-%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8/</id>
+    <published>2018-07-06T16:00:00.000Z</published>
+    <updated>2022-10-10T08:44:30.683Z</updated>
+    
+    <content type="html"><![CDATA[<p>async 和await 主要是用于解决异步操作的一种方案</p><p>异步函数不会阻塞后续代码的执行 async 会默认的返回一个promise 对象  </p><p>而await 就是async 返回promise 对象的结果</p><p>如果好获取async 里的数据 使用 .then 和 .watch 来注册异步函数</p><p>await 是需要定义在异步函数内部的 当异步操作执行的时候遇到await会暂停   当异步函数执行完成之后</p><p>await 在继续执行</p><p>.async函数配合await关键字使用(阻塞代码往下执行)<br>是异步方法，但是阻塞式的</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;async 和await 主要是用于解决异步操作的一种方案&lt;/p&gt;
+&lt;p&gt;异步函数不会阻塞后续代码的执行 async 会默认的返回一个promise 对象  &lt;/p&gt;
+&lt;p&gt;而await 就是async 返回promise 对象的结果&lt;/p&gt;
+&lt;p&gt;如果好获取async 里</summary>
+      
+    
+    
+    
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>异步操作有哪些</title>
+    <link href="http://example.com/2018/07/06/%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B/"/>
+    <id>http://example.com/2018/07/06/%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B/</id>
+    <published>2018-07-05T16:00:00.000Z</published>
+    <updated>2022-10-10T08:39:03.789Z</updated>
+    
+    <content type="html"><![CDATA[<p>回调函数 </p><p>事件监听</p><p>  promise</p><p> ajax </p><p>async </p><p> setTimeout</p><p> Generator</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;回调函数 &lt;/p&gt;
+&lt;p&gt;事件监听&lt;/p&gt;
+&lt;p&gt;  promise&lt;/p&gt;
+&lt;p&gt; ajax &lt;/p&gt;
+&lt;p&gt;async &lt;/p&gt;
+&lt;p&gt; setTimeout&lt;/p&gt;
+&lt;p&gt; Generator&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说webpack中常见的Loader？解决了什么问题？</title>
+    <link href="http://example.com/2018/07/05/%E8%AF%B4%E8%AF%B4webpack%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84Loader%EF%BC%9F%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F/"/>
+    <id>http://example.com/2018/07/05/%E8%AF%B4%E8%AF%B4webpack%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84Loader%EF%BC%9F%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F/</id>
+    <published>2018-07-04T16:00:00.000Z</published>
+    <updated>2022-10-10T08:31:17.446Z</updated>
+    
+    <content type="html"><![CDATA[<p>loader 用于对模块的源代码进行转换 在import或 “加载” 模块时预处理文件</p><p>style-loader 讲css添加到dom 的内联样式标签style里</p><p>css-loader 允许讲css文件通过require的方式引入 并返回css代码</p><p>less-loader 处理less</p><p>sass-loader 处理sass</p><p>postcss-loader 用postcss来处理css</p><p>autoprefixer-loader 处理css3属性前缀 已被弃用 建议直接使用postcss</p><p>file-loader 分发文件导uotput目录并返回想对路劲</p><p>url-loader和file-loader 类似，但是当文件小于设定的limit时返回一个Data url</p><p>html-minify-loader 压缩HTML</p><p>babel-loader 用loader来转换ES6文件到Es5</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;loader 用于对模块的源代码进行转换 在import或 “加载” 模块时预处理文件&lt;/p&gt;
+&lt;p&gt;style-loader 讲css添加到dom 的内联样式标签style里&lt;/p&gt;
+&lt;p&gt;css-loader 允许讲css文件通过require的方式引入 并返回css代</summary>
+      
+    
+    
+    
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说你对promise的了解</title>
+    <link href="http://example.com/2018/07/05/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9promise%E7%9A%84%E4%BA%86%E8%A7%A3/"/>
+    <id>http://example.com/2018/07/05/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9promise%E7%9A%84%E4%BA%86%E8%A7%A3/</id>
+    <published>2018-07-04T16:00:00.000Z</published>
+    <updated>2022-10-10T08:35:22.101Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.异步操作的解决方案</p><p>Promise 是一种异步操作的解决方案，将写法复杂的传统的回调函数和监听事件的异</p><p>步操作，用同步代码的形式表达出来。避免了多级异步操作的回调函数嵌套。</p><p>主要用于异步计算</p><p>\2. 作为对象，内部有三种状态</p><p>初始状态（ pending ）。</p><p>已完成（ resolve）：resolve 方法可以使 Promise 对象的状态改变成成功</p><p>已拒绝（ reject ）：reject 方法则是将 Promise 对象的状态改变为失败</p><p>3.常用的三种方法</p><p>第一种：then 表示异步成功执行后的数据状态变为 resolve</p><p>第二种：catch 表示异步失败后执行的数据状态变为 reject</p><p>第三种：all 表示把多个没有关系的 Promise 封装成一个 Promise 对象，使用</p><p>then 返回一个数组数据。</p><p>5.在哪里使用过</p><p>Ajax 异步请求的时候</p><p>函数嵌套层级多的时候使用 promise，优点在于，回调函数变成了链式写法，程序的</p><p>流程可以看得很清楚，而且有一整套的配套方法，可以实现许多强大的功能。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1.异步操作的解决方案&lt;/p&gt;
+&lt;p&gt;Promise 是一种异步操作的解决方案，将写法复杂的传统的回调函数和监听事件的异&lt;/p&gt;
+&lt;p&gt;步操作，用同步代码的形式表达出来。避免了多级异步操作的回调函数嵌套。&lt;/p&gt;
+&lt;p&gt;主要用于异步计算&lt;/p&gt;
+&lt;p&gt;\2. 作为对象，内部</summary>
+      
+    
+    
+    
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谈谈你对webpack的看法</title>
+    <link href="http://example.com/2018/07/03/%E8%B0%88%E8%B0%88%E4%BD%A0%E5%AF%B9webpack%E7%9A%84%E7%9C%8B%E6%B3%95/"/>
+    <id>http://example.com/2018/07/03/%E8%B0%88%E8%B0%88%E4%BD%A0%E5%AF%B9webpack%E7%9A%84%E7%9C%8B%E6%B3%95/</id>
+    <published>2018-07-02T16:00:00.000Z</published>
+    <updated>2022-10-10T08:20:46.213Z</updated>
+    
+    <content type="html"><![CDATA[<p>webpack是用来管理模块包的工具，在项目开发中可以打包模块依赖，对静态资源进行解析。在web开发过程中打包ht js css等静态资源，开发更加高效。对于不同类型的资源，webpack有模块加载器对模块包分析他们之间的依赖关系，最终优化合并为静态资源</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;webpack是用来管理模块包的工具，在项目开发中可以打包模块依赖，对静态资源进行解析。在web开发过程中打包ht js css等静态资源，开发更加高效。对于不同类型的资源，webpack有模块加载器对模块包分析他们之间的依赖关系，最终优化合并为静态资源&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>XML和JSON的区别</title>
+    <link href="http://example.com/2018/07/02/29-XML%E5%92%8CJSON%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://example.com/2018/07/02/29-XML%E5%92%8CJSON%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+    <published>2018-07-01T16:00:00.000Z</published>
+    <updated>2022-10-10T08:18:01.088Z</updated>
+    
+    <content type="html"><![CDATA[<p>XML和JSON的区别</p><p> XML是<a href="https://so.csdn.net/so/search?q=%E5%8F%AF%E6%89%A9%E5%B1%95%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80&spm=1001.2101.3001.7020">可扩展标记语言</a>，标记语言就是通过一个一个的标记来组织数据的一种语法格式。</p><p>JSON是一种轻量级的数据交换格式，可使人们很容易地进行阅读和编写，同时也方便了机器进行解析和生成。JSON适用于进行数据交互的场景，如网站前台与后台之间的数据交互。</p><p>数据交互 json比xml交互更好，容易被解析</p><p>传输速度 json比xml传输速度更快</p><p>数据描述 json比xml描述更细致</p><p>体积 json比xml体积小，传输速度快</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;XML和JSON的区别&lt;/p&gt;
+&lt;p&gt; XML是&lt;a href=&quot;https://so.csdn.net/so/search?q=%E5%8F%AF%E6%89%A9%E5%B1%95%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80&amp;spm=1001</summary>
+      
+    
+    
+    
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
+    
+  </entry>
   
   <entry>
     <title>如何解决跨域问题</title>
@@ -387,163 +549,6 @@
     
     
     <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>bind、call、apply 区别？如何实现一个bind?</title>
-    <link href="http://example.com/2018/06/06/bind%E3%80%81call%E3%80%81apply-%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAbind/"/>
-    <id>http://example.com/2018/06/06/bind%E3%80%81call%E3%80%81apply-%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAbind/</id>
-    <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2022-10-07T08:03:11.033Z</updated>
-    
-    <content type="html"><![CDATA[<p>区别</p><p>三者都可以改变函数的this对象指向</p><p>三者第一个参数都是this要指向的对象，如果如果没有这个参数或参数为undefined或null，则默认指向全局window</p><p>三者都可以传参，但是apply是数组，而call是参数列表，且apply和call是一次性传入参数，而bind可以分为多次传入</p><p>bind是返回绑定this之后的函数，apply、call 则是立即执行</p><p>三、实现</p><p>实现bind的步骤，我们可以分解成为三部分：</p><p>修改this指向</p><p>动态传递参数</p><p>// 方式一：只在bind中传递函数参数</p><p>// 方式二：返回函数中传递参数</p><p>兼容new关键字</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;区别&lt;/p&gt;
-&lt;p&gt;三者都可以改变函数的this对象指向&lt;/p&gt;
-&lt;p&gt;三者第一个参数都是this要指向的对象，如果如果没有这个参数或参数为undefined或null，则默认指向全局window&lt;/p&gt;
-&lt;p&gt;三者都可以传参，但是apply是数组，而call是参数列表，且</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>说说你对闭包的理解？闭包使用场景</title>
-    <link href="http://example.com/2018/06/06/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E9%97%AD%E5%8C%85%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E9%97%AD%E5%8C%85%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/"/>
-    <id>http://example.com/2018/06/06/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E9%97%AD%E5%8C%85%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E9%97%AD%E5%8C%85%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</id>
-    <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2022-10-07T08:09:07.640Z</updated>
-    
-    <content type="html"><![CDATA[<p>说说你对闭包的理解</p><p>闭包就是能够读取其他函数内部的函数，是指有权访问拎一个函数作用域中变量的函数，闭包就是在一个函数内创建另一个函数，通过另一个函数访问这个这个函数内部的局部变量</p><p>使用闭包主要是为了设计私有的方法和变量。利用闭包可以突破作用链域</p><p>闭包的特性：</p><p>函数内再嵌套函数    </p><p>内部函数可以引用外层的参数和变量</p><p>参数和变量不会被垃圾回收机制回收</p><p>闭包 的最大用处有两个，一个是可以读取函数内部的变量，让这些变量始终保持在内存中</p><p>闭包的另一个用处，是封装对象的私有属性和私有方法</p><p>好处：能够实现封装和缓存等；</p><p>坏处：就是消耗内存、不正当使用会造成内存溢出的问题</p><p>闭包的使用场景：</p><ol><li><p>创建私有变量，</p></li><li><p>延长生命周期</p></li><li><p>例如计数器，延迟调用，回调等闭包的应用</p></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;说说你对闭包的理解&lt;/p&gt;
-&lt;p&gt;闭包就是能够读取其他函数内部的函数，是指有权访问拎一个函数作用域中变量的函数，闭包就是在一个函数内创建另一个函数，通过另一个函数访问这个这个函数内部的局部变量&lt;/p&gt;
-&lt;p&gt;使用闭包主要是为了设计私有的方法和变量。利用闭包可以突破作用链域&lt;</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>什么是响应式设计？响应式设计的基本原理是什么？如何做？</title>
-    <link href="http://example.com/2018/06/05/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%EF%BC%9F%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%81%9A%EF%BC%9F/"/>
-    <id>http://example.com/2018/06/05/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%EF%BC%9F%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%81%9A%EF%BC%9F/</id>
-    <published>2018-06-04T16:00:00.000Z</published>
-    <updated>2022-10-07T08:08:40.457Z</updated>
-    
-    <content type="html"><![CDATA[<p>响应式⽹站设计（Responsive Web design）是⼀种⽹络页⾯设计布局，页⾯的设计与开发应当根据⽤户⾏为以及设备环境(系统平台、屏幕尺⼨、屏幕定向等)进⾏相应的响应和调整</p><p>响应式设计的基本原理是通过媒体查询检测不同的设备屏幕尺⼨做处理，为了处理移动端，页⾯头部必须有meta声明viewport</p><p>实现响应式布局的⽅式有如下：</p><p>媒体查询 媒体查询（Media Query）是CSS3新语法。 将不同的终端设备划分为不同的类型，称为媒体类型   关键字将媒体类型或多个特性连接到一起做为媒体查询的条件</p><p>百分⽐  百分比是一种相对于包含块的计量单位。利用对属性设置百分比来适配不同屏幕，注意这里的百分比是相对于父元素；</p><p>vw/vh </p><p> vw和vh是视口（viewport units）单位，</p><p>何谓视口，就是根据你浏览器窗口的大小的单位，不受显示器分辨率的影响，是不是很神奇，这就代表了，我们不需要顾虑到现在那么多不同电脑有关分辨率的自适应问题。</p><p>vw是可视窗口的宽度单位，和百分比有点一样，1vw = 可视窗口的宽度的百分之一。比如窗口宽度大小是1800px，那么1vw = 18px。和百分比不一样的是，vw始终相对于可视窗口的宽度，而百分比和其父元素的宽度有关。</p><p>vh就是可视窗口的高度了。</p><p>vmin和vmax，vmin是指选择vw和vh中最小的那个，而vmax是选择最大的那个</p><p>Rem <em><strong>*当前页面中元素的REM单位的样式值都是针对于HTML元素的font-size的值进行动态计算的*</strong></em> <em><strong>*手动设置 js*</strong></em> </p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;响应式⽹站设计（Responsive Web design）是⼀种⽹络页⾯设计布局，页⾯的设计与开发应当根据⽤户⾏为以及设备环境(系统平台、屏幕尺⼨、屏幕定向等)进⾏相应的响应和调整&lt;/p&gt;
-&lt;p&gt;响应式设计的基本原理是通过媒体查询检测不同的设备屏幕尺⼨做处理，为了处理移动</summary>
-      
-    
-    
-    
-    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
-    
-    
-    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>元素水平垂直居中的方法有哪些？如果元素不定宽高呢?</title>
-    <link href="http://example.com/2018/06/03/%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E6%9E%9C%E5%85%83%E7%B4%A0%E4%B8%8D%E5%AE%9A%E5%AE%BD%E9%AB%98%E5%91%A2/"/>
-    <id>http://example.com/2018/06/03/%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E6%9E%9C%E5%85%83%E7%B4%A0%E4%B8%8D%E5%AE%9A%E5%AE%BD%E9%AB%98%E5%91%A2/</id>
-    <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2022-10-07T08:10:04.456Z</updated>
-    
-    <content type="html"><![CDATA[<p>实现元素水平垂直居中的方式：</p><p>利用定位+<a href="https://so.csdn.net/so/search?q=margin&spm=1001.2101.3001.7020">margin</a>:auto</p><p>利用定位+margin:负值</p><p>利用定位+transform</p><p>table布局</p><p><a href="https://so.csdn.net/so/search?q=flex&spm=1001.2101.3001.7020">flex</a>布局</p><p>.content {</p><p>​     /<em>转为flex弹性盒布局</em>/</p><p>​    display: flex;</p><p>​    /<em>主轴上的对齐方式为居中</em>/</p><p>​    justify-content: center;</p><p>​    /<em>交叉轴上对齐方式为居中</em>/</p><p>​    align-items: center;</p><p>}</p><p>grid布局</p><p>上述方法中，不知道元素宽高大小仍能实现水平垂直居中的方法有：</p><p>利用定位+margin:auto</p><p>利用定位+transform</p><p>利用定位+margin:负值</p><p>flex布局</p><p>grid布局</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;实现元素水平垂直居中的方式：&lt;/p&gt;
-&lt;p&gt;利用定位+&lt;a href=&quot;https://so.csdn.net/so/search?q=margin&amp;spm=1001.2101.3001.7020&quot;&gt;margin&lt;/a&gt;:auto&lt;/p&gt;
-&lt;p&gt;利用定位+margin:负值</summary>
-      
-    
-    
-    
-    <category term="-Css" scheme="http://example.com/categories/Css/"/>
-    
-    
-    <category term="-Css" scheme="http://example.com/tags/Css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>怎么理解回流跟重绘？什么场景下会触发？</title>
-    <link href="http://example.com/2018/06/03/%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%E5%9B%9E%E6%B5%81%E8%B7%9F%E9%87%8D%E7%BB%98%EF%BC%9F%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%E4%BC%9A%E8%A7%A6%E5%8F%91%EF%BC%9F/"/>
-    <id>http://example.com/2018/06/03/%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%E5%9B%9E%E6%B5%81%E8%B7%9F%E9%87%8D%E7%BB%98%EF%BC%9F%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%E4%BC%9A%E8%A7%A6%E5%8F%91%EF%BC%9F/</id>
-    <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2022-10-07T08:10:14.779Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="21-4-重绘（Repaint）和回流（Reflow）"><a href="#21-4-重绘（Repaint）和回流（Reflow）" class="headerlink" title="21.4 重绘（Repaint）和回流（Reflow）"></a>21.4 重绘（Repaint）和回流（Reflow）</h3><p>重绘和回流会在我们设置节点样式时频繁出现，同时也会很大程度上影响性能。</p><p>重绘是当节点需要更改外观而不会影响布局的，比如改变 color 就叫称为重绘</p><p>回流是布局或者几何属性需要改变就称为回流。</p><p>什么场景下会触发</p><p>回流必定会发生重绘，重绘不一定会引发回流。回流所需的成本比重绘高的多，改变父节点里的子节点很可能会导致父节点的一系列回流。    </p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;21-4-重绘（Repaint）和回流（Reflow）&quot;&gt;&lt;a href=&quot;#21-4-重绘（Repaint）和回流（Reflow）&quot; class=&quot;headerlink&quot; title=&quot;21.4 重绘（Repaint）和回流（Reflow）&quot;&gt;&lt;/a&gt;21.4 </summary>
-      
-    
-    
-    
-    <category term="-Css" scheme="http://example.com/categories/Css/"/>
-    
-    
-    <category term="-Css" scheme="http://example.com/tags/Css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>css选择器有哪些？优先级？哪些属性可以继承？</title>
-    <link href="http://example.com/2018/06/02/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF%EF%BC%9F/"/>
-    <id>http://example.com/2018/06/02/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF%EF%BC%9F/</id>
-    <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2022-10-07T08:03:24.467Z</updated>
-    
-    <content type="html"><![CDATA[<p>关于css属性选择器常用的有：</p><p>id选择器（#box），选择id为box的元素</p><p>类选择器（.one），选择类名为one的所有元素</p><p>标签选择器（div），选择标签为div的所有元素</p><p>伪类选择器</p><p>伪元素选择器</p><p>属性选择器</p><p>优先级：内联 &gt; ID选择器 &gt; 类选择器 &gt; 标签选择器</p><p>关于继承属性，可以分成：</p><p>字体系列属性</p><p>文本系列属性</p><p>元素可见性</p><p>表格布局属性</p><p>列表属性</p><p>光标属性</p><p>继承中比较特殊的几点：</p><p>a 标签的字体颜色不能被继承</p><p>h1-h6标签字体的大下也是不能被继承的</p><p>无继承的属性</p><p>display</p><p>文本属性：vertical-align、text-decoration</p><p>盒子模型的属性：宽度、高度、内外边距、边框等</p><p>背景属性：背景图片、颜色、位置等</p><p>定位属性：浮动、清除浮动、定位position等</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;关于css属性选择器常用的有：&lt;/p&gt;
-&lt;p&gt;id选择器（#box），选择id为box的元素&lt;/p&gt;
-&lt;p&gt;类选择器（.one），选择类名为one的所有元素&lt;/p&gt;
-&lt;p&gt;标签选择器（div），选择标签为div的所有元素&lt;/p&gt;
-&lt;p&gt;伪类选择器&lt;/p&gt;
-&lt;p&gt;伪元素选择器</summary>
-      
-    
-    
-    
-    <category term="-HTML" scheme="http://example.com/categories/HTML/"/>
-    
-    
-    <category term="-HTML" scheme="http://example.com/tags/HTML/"/>
     
   </entry>
   
