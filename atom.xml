@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-10T08:44:30.683Z</updated>
+  <updated>2022-10-13T01:52:47.060Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,88 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SPA首屏加载速度慢怎么解决？</title>
+    <link href="http://example.com/2022/10/13/SPA%E9%A6%96%E5%B1%8F%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%EF%BC%9F/"/>
+    <id>http://example.com/2022/10/13/SPA%E9%A6%96%E5%B1%8F%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%EF%BC%9F/</id>
+    <published>2022-10-13T01:39:46.820Z</published>
+    <updated>2022-10-13T01:52:47.060Z</updated>
+    
+    <content type="html"><![CDATA[<p>加载慢的原因</p><p>​    1.在页面渲染的过程导致加载速度慢的因素 可能如下</p><p>​        网络延时问题</p><p>​        资源文件体积是否过大</p><p>​        资源是否重复发送请求去加载了</p><p>​        加载脚本的时候 渲染内容堵塞</p><p>解决方案</p><p>​        减小入口文件体积</p><p>​        静态资源本地缓存</p><p>​        UI框架按需加载</p><p>​        图片资源的压缩</p><p>​        组件重复打包</p><p>​        开启GZip压缩</p><p>​        使用SSR</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;加载慢的原因&lt;/p&gt;
+&lt;p&gt;​    1.在页面渲染的过程导致加载速度慢的因素 可能如下&lt;/p&gt;
+&lt;p&gt;​        网络延时问题&lt;/p&gt;
+&lt;p&gt;​        资源文件体积是否过大&lt;/p&gt;
+&lt;p&gt;​        资源是否重复发送请求去加载了&lt;/p&gt;
+&lt;p&gt;​   </summary>
+      
+    
+    
+    
+    <category term="-JS html" scheme="http://example.com/categories/JS-html/"/>
+    
+    
+    <category term="-JS html" scheme="http://example.com/tags/JS-html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue路由的原理</title>
+    <link href="http://example.com/2018/08/11/Vue%E8%B7%AF%E7%94%B1%E7%9A%84%E5%8E%9F%E7%90%86/"/>
+    <id>http://example.com/2018/08/11/Vue%E8%B7%AF%E7%94%B1%E7%9A%84%E5%8E%9F%E7%90%86/</id>
+    <published>2018-08-10T16:00:00.000Z</published>
+    <updated>2022-10-13T02:32:11.330Z</updated>
+    
+    <content type="html"><![CDATA[<p>通过改变URL，在不重新请求页面的情况下，更新页面视图</p><p>更新视图但不重新请求页面，是前端路由原理的核心之一，目前在浏览器环境中这一功能</p><p>的实现主要有2种方式</p><p>第一种是利用H5的historyAPI实现</p><p>主要是通过 history.pushstate和history.replacestate来实现，不同之处在于，pushstate</p><p>会增加一天新的历史记录 二replacestate 则会替代当前历史记录</p><p>第二种是利用url 的hash实现</p><p>我们经常在url中看到 # 这个#有俩种情况，一个是我们所谓的瞄点，路由里的#不叫瞄点</p><p>我们称之为hash，我们说的就是hash，主要是利用监听哈希值的变化触发事件–hashchange 事件来做页面局部更新</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;通过改变URL，在不重新请求页面的情况下，更新页面视图&lt;/p&gt;
+&lt;p&gt;更新视图但不重新请求页面，是前端路由原理的核心之一，目前在浏览器环境中这一功能&lt;/p&gt;
+&lt;p&gt;的实现主要有2种方式&lt;/p&gt;
+&lt;p&gt;第一种是利用H5的historyAPI实现&lt;/p&gt;
+&lt;p&gt;主要是通过 hi</summary>
+      
+    
+    
+    
+    <category term="-vue" scheme="http://example.com/categories/vue/"/>
+    
+    
+    <category term="-vue" scheme="http://example.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有使用过vue吗 说说你对于vue的理解？</title>
+    <link href="http://example.com/2018/07/15/%E6%9C%89%E4%BD%BF%E7%94%A8%E8%BF%87vue%E5%90%97-%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BA%8Evue%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F/"/>
+    <id>http://example.com/2018/07/15/%E6%9C%89%E4%BD%BF%E7%94%A8%E8%BF%87vue%E5%90%97-%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BA%8Evue%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F/</id>
+    <published>2018-07-14T16:00:00.000Z</published>
+    <updated>2022-10-10T10:39:23.886Z</updated>
+    
+    <content type="html"><![CDATA[<p>vue 是一用于构建用户界面的Javascript 库 也是一个创建单页面应用的框架</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;vue 是一用于构建用户界面的Javascript 库 也是一个创建单页面应用的框架&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="-JS" scheme="http://example.com/categories/JS/"/>
+    
+    
+    <category term="-JS" scheme="http://example.com/tags/JS/"/>
+    
+  </entry>
   
   <entry>
     <title>async 函数是什么 有什么作用</title>
@@ -469,86 +551,6 @@
     
     
     <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>说说你对事件循环的理解</title>
-    <link href="http://example.com/2018/06/07/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%E7%9A%84%E7%90%86%E8%A7%A3/"/>
-    <id>http://example.com/2018/06/07/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%E7%9A%84%E7%90%86%E8%A7%A3/</id>
-    <published>2018-06-06T16:00:00.000Z</published>
-    <updated>2022-10-07T08:09:15.294Z</updated>
-    
-    <content type="html"><![CDATA[<p>JavaScript 在设计之初便是单线程，即指程序运行时，只有一个线程存在，同一时间只能做一件事，</p><p>为了解决单线程运行阻塞问题，JavaScript用到了计算机系统的一种运行机制，这种机制就叫做事件循环</p><p>同步：在主线程上排队执行的任务 当一个任务执行完毕 才会执行下一个任务</p><p>异步 ：不会直接进入主线程  首先会进入任务队列 当任务队列函数主线程这个异步任务可以执行的时候 </p><p>才会进入 任务队列</p><p>执行一个宏任务，然后执行清空微任务列表，循环再执行宏任务，再清微任务列表过程的不断重复就是事件循环</p><p>****宏任务：****script (可以理解为外层同步代码)</p><p>setTimeout/setInterval</p><p>UI rendering/UI事件</p><p>postMessage、MessageChannel</p><p>setImmediate、I/O（Node.js）</p><p>****微任务：****Promise.then  MutaionObserver  Object.observe（已废弃；Proxy 对象替代process.nextTick（Node.js）</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;JavaScript 在设计之初便是单线程，即指程序运行时，只有一个线程存在，同一时间只能做一件事，&lt;/p&gt;
-&lt;p&gt;为了解决单线程运行阻塞问题，JavaScript用到了计算机系统的一种运行机制，这种机制就叫做事件循环&lt;/p&gt;
-&lt;p&gt;同步：在主线程上排队执行的任务 当一个任</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深拷贝和浅拷贝的区别</title>
-    <link href="http://example.com/2018/06/06/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%BA%8E%E6%B5%85%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>http://example.com/2018/06/06/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%BA%8E%E6%B5%85%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
-    <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2022-10-07T08:07:52.363Z</updated>
-    
-    <content type="html"><![CDATA[<p>深拷贝和浅拷贝的区别</p><p>​    1.浅拷贝 </p><p>​            浅拷贝只复制某个对象的引用，而不是对象本身 新旧对象还是共享一块内存</p><p>​            当其中一个对象发生变化是另一个对象也会随之变化 </p><p>​        object.assign（） 拷贝的是对象的属性的引用 而不是对象本身</p><p>​    2.深拷贝</p><p>​            深拷贝会创建一个一模一样的对象  新对象和旧对象不会共享内存 当修改新对象时 </p><p>不会改变原对象 。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;深拷贝和浅拷贝的区别&lt;/p&gt;
-&lt;p&gt;​    1.浅拷贝 &lt;/p&gt;
-&lt;p&gt;​            浅拷贝只复制某个对象的引用，而不是对象本身 新旧对象还是共享一块内存&lt;/p&gt;
-&lt;p&gt;​            当其中一个对象发生变化是另一个对象也会随之变化 &lt;/p&gt;
-&lt;p&gt;</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>session,cookie和token的区别</title>
-    <link href="http://example.com/2018/06/06/session-cookie%E5%92%8Ctoken%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>http://example.com/2018/06/06/session-cookie%E5%92%8Ctoken%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
-    <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2022-10-07T08:06:16.551Z</updated>
-    
-    <content type="html"><![CDATA[<p><em><strong>*1.session和cookie区别：*</strong></em></p><p>·   数据存放位置不同：Session数据是存在服务器中的，cookie数据存放在浏览器当中。</p><p>·   安全程度不同：cookie放在服务器中不是很安全，session放在服务器中，相对安全。</p><p>·   性能使用程度不同：session放在服务器上，访问增多会占用服务器的性能；考虑到减轻服务器性能方面，应使用cookie。</p><p>·   数据存储大小不同：单个cookie保存的数据不能超过4K，session存储在服务端，根据服务器大小来定。</p><p><em><strong>*2.token和session区别：*</strong></em></p><p>·   token是开发定义的，session是http协议规定的；</p><p>·   token不一定存储，session存在服务器中；</p><p>·   token可以跨域，session不可以跨域，它是与域名绑定的</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;*1.session和cookie区别：*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;·   数据存放位置不同：Session数据是存在服务器中的，cookie数据存放在浏览器当中。&lt;/p&gt;
-&lt;p&gt;·   安全程度不同：cookie放在服务器中不是很</summary>
-      
-    
-    
-    
-    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
-    
-    
-    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
     
   </entry>
   
