@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-13T01:52:47.060Z</updated>
+  <updated>2022-11-01T07:06:54.581Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,31 +17,81 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>SPA首屏加载速度慢怎么解决？</title>
-    <link href="http://example.com/2022/10/13/SPA%E9%A6%96%E5%B1%8F%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%EF%BC%9F/"/>
-    <id>http://example.com/2022/10/13/SPA%E9%A6%96%E5%B1%8F%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%EF%BC%9F/</id>
-    <published>2022-10-13T01:39:46.820Z</published>
-    <updated>2022-10-13T01:52:47.060Z</updated>
+    <title>vue2和vue3的区别</title>
+    <link href="http://example.com/2018/09/30/vue2%E5%92%8Cvue3%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://example.com/2018/09/30/vue2%E5%92%8Cvue3%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+    <published>2018-09-29T16:00:00.000Z</published>
+    <updated>2022-11-01T07:06:54.581Z</updated>
     
-    <content type="html"><![CDATA[<p>加载慢的原因</p><p>​    1.在页面渲染的过程导致加载速度慢的因素 可能如下</p><p>​        网络延时问题</p><p>​        资源文件体积是否过大</p><p>​        资源是否重复发送请求去加载了</p><p>​        加载脚本的时候 渲染内容堵塞</p><p>解决方案</p><p>​        减小入口文件体积</p><p>​        静态资源本地缓存</p><p>​        UI框架按需加载</p><p>​        图片资源的压缩</p><p>​        组件重复打包</p><p>​        开启GZip压缩</p><p>​        使用SSR</p>]]></content>
+    <content type="html"><![CDATA[<p>\1. vue2和vue3双向数据绑定原理发生了改变</p><p>vue2的双向数据绑定是利用了es5 的一个API Object.definepropert() 对数据进行劫持 结合发布订阅模式来实现的。vue3中使用了es6的proxyAPI对数据进行处理。</p><p>相比与vue2，使用proxy API 优势有：defineProperty只能监听某个属性，不能对全对象进行监听；可以省去for in 、闭包等内容来提升效率（直接绑定整个对象即可）；可以监听数组，不用再去单独的对数组做特异性操作，vue3可以检测到数组内部数据的变化。</p><p>2.Vue3支持碎片（Fragments）</p><p>就是说可以拥有多个跟节点。</p><p>1</p><p>\3. Composition API</p><p>Vue2 与vue3 最大的区别是vue2使用选项类型api，对比vue3合成型api。旧得选项型api在代码里分割了不同得属性：data,computed,methods等；新得合成型api能让我们使用方法来分割，相比于旧的API使用属性来分组，这样代码会更加简便和整洁。</p><p>\4. 建立数据data</p><p>vue2是把数据放入data中，vue3就需要使用一个新的setup()方法，此方法在组件初始化构造得时候触发。使用一下三个步骤来简=建立反应性数据： 1. 从vue引入reactive；使用reactive() 方法来声明数据为响应性数据；3. 使用setup()方法来返回我们得响应性数据，从而template可以获取这些响应性数据。</p><p>1</p><p>\5. 生命周期</p><p>vue2   ————— vue3</p><p>beforeCreate             -&gt;  setup()</p><p>Created                 -&gt;  setup()</p><p>beforeMount              -&gt;  onBeforeMount</p><p>mounted                 -&gt;   onMounted</p><p>beforeUpdate             -&gt;   onBeforeUpdate</p><p>updated                 -&gt;   onUpdated</p><p>beforeDestroyed           -&gt;   onBeforeUnmount</p><p>destroyed                -&gt;   onUnmounted</p><p>activated                 -&gt;   onActivated</p><p>deactivated               -&gt;   onDeactivated</p><p>\6. 父子传参不同，setup()函数特性</p><p>setup()函数接收两个参数：props、context(包含attrs、slots、emit)</p><p>setup函数是处于生命周期beforeCreated和created俩个钩子函数之前</p><p>执行setup时，组件实例尚未被创建（在setup()内部，this不会是该活跃实例得引用，即不指向vue实例，Vue为了避免我们错误得使用，直接将setup函数中得this修改成了undefined）</p><p>与模板一起使用时，需要返回一个对象</p><p>因为setup函数中，props是响应式得，当传入新的prop时，它将会被更新，所以不能使用es6解构，因为它会消除prop得响应性，如需解构prop，可以通过使用setup函数中得toRefs来完成此操作。</p><p>父传子，用props,子传父用事件 Emitting Events。在vue2中，会调用this$emit然后传入事件名和对象；在vue3中得setup()中得第二个参数content对象中就有emit，那么我们只要在setup()接收第二个参数中使用分解对象法取出emit就可以在setup方法中随意使用了。</p><p>在setup()内使用响应式数据时，需要通过 .value 获取</p><p>import { ref } from ‘vue’</p><p>const count = ref(0)</p><p>console.log(count.value)</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;加载慢的原因&lt;/p&gt;
-&lt;p&gt;​    1.在页面渲染的过程导致加载速度慢的因素 可能如下&lt;/p&gt;
-&lt;p&gt;​        网络延时问题&lt;/p&gt;
-&lt;p&gt;​        资源文件体积是否过大&lt;/p&gt;
-&lt;p&gt;​        资源是否重复发送请求去加载了&lt;/p&gt;
-&lt;p&gt;​   </summary>
+    <summary type="html">&lt;p&gt;\1. vue2和vue3双向数据绑定原理发生了改变&lt;/p&gt;
+&lt;p&gt;vue2的双向数据绑定是利用了es5 的一个API Object.definepropert() 对数据进行劫持 结合发布订阅模式来实现的。vue3中使用了es6的proxyAPI对数据进行处理。&lt;/p&gt;
+</summary>
       
     
     
     
-    <category term="-JS html" scheme="http://example.com/categories/JS-html/"/>
+    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
     
     
-    <category term="-JS html" scheme="http://example.com/tags/JS-html/"/>
+    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你了解vue的diff算法吗？说说看</title>
+    <link href="http://example.com/2018/09/16/41-%E4%BD%A0%E4%BA%86%E8%A7%A3vue%E7%9A%84diff%E7%AE%97%E6%B3%95%E5%90%97%EF%BC%9F%E8%AF%B4%E8%AF%B4%E7%9C%8B/"/>
+    <id>http://example.com/2018/09/16/41-%E4%BD%A0%E4%BA%86%E8%A7%A3vue%E7%9A%84diff%E7%AE%97%E6%B3%95%E5%90%97%EF%BC%9F%E8%AF%B4%E8%AF%B4%E7%9C%8B/</id>
+    <published>2018-09-15T16:00:00.000Z</published>
+    <updated>2022-11-01T07:05:50.141Z</updated>
+    
+    <content type="html"><![CDATA[<p>diff算法就是进行虚拟节点对比，并返回一个patch对象，用来存储两个节点</p><p>不同的地方，最后用patch记录的消息去局部更新Dom。</p><p>其有两个特点：</p><p>比较只会在同层级进行, 不会跨层级比较</p><p>在diff比较的过程中，循环从两边向中间比较</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;diff算法就是进行虚拟节点对比，并返回一个patch对象，用来存储两个节点&lt;/p&gt;
+&lt;p&gt;不同的地方，最后用patch记录的消息去局部更新Dom。&lt;/p&gt;
+&lt;p&gt;其有两个特点：&lt;/p&gt;
+&lt;p&gt;比较只会在同层级进行, 不会跨层级比较&lt;/p&gt;
+&lt;p&gt;在diff比较的过程中，循</summary>
+      
+    
+    
+    
+    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
+    
+    
+    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue中组件和插件有什么区别？</title>
+    <link href="http://example.com/2018/09/01/Vue%E4%B8%AD%E7%BB%84%E4%BB%B6%E5%92%8C%E6%8F%92%E4%BB%B6%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/"/>
+    <id>http://example.com/2018/09/01/Vue%E4%B8%AD%E7%BB%84%E4%BB%B6%E5%92%8C%E6%8F%92%E4%BB%B6%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/</id>
+    <published>2018-08-31T16:00:00.000Z</published>
+    <updated>2022-11-01T07:03:40.857Z</updated>
+    
+    <content type="html"><![CDATA[<p>组件注册通过“Vue.component”或“components”属性，而插件通过“Vue.use()”；2、组件是用来构成App的业务模块，它的目标是“App.vue”，而插件是用来增强技术栈的功能模块，它的目标是Vue本身。</p><p>Cvb常见使用场景可以分为三类：</p><p>父子通信：</p><p>父向子传递数据是通过 props，子向父是通过 events（$emit）；通过父链 / 子链也可以通信（$parent / $children）；ref 也可以访问组件实例；provide / inject API；$attrs/$listeners</p><p>兄弟通信：</p><p>Bus；Vuex</p><p>跨级通信：</p><p>Bus；Vuex；provide / inject API、$attrs/$listeners</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;组件注册通过“Vue.component”或“components”属性，而插件通过“Vue.use()”；2、组件是用来构成App的业务模块，它的目标是“App.vue”，而插件是用来增强技术栈的功能模块，它的目标是Vue本身。&lt;/p&gt;
+&lt;p&gt;Cvb常见使用场景可以分为三</summary>
+      
+    
+    
+    
+    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
+    
+    
+    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
     
   </entry>
   
@@ -491,58 +541,6 @@
 &lt;p&gt;2.Instanceof 方法 是用来检测一个对象是否在其原型链原型构造函数的属性  &lt;/p&gt;
 &lt;p&gt;​    用于检验构造函数的prototype属性是否出现在对象的原型链中的属性&lt;/p&gt;
 &lt;ol start=&quot;3</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>什么是防抖和节流？有什么区别？如何实现？</title>
-    <link href="http://example.com/2018/06/11/16-%E4%BB%80%E4%B9%88%E6%98%AF%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%EF%BC%9F/"/>
-    <id>http://example.com/2018/06/11/16-%E4%BB%80%E4%B9%88%E6%98%AF%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%EF%BC%9F/</id>
-    <published>2018-06-10T16:00:00.000Z</published>
-    <updated>2022-10-07T08:02:56.428Z</updated>
-    
-    <content type="html"><![CDATA[<p>防抖：某一高频事件不断被触发时，仅在最后一次真正执行事件处理代码。</p><p>节流：某一高频事件被触发时，确保在每一个特定的时间段内被执行一次。</p><p>相似点：都是为应对事件持续频繁发生，造成前端性能下降或对后端服务造成的压力。</p><p>区别：节流会不断的触发，而防抖仅在最后一次触发。防抖适用于，如搜索输入框提</p><p>示，仅在输入停止后进行一次提示更新，以减少后台压力。节流适用于，如窗体以拖动的方式调整大小，在每次特定的时间片结束后触发一次窗体大小调整。</p><p>节流的实现：</p><p>俩者都是通过setTimeout实现的</p><p>可以使用事件戳和定时器</p><p> 使用事件戳写法，事件会立即执行，停止触发后没有办法再次执行</p><p> 使用定时器的写法，自己决定多少毫秒后第一次执行，第二次事件停止触发后依然会在执行一次</p><p>防抖的实现：</p><p>在处理一段连续操作结束后，处理回调，利用clearTimeout和setTimeout实现</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;防抖：某一高频事件不断被触发时，仅在最后一次真正执行事件处理代码。&lt;/p&gt;
-&lt;p&gt;节流：某一高频事件被触发时，确保在每一个特定的时间段内被执行一次。&lt;/p&gt;
-&lt;p&gt;相似点：都是为应对事件持续频繁发生，造成前端性能下降或对后端服务造成的压力。&lt;/p&gt;
-&lt;p&gt;区别：节流会不断的</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>说说你对BOM的理解，常见的BOM对象你了解哪些？</title>
-    <link href="http://example.com/2018/06/07/14-%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9BOM%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E5%B8%B8%E8%A7%81%E7%9A%84BOM%E5%AF%B9%E8%B1%A1%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B%EF%BC%9F/"/>
-    <id>http://example.com/2018/06/07/14-%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9BOM%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E5%B8%B8%E8%A7%81%E7%9A%84BOM%E5%AF%B9%E8%B1%A1%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B%EF%BC%9F/</id>
-    <published>2018-06-07T13:54:27.000Z</published>
-    <updated>2022-10-07T08:02:33.893Z</updated>
-    
-    <content type="html"><![CDATA[<p>javascript由3个部分组成：1、ECMAScript，js语言核心部分，描述了该语言的语法和基本对象；2、文档对象模型（DOM）,网页文档操作标准；3、浏览器对象模型（BOM），客户端和浏览器窗口操作基础。</p><p>Bom（浏览器对象模型）是浏览器本身的一些信息的设置和获取，其作⽤就是跟浏览器做⼀些交互效果,⽐如如何进⾏页⾯的后退，前进，刷新，浏览器的窗⼝发⽣变化，滚动条的滚动，以及获取客户的⼀些信息如：浏览器品牌版本，屏幕分辨率，浏览器的全部内容可以看成dom整个浏览器可以看成bom</p><p>Window 对象：浏览器窗口对象</p><p>Navigator 耐飞杆得 ：浏览器对象</p><p>Screen 死亏 ：浏览器所处客户端的显示器屏幕对象</p><p>History：浏览器当前窗口的访问历史记录对象</p><p>Location：浏览器当前窗口的地址栏对象</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;javascript由3个部分组成：1、ECMAScript，js语言核心部分，描述了该语言的语法和基本对象；2、文档对象模型（DOM）,网页文档操作标准；3、浏览器对象模型（BOM），客户端和浏览器窗口操作基础。&lt;/p&gt;
-&lt;p&gt;Bom（浏览器对象模型）是浏览器本身的一些信</summary>
       
     
     
