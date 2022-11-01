@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-11-01T07:06:54.581Z</updated>
+  <updated>2022-11-01T07:52:38.624Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,480 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>django rest_framework 配置</title>
+    <link href="http://example.com/2022/06/23/django-rest-framework-%E9%85%8D%E7%BD%AE/"/>
+    <id>http://example.com/2022/06/23/django-rest-framework-%E9%85%8D%E7%BD%AE/</id>
+    <published>2022-06-22T16:00:00.000Z</published>
+    <updated>2022-11-01T07:52:38.624Z</updated>
+    
+    <content type="html"><![CDATA[<p>下载命令： pip install djangorestframework<br>注册：</p><p>2.<br>        创建 序列化器    （必须在APP定义）</p><p>drf.py 为序列化器  文件 （名字自定义）</p><ol start="3"><li>view 视图导入</li></ol><ol start="4"><li>路由部分</li></ol><p>from django.urls import path<br>from rest_framework import routers<br>from .views import *</p><p>urlpatterns = [</p><p>]</p><p>router=routers.DefaultRouter(trailing_slash=False)#取消url地址后面的 /<br>router.register(‘user’,UserView,basename=’user’)<br>router.register(‘menu’,MenuView,basename=’menu’)<br>router.register(‘menumeta’,MenuView,basename=’menumeta’)</p><p>urlpatterns+=router.urls</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;下载命令： pip install djangorestframework&lt;br&gt;注册：&lt;/p&gt;
+&lt;p&gt;2.&lt;br&gt;        创建 序列化器    （必须在APP定义）&lt;/p&gt;
+&lt;p&gt;drf.py 为序列化器  文件 （名字自定义）&lt;/p&gt;
+&lt;ol start=&quot;3&quot;</summary>
+      
+    
+    
+    
+    <category term="-django" scheme="http://example.com/categories/django/"/>
+    
+    
+    <category term="-django" scheme="http://example.com/tags/django/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>创建虚拟环境 激活 ，退出</title>
+    <link href="http://example.com/2022/04/15/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-%E6%BF%80%E6%B4%BB-%EF%BC%8C%E9%80%80%E5%87%BA/"/>
+    <id>http://example.com/2022/04/15/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-%E6%BF%80%E6%B4%BB-%EF%BC%8C%E9%80%80%E5%87%BA/</id>
+    <published>2022-04-14T16:00:00.000Z</published>
+    <updated>2022-11-01T07:51:08.007Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.conda create -n 名称 创建虚拟环境</p><p>2.conda activate Opencv 激活 Opencv 虚拟环境名称  激活即可使用</p><p>3.conda deactivate 退出当前环境</p><p>pycharm 中进行环境切换</p><p>换将切换</p><p>激活即可使用 可以直接使用 下载命令 打开pycharm 在 File 中 进行虚拟环境的切换</p><p>无  下面无关</p><p>还可以在PyCharm开发环境中安装。运行PyCharm，选择File→Settings命令，打开Settings对话框，选择Project Interpreter选项，然后单击+（添加）按钮，打开Available Packages对话框，在搜索文本框中输入需要添加的模块名称，例如scikit-learn，然后在列表中选择需要安装的模块，如图10.1所示。单击Install Package按钮即可实现Scikit-Learn模块的安装。</p><p>1.3 概念<br>scikit-learn库主要功能分六大部分：分类，回归，聚类，降维，模型选择，数据预处理。</p><p>1.3.1 监督学习<br>监督学习（supervised learning）的任务是学习一个模型，使模型能够对任意给定的输入，对其相应的输出做出一个好的预测。</p><p>即：利用训练数据集学习一个模型，再用模型对测试样本集进行预测。</p><p>通俗理解：每个数据点都被标记或关联一个类别或者分值。</p><p>例（类别）：输入一张图片，判断该图片中的动物是猫还是狗；</p><p>例（分值）：通过大量数据预测一辆二手车的出售价格；</p><p>监督学习的目的就是学习大量的样本（称作训练数据），从而对未来的数据点做出预测（称作测试数据）。</p><p>分类和回归</p><p>从根本上来说，分类是预测一个标签，回归是预测一个数量。</p><p>分类是给一个样本预测离散型类别标签的问题。</p><p>回归是给一个样本预测连续输出量的问题。</p><p>1.3.2 非监督学习<br>非监督学习（unsupervised learning）为直接对数据进行建模。没有给定事先标记过的训练范例，所用的数据没有属性或标签这一概念。事先不知道输入数据对应的输出结果是什么。</p><p>自动对输入的资料进行分类或分群，以寻找数据的模型和规律。</p><p>例：聚类</p><p>1.3.3 强化学习<br>强化学习（Reinforcement Learning）是机器学习中的一个领域，强调如何基于环境而行动，以取得最大化的预期利益。其灵感来源于心理学中的行为主义理论，即有机体如何在环境给予的奖励或惩罚的刺激下，逐步形成对刺激的预期，产生能获得最大利益的习惯性行为。</p><p>有监督学习、无监督学习、强化学习具有不同的特点：</p><p>有监督学习是有一个label（标记）的，这个label告诉算法什么样的输入对应着什么样的输出，常见的算法是分类、回归等；</p><p>无监督学习则是没有label（标记），常见的算法是聚类；</p><p>强化学习强调如何基于环境而行动，以取得最大化的预期利益。</p><p>1.4 数据预处理<br>在真实的世界中，经常需要处理大量的原始数据，这些原始数据是机器学习算法无法理解的，为了让机器学习算法理解原始数据，需要对数据进行预处理。</p><p>1.4.1 准备工作<br>python进行数据预处理，需要加载两个必要的程序包。</p><p>import numpy as np from sklearn import preprocessing</p><p>data = np.array([[ 3, -1.5, 2, -5.4], [ 0, 4, -0.3, 2.1], [ 1, 3.3, -1.9, -4.3]])</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1.conda create -n 名称 创建虚拟环境&lt;/p&gt;
+&lt;p&gt;2.conda activate Opencv 激活 Opencv 虚拟环境名称  激活即可使用&lt;/p&gt;
+&lt;p&gt;3.conda deactivate 退出当前环境&lt;/p&gt;
+&lt;p&gt;pycharm 中进行环境</summary>
+      
+    
+    
+    
+    <category term="-django" scheme="http://example.com/categories/django/"/>
+    
+    
+    <category term="-django" scheme="http://example.com/tags/django/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>django 分页</title>
+    <link href="http://example.com/2022/04/09/django-%E5%88%86%E9%A1%B5/"/>
+    <id>http://example.com/2022/04/09/django-%E5%88%86%E9%A1%B5/</id>
+    <published>2022-04-08T16:00:00.000Z</published>
+    <updated>2022-11-01T07:49:19.698Z</updated>
+    
+    <content type="html"><![CDATA[<p> 1.在view.py中使用字符切割的形式进行分页<br>def Wenzhang2(request):<br>    pagenum=request.GET.get(‘pagenum’)  条数<br>    pagesize = request.GET.get(‘pagesize’)页数<br>    a = (int(pagenum) - 1) * int(pagesize)<br>    b = (int(pagenum) - 1) * int(pagesize) + int(pagesize)<br>    a = Rong.objects.all()[a:b] 字符串进行切割<br>    c = Rong.objects.all().count()<br>    guo = []<br>    for i in a:<br>        guo.append({<br>            ‘id’: i.id,<br>            ‘biao’: i.biao,<br>            ‘user’: i.user,<br>            ‘du’: i.du,<br>            ‘ping’: i.ping,<br>            ‘Rong_id’: i.Rong_id.name,<br>            ‘lou_id’:i.Rong_id.id,<br>        })<br>    return JsonResponse({‘code’: 200, ‘data’: list(guo),’count’:c})</p><p>vue 进行接收</p><p>2.使用 rest_framework  settings.py 中配置<br>下载命令： pip install djangorestframework<br>注册：</p><p>在 settings.py 中配置<br>REST_FRAMEWORK = {<br>     ‘DEFAULT_PAGINATION_CLASS’: ‘rest_framework.pagination.PageNumberPagination’,<br>     ‘PAGE_SIZE’: 5  每页显示5条<br>}<br>3. 使用rest_framework 引入模块 PageNumberPagination<br>引入命令：from rest_framework.pagination import PageNumberPagination<br>编写：</p><p>class Page(PageNumberPagination): 继承 PageNumberPagination 这个类<br>    page_size_query_param = ‘pagesize’ 默认第几页<br>    page_query_param = ‘pagenum’ 每页显示几条<br>    max_page_size = 10 最大10条<br>    page_size = 5 默认每页5条<br>需要用到分页 调用这函数 即可   通过<br>pagination_class = 定义的函数）     调用</p><p>借鉴</p><p>def quanxian(request):<br>    pagenum = request.GET.get(‘pagenum’)<br>    # 条数<br>​    pagesize = request.GET.get(‘pagesize’)<br>    # 页数<br>​    a = (int(pagenum) - 1) * int(pagesize)<br>​    b = int(pagenum) * int(pagesize)<br>​    data = list(quanxiancaidan.objects.all().values())[a:b]<br>    # print(data,786)<br>​    c = quanxiancaidan.objects.all().count()<br>​    return JsonResponse({‘code’: 200, ‘data’: data, ‘count’: c})</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt; 1.在view.py中使用字符切割的形式进行分页&lt;br&gt;def Wenzhang2(request):&lt;br&gt;    pagenum=request.GET.get(‘pagenum’)  条数&lt;br&gt;    pagesize = request.GET.get(‘pag</summary>
+      
+    
+    
+    
+    <category term="-django" scheme="http://example.com/categories/django/"/>
+    
+    
+    <category term="-django" scheme="http://example.com/tags/django/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>django view 正反向查询 原生代码</title>
+    <link href="http://example.com/2022/03/15/django-view-%E6%AD%A3%E5%8F%8D%E5%90%91%E6%9F%A5%E8%AF%A2-%E5%8E%9F%E7%94%9F%E4%BB%A3%E7%A0%81/"/>
+    <id>http://example.com/2022/03/15/django-view-%E6%AD%A3%E5%8F%8D%E5%90%91%E6%9F%A5%E8%AF%A2-%E5%8E%9F%E7%94%9F%E4%BB%A3%E7%A0%81/</id>
+    <published>2022-03-14T16:00:00.000Z</published>
+    <updated>2022-11-01T07:49:38.537Z</updated>
+    
+    <content type="html"><![CDATA[<p>模型关联关系</p><pre><code>    一对多的关系:就把一的表中的主键放到多的表中作为外键    多对多的关系:就会产生一张关联关系的表 存储俩张表中的主键id</code></pre><p>模型表</p><p>正项查询：有外键的表查询没有外键的表</p><p>def gettwo(request):<br>    b = Shang.objects.all()   #商品表<br>    yang = []    #定义一个空数组<br>    for i in b:   #循环 商品表<br>        yang.append({   #数组添加<br>            ‘id’: i.id,<br>            ‘img’:i.img,  #需要查看的数据（字段）<br>            ‘username’: i.username,<br>            ‘price’: i.price,<br>            ‘shang_id’:i.shang_id.name  #外键字段，键名字可以自定义，值: 商品表的外键关联类表name字段   查询出来商品是在哪一个类的下面<br>        })<br>    return JsonResponse({‘code’: 200, ‘message’: ‘成功’,’data’:list(yang)})</p><p>正项查询的结果图： shang_id:类表的name字段</p><p>反向查询：没有外建的表关联有外建的表</p><p>​        </p><p>def getone(request):<br>    a = User.objects.all()  类的表<br>    yang=[]<br>    for i in a:<br>        yang.append({<br>            ‘id’:i.id,<br>            ‘img’:i.img,<br>            ‘name’:i.name,<br>            ‘user_shang’:list(i.shang_set.all().values())  #list(i.shang_set.all().values().filter().count())<br>#user_shang:可以直定义，对应的数据 商品表的全部数据 也可以进行筛选 返回条数<br>        })</p><pre><code>return JsonResponse(&#123;&#39;code&#39;: 200, &#39;message&#39;: &#39;获取成功&#39;, &#39;data&#39;:yang&#125;)</code></pre><p> 反项查询的结果： 类表下面有俩条数据</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;模型关联关系&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    一对多的关系:就把一的表中的主键放到多的表中作为外键
+
+    多对多的关系:就会产生一张关联关系的表 存储俩张表中的主键id
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;模型表&lt;/p&gt;
+&lt;p&gt;正项查询：有外键的表查询没有外键的表&lt;</summary>
+      
+    
+    
+    
+    <category term="-django" scheme="http://example.com/categories/django/"/>
+    
+    
+    <category term="-django" scheme="http://example.com/tags/django/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>项目做过哪些性能优化</title>
+    <link href="http://example.com/2022/03/02/%E9%A1%B9%E7%9B%AE%E5%81%9A%E8%BF%87%E5%93%AA%E4%BA%9B%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    <id>http://example.com/2022/03/02/%E9%A1%B9%E7%9B%AE%E5%81%9A%E8%BF%87%E5%93%AA%E4%BA%9B%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</id>
+    <published>2022-03-01T16:00:00.000Z</published>
+    <updated>2022-11-01T07:45:26.895Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="#t0">一、 加载优化（减少http请求数）</a></p><p><a href="#t1">二、图片优化</a></p><p><a href="#t2">三、使用CDN</a></p><p><a href="#t3">四、开启Gzip（代码压缩）</a></p><p><a href="#t4">六、减少不必要的Cookie</a></p><p><a href="#t5">七、脚本优化</a></p><p><a href="#t6">八、前端代码结构的优化</a></p><p><a href="#t7">九、SEO优化</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;#t0&quot;&gt;一、 加载优化（减少http请求数）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#t1&quot;&gt;二、图片优化&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#t2&quot;&gt;三、使用CDN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#t3&quot;&gt;四、开启Gzip（代码压缩）</summary>
+      
+    
+    
+    
+    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
+    
+    
+    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue、react、angular 区别</title>
+    <link href="http://example.com/2021/05/30/vue%E3%80%81react%E3%80%81angular-%E5%8C%BA%E5%88%AB/"/>
+    <id>http://example.com/2021/05/30/vue%E3%80%81react%E3%80%81angular-%E5%8C%BA%E5%88%AB/</id>
+    <published>2021-05-29T16:00:00.000Z</published>
+    <updated>2022-11-01T07:39:17.771Z</updated>
+    
+    <content type="html"><![CDATA[<p><em><strong>*一、Angular*</strong></em></p><p>Angular是一个JavaScript框架，是一个以 JavaScript 编写的库，一个客户端的JavaScript MVC框架，用于开发动态Web应用程序。它最初是作为Google的一个项目启动的，但现在它是开源框架。</p><p>Angular特性：</p><p>由自己实现一套模板编译规则，数据变化依赖脏检查，</p><p>基本属性包括：数据双向绑定、基本模板指令、自定义指令、表单验证、路由操作、依赖注入、过滤器、内置服务、自定义服务、组件、模块。</p><p>运行效率较低，数据变更检测方式。</p><p>学习angular会迫使你学习特有的预发，上手成本很大，代码看起来很干净</p><p>依赖注入，即一个对象将依赖项提供给另一个对象（客户端）的模式。导致更多的灵活性和更干净的代码。</p><p>Angular 最适合单页应用（SPA），因为它可能太臃肿而不能用于微服务。</p><p>框架比较臃肿，每次用啥功能要引入一大堆东西</p><p>Angular错误提示不够清晰明显，对于初级开发者，很难看懂Angular的错误提示。（个人认为这是最大的不好之处，当初学习这个遇到很多坑啊），而且定位bug很难。</p><p>面向对象编程的思想，Angular由后端开发人员设计的前端框架。</p><p><em><strong>*二、React*</strong></em></p><p>React是 Facebook 推出的一个用来构建用户界面的 JavaScript 库。 React主要用于构建UI，很多人认为 React 是 MVC 中的 V（视图）。React 拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。</p><p>React特性：</p><p>单向绑定，先更新model,然后渲染UI元素，数据在一个方向流动，使得调试更加容易。代码冗余，各种生命周期太麻烦，刚开始接触好难记。</p><p>用了虚拟DOM。（对虚拟DOM的理解刚开始我不是很理解概念，建议大家去看【深入REACT技术栈】这本书有很好的讲解）</p><p>更适合大型应用和更好的可测试性</p><p>Web端和移动端原生APP通吃</p><p>更大的生态系统，更多的支持和好用的工具</p><p>组件生命周期</p><p>****三、Vue****。</p><p>Vue.js是一套构建用户界面的渐进式框架。与其他重量级框架不同的是，Vue采用自底向上增量开发的设计。Vue的核心库只关注视图层，并且非常容易学习，非常容易与其它库或已有项目整合。</p><p>Vue特性：</p><p>模板和渲染函数的弹性选择</p><p>简单的语法和项目配置</p><p>更快的渲染速度和更小的体积四</p><p>生命周期</p><p><em><strong>*vue和angular和react的区别*</strong></em></p><table><thead><tr><th></th><th><em><strong>*vue*</strong></em></th><th><em><strong>*React*</strong></em></th><th><em><strong>*angular*</strong></em></th></tr></thead><tbody><tr><td><em><strong>*控制器*</strong></em></td><td>无</td><td>无</td><td>有</td></tr><tr><td><em><strong>*过滤器*</strong></em></td><td>无</td><td>无</td><td>有</td></tr><tr><td><em><strong>*指令*</strong></em></td><td>有</td><td>无</td><td>有</td></tr><tr><td><em><strong>*渲染指令*</strong></em></td><td>有</td><td>无</td><td>有</td></tr><tr><td><em><strong>*数据绑定*</strong></em></td><td>双向</td><td>单向</td><td>双向</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;*一、Angular*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Angular是一个JavaScript框架，是一个以 JavaScript 编写的库，一个客户端的JavaScript MVC框架，用于开发动态Web应用程序。它最初是作为Googl</summary>
+      
+    
+    
+    
+    <category term="-Vue react angular" scheme="http://example.com/categories/Vue-react-angular/"/>
+    
+    
+    <category term="-Vue react angular" scheme="http://example.com/tags/Vue-react-angular/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说 React 性能优化的手段有哪些</title>
+    <link href="http://example.com/2020/11/30/%E8%AF%B4%E8%AF%B4-React-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%9A%84%E6%89%8B%E6%AE%B5%E6%9C%89%E5%93%AA%E4%BA%9B/"/>
+    <id>http://example.com/2020/11/30/%E8%AF%B4%E8%AF%B4-React-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%9A%84%E6%89%8B%E6%AE%B5%E6%9C%89%E5%93%AA%E4%BA%9B/</id>
+    <published>2020-11-29T16:00:00.000Z</published>
+    <updated>2022-11-01T07:37:46.188Z</updated>
+    
+    <content type="html"><![CDATA[<p>（1） 避免使用内联函数</p><p>（2） 使用react fragments避免额外标记</p><p>（3） 使用immutable</p><p>（4） 懒加载组件</p><p>（5） 事件绑定方式</p><p>（6） 服务端渲染</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;（1） 避免使用内联函数&lt;/p&gt;
+&lt;p&gt;（2） 使用react fragments避免额外标记&lt;/p&gt;
+&lt;p&gt;（3） 使用immutable&lt;/p&gt;
+&lt;p&gt;（4） 懒加载组件&lt;/p&gt;
+&lt;p&gt;（5） 事件绑定方式&lt;/p&gt;
+&lt;p&gt;（6） 服务端渲染&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="-react" scheme="http://example.com/categories/react/"/>
+    
+    
+    <category term="-react" scheme="http://example.com/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说对React Hooks的理解？解决了什么问题？</title>
+    <link href="http://example.com/2020/10/30/%E8%AF%B4%E8%AF%B4%E5%AF%B9React-Hooks%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F/"/>
+    <id>http://example.com/2020/10/30/%E8%AF%B4%E8%AF%B4%E5%AF%B9React-Hooks%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F/</id>
+    <published>2020-10-29T16:00:00.000Z</published>
+    <updated>2022-11-01T07:36:09.455Z</updated>
+    
+    <content type="html"><![CDATA[<p>它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性</p><p>难以重用和共享组件中的与状态相关的逻辑</p><p>逻辑复杂的组件难以开发与维护，当我们的组件需要处理多个互不相关的 local state 时，每个生命周期函数中可能会包含着各种互不相关的逻辑在里面</p><p>类组件中的this增加学习成本，类组件在基于现有工具的优化上存在些许问题</p><p>由于业务变动，函数组件不得不改为类组件等等</p><p>useState </p><p>useEffect</p><p>useReducer</p><p>useCallback</p><p>useMemo</p><p>useRef</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性&lt;/p&gt;
+&lt;p&gt;难以重用和共享组件中的与状态相关的逻辑&lt;/p&gt;
+&lt;p&gt;逻辑复杂的组件难以开发与维护，当我们的组件需要处理多个互不相关的 local state 时，每个生命周期函数中可能会</summary>
+      
+    
+    
+    
+    <category term="-react" scheme="http://example.com/categories/react/"/>
+    
+    
+    <category term="-react" scheme="http://example.com/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说对React中类组件和函数组件的理解？有什么区别？</title>
+    <link href="http://example.com/2020/06/30/%E8%AF%B4%E8%AF%B4%E5%AF%B9React%E4%B8%AD%E7%B1%BB%E7%BB%84%E4%BB%B6%E5%92%8C%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/"/>
+    <id>http://example.com/2020/06/30/%E8%AF%B4%E8%AF%B4%E5%AF%B9React%E4%B8%AD%E7%B1%BB%E7%BB%84%E4%BB%B6%E5%92%8C%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/</id>
+    <published>2020-06-29T16:00:00.000Z</published>
+    <updated>2022-11-01T07:35:05.672Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="file:///C:\Users\dell\AppData\Local\Temp\ksohtml10856\wps2.jpg" alt="img"></p><p>类组件： 类组件，顾名思义，也就是通过使用ES6类的编写形式去编写组件，该类必须继承React.Component如果想要访问父组件传递过来的参数，可通过this.props的方式去访问在组件中必须实现render方法，在return中返回React对象</p><p>函数组件： </p><p>函数组件接收一个单一的 props 对象并返回了一个React元素。函数组件的性能比类组件的性能要高，因为类组件使用的时候要实例化，而函数组件直接执行函数取返回结果即可。为了提高性能，尽量使用函数组件。 </p><p>编写形式</p><p>状态管理</p><p>生命周期 函数式组件没有生命周期，这是因为这些生命周期钩子都来自于继承的React.Component </p><p>调用方式</p><p>如果是一个函数组件，调用则是执行函数即可如果是一个类组件，则需要将组件进行实例化，然后调用实例对象的render方法：获取渲染的值</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;file:///C:\Users\dell\AppData\Local\Temp\ksohtml10856\wps2.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;类组件： 类组件，顾名思义，也就是通过使用ES6类的编写形式去编写组件，该类必须继承Rea</summary>
+      
+    
+    
+    
+    <category term="-react" scheme="http://example.com/categories/react/"/>
+    
+    
+    <category term="-react" scheme="http://example.com/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说 React 生命周期有哪些不同阶段？每个阶段对应的方法是？</title>
+    <link href="http://example.com/2020/05/30/%E8%AF%B4%E8%AF%B4-React-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E9%98%B6%E6%AE%B5%EF%BC%9F%E6%AF%8F%E4%B8%AA%E9%98%B6%E6%AE%B5%E5%AF%B9%E5%BA%94%E7%9A%84%E6%96%B9%E6%B3%95%E6%98%AF%EF%BC%9F/"/>
+    <id>http://example.com/2020/05/30/%E8%AF%B4%E8%AF%B4-React-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E9%98%B6%E6%AE%B5%EF%BC%9F%E6%AF%8F%E4%B8%AA%E9%98%B6%E6%AE%B5%E5%AF%B9%E5%BA%94%E7%9A%84%E6%96%B9%E6%B3%95%E6%98%AF%EF%BC%9F/</id>
+    <published>2020-05-29T16:00:00.000Z</published>
+    <updated>2022-11-01T07:28:45.795Z</updated>
+    
+    <content type="html"><![CDATA[<p>Mounting(挂载阶段)：已插入真实 DOM</p><p>Updating(更新阶段)：正在被重新渲染</p><p>Unmounting(卸载阶段)：已移出真实 DOM</p><p>挂载阶段</p><p>· constructor() 在 React 组件挂载之前，会调用它的构造函数。</p><p>· componentWillMount: 在调用 render 方法之前调用，并且在初始挂载及后续更新时都会被调用。</p><p>· componentDidMount(): 在组件挂载后（插入 DOM 树中）立即调用</p><p>更新运行阶段:</p><p>· componentWillReceiveProps: 在接受父组件改变后的props需要重新渲染组件时用</p><p>· shouldComponentUpdate():用于控制组件重新渲染的生命周期，state发生变化，组件会进入重新渲染</p><p>render(): rclass 组件中唯一必须实现的方法。</p><p><em>componentWillUpdate()</em> : shouldComponentUpdate返回true以后，组件进入重新渲染完成之前进入这个函数。</p><p>componentDidUpdate(): 每次state改变并重新渲染页面后都会进入这个生命周期</p><p>卸载或销毁阶段</p><p>​    componentWillUnmount ()： 在此处完成组件的卸载和数据的销毁。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Mounting(挂载阶段)：已插入真实 DOM&lt;/p&gt;
+&lt;p&gt;Updating(更新阶段)：正在被重新渲染&lt;/p&gt;
+&lt;p&gt;Unmounting(卸载阶段)：已移出真实 DOM&lt;/p&gt;
+&lt;p&gt;挂载阶段&lt;/p&gt;
+&lt;p&gt;· constructor() 在 React 组件挂载之</summary>
+      
+    
+    
+    
+    <category term="-react" scheme="http://example.com/categories/react/"/>
+    
+    
+    <category term="-react" scheme="http://example.com/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说 React中的setState执行机制</title>
+    <link href="http://example.com/2020/05/30/%E8%AF%B4%E8%AF%B4-React%E4%B8%AD%E7%9A%84setState%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/"/>
+    <id>http://example.com/2020/05/30/%E8%AF%B4%E8%AF%B4-React%E4%B8%AD%E7%9A%84setState%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/</id>
+    <published>2020-05-29T16:00:00.000Z</published>
+    <updated>2022-11-01T07:33:57.506Z</updated>
+    
+    <content type="html"><![CDATA[<p>一个组件的显示形态可以由数据状态和外部参数所决定，而数据状态就是state</p><p>当需要修改里面的值的状态需要通过调用setState来改变，从而达到更新组件内部数据的作用</p><p>在使用setState更新数据的时候，setState的更新类型分成：</p><p>异步更新</p><p>同步更新</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一个组件的显示形态可以由数据状态和外部参数所决定，而数据状态就是state&lt;/p&gt;
+&lt;p&gt;当需要修改里面的值的状态需要通过调用setState来改变，从而达到更新组件内部数据的作用&lt;/p&gt;
+&lt;p&gt;在使用setState更新数据的时候，setState的更新类型分成：&lt;/p&gt;</summary>
+      
+    
+    
+    
+    <category term="-react" scheme="http://example.com/categories/react/"/>
+    
+    
+    <category term="-react" scheme="http://example.com/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说 Real DOM 和 Virtual DOM 的区别？优缺点？</title>
+    <link href="http://example.com/2020/03/09/%E8%AF%B4%E8%AF%B4-Real-DOM-%E5%92%8C-Virtual-DOM-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F/"/>
+    <id>http://example.com/2020/03/09/%E8%AF%B4%E8%AF%B4-Real-DOM-%E5%92%8C-Virtual-DOM-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F/</id>
+    <published>2020-03-08T16:00:00.000Z</published>
+    <updated>2022-11-01T07:25:04.586Z</updated>
+    
+    <content type="html"><![CDATA[<p>真实Dom 页面数据发生变化 真实Dom 会从第一个节点进行对比 直到全部对比完毕 会频繁的发生重绘或回流 </p><p><img src="file:///C:\Users\dell\AppData\Local\Temp\ksohtml10856\wps1.jpg" alt="img"> </p><p>Key 值的重要性 如果不写key会发生就地复用的效果（全部的节点都要发生变动） 写上key值之后 只需要给需要的节点在创建一个虚拟Dom。</p><p>真实 DOM，</p><p>DOM是文档对象模型，</p><p>DOM采用树形结构作为分层结构，以树节点形式表示页面中各种元素或内容在页面渲染出的每一个结点都是一个真实DOM结构，</p><p>虚拟DOM </p><p>虚拟Dom，本质上是以 JavaScript 对象形式存在的对 DOM 的描述。</p><p><em><strong>*区别：*</strong></em></p><p>\1. 虚拟dom不会进行重绘和回流，而真实dom会频繁重排与重绘</p><p>\2. 虚拟dom的总损耗是”虚拟dom的增删改+真实dom的****差异****增删改+重排“；真实dom的消耗是”真实dom全部增删改+重排“</p><p>.优缺点</p><p>1.真实dom</p><p> 优点：</p><ol><li>直接操作HTML，易用</li></ol><p> 缺点：</p><ol><li><p>解析速度慢，效率低，内存占用量高</p></li><li><p>性能差：频繁操作真实DOM，导致重绘、回流</p></li></ol><p>2.虚拟dom</p><ol><li><p>减少真实dom的频繁更新，减少重绘回流、占用内存少</p></li><li><p>跨平台：一套react代码可以多端运行</p></li></ol><p> 优点：</p><p> 缺点：</p><ol><li>页面首次渲染时，由于多一层虚拟dom的计算，速度比正常慢些</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;真实Dom 页面数据发生变化 真实Dom 会从第一个节点进行对比 直到全部对比完毕 会频繁的发生重绘或回流 &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;file:///C:\Users\dell\AppData\Local\Temp\ksohtml10856\wps1.jpg&quot; a</summary>
+      
+    
+    
+    
+    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
+    
+    
+    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>什么是JSX和它的特性？</title>
+    <link href="http://example.com/2019/10/01/%E4%BB%80%E4%B9%88%E6%98%AFJSX%E5%92%8C%E5%AE%83%E7%9A%84%E7%89%B9%E6%80%A7%EF%BC%9F/"/>
+    <id>http://example.com/2019/10/01/%E4%BB%80%E4%B9%88%E6%98%AFJSX%E5%92%8C%E5%AE%83%E7%9A%84%E7%89%B9%E6%80%A7%EF%BC%9F/</id>
+    <published>2019-09-30T16:00:00.000Z</published>
+    <updated>2022-11-01T07:23:43.617Z</updated>
+    
+    <content type="html"><![CDATA[<p>JSX 是JavaScript XML的缩写，，基于ECMAScript的一种新特性，一种定义带属性树结构的语法； </p><p>特性： </p><p>自定义组件名首字母大写嵌套；在render函数中return返回的只能包含一个顶层标签，否则也会报错。求值表达式；JSX基本语法规则，遇到HTML标签（以&lt;开头），就用HTML规则解析；遇到代码块（以{开头），就用JS规则解析驼峰命名class属性需要写成classNameJSX允许直接在模板插入JS变量。如果这个变量是一个数组，则会展开这个数组的所有成员。在JSX中插入用户输入是安全的，默认情况下ReactDOM会在渲染前，转义JSX中的任意值，渲染前，所有的值都被转化为字符串形式，这能预防XSS攻击。 </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;JSX 是JavaScript XML的缩写，，基于ECMAScript的一种新特性，一种定义带属性树结构的语法； &lt;/p&gt;
+&lt;p&gt;特性： &lt;/p&gt;
+&lt;p&gt;自定义组件名首字母大写嵌套；在render函数中return返回的只能包含一个顶层标签，否则也会报错。求值表达式；JS</summary>
+      
+    
+    
+    
+    <category term="-rect" scheme="http://example.com/categories/rect/"/>
+    
+    
+    <category term="-rect" scheme="http://example.com/tags/rect/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>什么是高阶组件</title>
+    <link href="http://example.com/2019/09/30/%E4%BB%80%E4%B9%88%E6%98%AF%E9%AB%98%E9%98%B6%E7%BB%84%E4%BB%B6/"/>
+    <id>http://example.com/2019/09/30/%E4%BB%80%E4%B9%88%E6%98%AF%E9%AB%98%E9%98%B6%E7%BB%84%E4%BB%B6/</id>
+    <published>2019-09-29T16:00:00.000Z</published>
+    <updated>2022-11-01T07:22:15.676Z</updated>
+    
+    <content type="html"><![CDATA[<p>**高阶组件就是一个函数，且该函数接受一个组件作为参数，并返回一个新的组件。基本上，这是从React的组成性质派生的一种模式，我们称它们为“纯”组件， 因为它们可以接受任何动态提供的子组件，但它们不会修改或复制其输入组件的任何行为。 **</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;**高阶组件就是一个函数，且该函数接受一个组件作为参数，并返回一个新的组件。基本上，这是从React的组成性质派生的一种模式，我们称它们为“纯”组件， 因为它们可以接受任何动态提供的子组件，但它们不会修改或复制其输入组件的任何行为。 **&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="-react" scheme="http://example.com/categories/react/"/>
+    
+    
+    <category term="-react" scheme="http://example.com/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说对 React 的理解？有哪些特性？</title>
+    <link href="http://example.com/2019/08/30/%E8%AF%B4%E8%AF%B4%E5%AF%B9-React-%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7%EF%BC%9F/"/>
+    <id>http://example.com/2019/08/30/%E8%AF%B4%E8%AF%B4%E5%AF%B9-React-%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7%EF%BC%9F/</id>
+    <published>2019-08-29T16:00:00.000Z</published>
+    <updated>2022-11-01T07:21:08.797Z</updated>
+    
+    <content type="html"><![CDATA[<p>是什么 React，用于构建用户界面的 JavaScript 库，提供了 UI 层面的解决方案，遵循组件设计模式、声明式编程范式和函数式编程概念，以使前端应用程序更高效，使用虚拟DOM来有效地操作DOM，遵循从高阶组件到低阶组件的单向数据流,帮助我们将界面成了各个独立的小块，每一个块就是组件，这些组件之间可以组合、嵌套，构成整体页面. </p><p>特性 </p><p>JSX语法单向数据绑定虚拟DOM，声明式编程，Component(组件化) </p><p>优势 </p><p>高效灵活声明式的设计，简单使用组件式开发，提高代码复用率单向响应的数据流会比双向绑定的更安全，速度更快 </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;是什么 React，用于构建用户界面的 JavaScript 库，提供了 UI 层面的解决方案，遵循组件设计模式、声明式编程范式和函数式编程概念，以使前端应用程序更高效，使用虚拟DOM来有效地操作DOM，遵循从高阶组件到低阶组件的单向数据流,帮助我们将界面成了各个独立的小块</summary>
+      
+    
+    
+    
+    <category term="-react" scheme="http://example.com/categories/react/"/>
+    
+    
+    <category term="-react" scheme="http://example.com/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue3.0 所采用的 Composition Api 与 Vue2.x 使用的 Options Api 有什么不同？</title>
+    <link href="http://example.com/2019/07/30/Vue3-0-%E6%89%80%E9%87%87%E7%94%A8%E7%9A%84-Composition-Api-%E4%B8%8E-Vue2-x-%E4%BD%BF%E7%94%A8%E7%9A%84-Options-Api-%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%EF%BC%9F/"/>
+    <id>http://example.com/2019/07/30/Vue3-0-%E6%89%80%E9%87%87%E7%94%A8%E7%9A%84-Composition-Api-%E4%B8%8E-Vue2-x-%E4%BD%BF%E7%94%A8%E7%9A%84-Options-Api-%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%EF%BC%9F/</id>
+    <published>2019-07-29T16:00:00.000Z</published>
+    <updated>2022-11-01T07:19:35.917Z</updated>
+    
+    <content type="html"><![CDATA[<p>在逻辑组织和逻辑复用方面，Composition API是优于Options API</p><p>因为Composition API几乎是函数，会有更好的类型推断。</p><p>Composition API（自动删除无用代码） 代码也更容易压缩</p><p>Composition API中见不到this的使用，减少了this指向不明的情况</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在逻辑组织和逻辑复用方面，Composition API是优于Options API&lt;/p&gt;
+&lt;p&gt;因为Composition API几乎是函数，会有更好的类型推断。&lt;/p&gt;
+&lt;p&gt;Composition API（自动删除无用代码） 代码也更容易压缩&lt;/p&gt;
+&lt;p&gt;Comp</summary>
+      
+    
+    
+    
+    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
+    
+    
+    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Dom</title>
+    <link href="http://example.com/2019/06/15/Dom/"/>
+    <id>http://example.com/2019/06/15/Dom/</id>
+    <published>2019-06-14T16:00:00.000Z</published>
+    <updated>2022-11-01T07:17:27.016Z</updated>
+    
+    <content type="html"><![CDATA[<p>真实 DOM，</p><p>DOM是文档对象模型，</p><p>DOM采用树形结构作为分层结构，以树节点形式表示页面中各种元素或内容在页面渲染出的每一个结点都是一个真实DOM结构，</p><p>虚拟DOM </p><p>虚拟Dom，本质上是以 JavaScript 对象形式存在的对 DOM 的描述。</p><p>创建虚拟DOM目的就是为了更好将虚拟的节点渲染到页面视图中，虚拟DOM对象</p><p>的节点与真实DOM的属性一一对应，为了简化视图的操作，解决跟踪状态变化的问</p><p>题，于是虚拟DOM出现了虚拟DOM的好处是当状态改变时不需要立即更新 DOM</p><p>，只需要创建一个虚拟树来描述DOM，虚DOM 内部将弄清楚如何有效的更新 DO</p><p>M，虚拟DOM 可以维护程序的状态，跟踪上一次的状态通过比较前后两次状态的差</p><p>N，异更新真实 DOM</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;真实 DOM，&lt;/p&gt;
+&lt;p&gt;DOM是文档对象模型，&lt;/p&gt;
+&lt;p&gt;DOM采用树形结构作为分层结构，以树节点形式表示页面中各种元素或内容在页面渲染出的每一个结点都是一个真实DOM结构，&lt;/p&gt;
+&lt;p&gt;虚拟DOM &lt;/p&gt;
+&lt;p&gt;虚拟Dom，本质上是以 JavaScript </summary>
+      
+    
+    
+    
+    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
+    
+    
+    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React 和 vue 的区别</title>
+    <link href="http://example.com/2019/05/30/React-%E5%92%8C-vue-%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://example.com/2019/05/30/React-%E5%92%8C-vue-%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+    <published>2019-05-29T16:00:00.000Z</published>
+    <updated>2022-11-01T07:16:29.842Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、核心思想不同"><a href="#一、核心思想不同" class="headerlink" title="*一、核心思想不同*"></a><em><strong>*一、核心思想不同*</strong></em></h3><p>Vue的核心思想是尽可能的降低前端开发的门槛，是一个灵活易用的渐进式双向绑定的MVVM框架。</p><p>React的核心思想是声明式渲染和组件化、单向数据流，React既不属于MVC也不属于MVVM架构</p><h2 id="二、组件写法上不同"><a href="#二、组件写法上不同" class="headerlink" title="*二、组件写法上不同*"></a><em><strong>*二、组件写法上不同*</strong></em></h2><p>Vue的组件写法是通过template的单文件组件格式。</p><p>React的组件写法是JSX+inline style，也就是吧HTML和CSS全部写进JavaScript中。</p><h2 id="三、Diff算法不同"><a href="#三、Diff算法不同" class="headerlink" title="*三、Diff算法不同*"></a><em><strong>*三、Diff算法不同*</strong></em></h2><p>React的diff和Vue的diff算法的不同之处</p><p>vue和react的diff算法都是进行同层次的比较，主要有以下两点不同：</p><p>vue对比节点，如果节点元素类型相同，但是className不同，认为是不同类型的元素，会进行删除重建，但是react则会认为是同类型的节点，只会修改节点属性。</p><p>vue的列表比对采用的是首尾指针法，而react采用的是从左到右依次比对的方式，当一个集合只是把最后一个节点移动到了第一个，react会把前面的节点依次移动，而vue只会把最后一个节点移动到最后一个，从这点上来说vue的对比方式更加高效</p><p>四、响应式原理不同</p><p>React的响应式原理</p><p>React主要是通过setState()方法来更新状态，状态更新之后，组件也会重新渲染。</p><p>Vue的响应式原理</p><p>vue会遍历data数据对象，使用Object.definedProperty()将每个属性都转换为getter和setter，每个Vue组件实例都有一个对应的watcher实例，在组件初次渲染的时候会记录组件用到了那些数据，当数据发生改变的时候，会触发setter方法，并通知所有依赖这个数据的watcher实例调用update方法去触发组件的compile渲染方法，进行渲染数据。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;一、核心思想不同&quot;&gt;&lt;a href=&quot;#一、核心思想不同&quot; class=&quot;headerlink&quot; title=&quot;*一、核心思想不同*&quot;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;*一、核心思想不同*&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;p&gt;Vue的核心思想是尽可能的降低前</summary>
+      
+    
+    
+    
+    <category term="-react vue" scheme="http://example.com/categories/react-vue/"/>
+    
+    
+    <category term="-react vue" scheme="http://example.com/tags/react-vue/"/>
+    
+  </entry>
   
   <entry>
     <title>vue2和vue3的区别</title>
@@ -67,488 +541,6 @@
     
     
     <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue中组件和插件有什么区别？</title>
-    <link href="http://example.com/2018/09/01/Vue%E4%B8%AD%E7%BB%84%E4%BB%B6%E5%92%8C%E6%8F%92%E4%BB%B6%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/"/>
-    <id>http://example.com/2018/09/01/Vue%E4%B8%AD%E7%BB%84%E4%BB%B6%E5%92%8C%E6%8F%92%E4%BB%B6%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/</id>
-    <published>2018-08-31T16:00:00.000Z</published>
-    <updated>2022-11-01T07:03:40.857Z</updated>
-    
-    <content type="html"><![CDATA[<p>组件注册通过“Vue.component”或“components”属性，而插件通过“Vue.use()”；2、组件是用来构成App的业务模块，它的目标是“App.vue”，而插件是用来增强技术栈的功能模块，它的目标是Vue本身。</p><p>Cvb常见使用场景可以分为三类：</p><p>父子通信：</p><p>父向子传递数据是通过 props，子向父是通过 events（$emit）；通过父链 / 子链也可以通信（$parent / $children）；ref 也可以访问组件实例；provide / inject API；$attrs/$listeners</p><p>兄弟通信：</p><p>Bus；Vuex</p><p>跨级通信：</p><p>Bus；Vuex；provide / inject API、$attrs/$listeners</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;组件注册通过“Vue.component”或“components”属性，而插件通过“Vue.use()”；2、组件是用来构成App的业务模块，它的目标是“App.vue”，而插件是用来增强技术栈的功能模块，它的目标是Vue本身。&lt;/p&gt;
-&lt;p&gt;Cvb常见使用场景可以分为三</summary>
-      
-    
-    
-    
-    <category term="-Vue" scheme="http://example.com/categories/Vue/"/>
-    
-    
-    <category term="-Vue" scheme="http://example.com/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue路由的原理</title>
-    <link href="http://example.com/2018/08/11/Vue%E8%B7%AF%E7%94%B1%E7%9A%84%E5%8E%9F%E7%90%86/"/>
-    <id>http://example.com/2018/08/11/Vue%E8%B7%AF%E7%94%B1%E7%9A%84%E5%8E%9F%E7%90%86/</id>
-    <published>2018-08-10T16:00:00.000Z</published>
-    <updated>2022-10-13T02:32:11.330Z</updated>
-    
-    <content type="html"><![CDATA[<p>通过改变URL，在不重新请求页面的情况下，更新页面视图</p><p>更新视图但不重新请求页面，是前端路由原理的核心之一，目前在浏览器环境中这一功能</p><p>的实现主要有2种方式</p><p>第一种是利用H5的historyAPI实现</p><p>主要是通过 history.pushstate和history.replacestate来实现，不同之处在于，pushstate</p><p>会增加一天新的历史记录 二replacestate 则会替代当前历史记录</p><p>第二种是利用url 的hash实现</p><p>我们经常在url中看到 # 这个#有俩种情况，一个是我们所谓的瞄点，路由里的#不叫瞄点</p><p>我们称之为hash，我们说的就是hash，主要是利用监听哈希值的变化触发事件–hashchange 事件来做页面局部更新</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;通过改变URL，在不重新请求页面的情况下，更新页面视图&lt;/p&gt;
-&lt;p&gt;更新视图但不重新请求页面，是前端路由原理的核心之一，目前在浏览器环境中这一功能&lt;/p&gt;
-&lt;p&gt;的实现主要有2种方式&lt;/p&gt;
-&lt;p&gt;第一种是利用H5的historyAPI实现&lt;/p&gt;
-&lt;p&gt;主要是通过 hi</summary>
-      
-    
-    
-    
-    <category term="-vue" scheme="http://example.com/categories/vue/"/>
-    
-    
-    <category term="-vue" scheme="http://example.com/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>有使用过vue吗 说说你对于vue的理解？</title>
-    <link href="http://example.com/2018/07/15/%E6%9C%89%E4%BD%BF%E7%94%A8%E8%BF%87vue%E5%90%97-%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BA%8Evue%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F/"/>
-    <id>http://example.com/2018/07/15/%E6%9C%89%E4%BD%BF%E7%94%A8%E8%BF%87vue%E5%90%97-%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BA%8Evue%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F/</id>
-    <published>2018-07-14T16:00:00.000Z</published>
-    <updated>2022-10-10T10:39:23.886Z</updated>
-    
-    <content type="html"><![CDATA[<p>vue 是一用于构建用户界面的Javascript 库 也是一个创建单页面应用的框架</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;vue 是一用于构建用户界面的Javascript 库 也是一个创建单页面应用的框架&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>async 函数是什么 有什么作用</title>
-    <link href="http://example.com/2018/07/07/async-%E5%87%BD%E6%95%B0%E6%98%AF%E4%BB%80%E4%B9%88-%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8/"/>
-    <id>http://example.com/2018/07/07/async-%E5%87%BD%E6%95%B0%E6%98%AF%E4%BB%80%E4%B9%88-%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8/</id>
-    <published>2018-07-06T16:00:00.000Z</published>
-    <updated>2022-10-10T08:44:30.683Z</updated>
-    
-    <content type="html"><![CDATA[<p>async 和await 主要是用于解决异步操作的一种方案</p><p>异步函数不会阻塞后续代码的执行 async 会默认的返回一个promise 对象  </p><p>而await 就是async 返回promise 对象的结果</p><p>如果好获取async 里的数据 使用 .then 和 .watch 来注册异步函数</p><p>await 是需要定义在异步函数内部的 当异步操作执行的时候遇到await会暂停   当异步函数执行完成之后</p><p>await 在继续执行</p><p>.async函数配合await关键字使用(阻塞代码往下执行)<br>是异步方法，但是阻塞式的</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;async 和await 主要是用于解决异步操作的一种方案&lt;/p&gt;
-&lt;p&gt;异步函数不会阻塞后续代码的执行 async 会默认的返回一个promise 对象  &lt;/p&gt;
-&lt;p&gt;而await 就是async 返回promise 对象的结果&lt;/p&gt;
-&lt;p&gt;如果好获取async 里</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>异步操作有哪些</title>
-    <link href="http://example.com/2018/07/06/%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B/"/>
-    <id>http://example.com/2018/07/06/%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B/</id>
-    <published>2018-07-05T16:00:00.000Z</published>
-    <updated>2022-10-10T08:39:03.789Z</updated>
-    
-    <content type="html"><![CDATA[<p>回调函数 </p><p>事件监听</p><p>  promise</p><p> ajax </p><p>async </p><p> setTimeout</p><p> Generator</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;回调函数 &lt;/p&gt;
-&lt;p&gt;事件监听&lt;/p&gt;
-&lt;p&gt;  promise&lt;/p&gt;
-&lt;p&gt; ajax &lt;/p&gt;
-&lt;p&gt;async &lt;/p&gt;
-&lt;p&gt; setTimeout&lt;/p&gt;
-&lt;p&gt; Generator&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>说说webpack中常见的Loader？解决了什么问题？</title>
-    <link href="http://example.com/2018/07/05/%E8%AF%B4%E8%AF%B4webpack%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84Loader%EF%BC%9F%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F/"/>
-    <id>http://example.com/2018/07/05/%E8%AF%B4%E8%AF%B4webpack%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84Loader%EF%BC%9F%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F/</id>
-    <published>2018-07-04T16:00:00.000Z</published>
-    <updated>2022-10-10T08:31:17.446Z</updated>
-    
-    <content type="html"><![CDATA[<p>loader 用于对模块的源代码进行转换 在import或 “加载” 模块时预处理文件</p><p>style-loader 讲css添加到dom 的内联样式标签style里</p><p>css-loader 允许讲css文件通过require的方式引入 并返回css代码</p><p>less-loader 处理less</p><p>sass-loader 处理sass</p><p>postcss-loader 用postcss来处理css</p><p>autoprefixer-loader 处理css3属性前缀 已被弃用 建议直接使用postcss</p><p>file-loader 分发文件导uotput目录并返回想对路劲</p><p>url-loader和file-loader 类似，但是当文件小于设定的limit时返回一个Data url</p><p>html-minify-loader 压缩HTML</p><p>babel-loader 用loader来转换ES6文件到Es5</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;loader 用于对模块的源代码进行转换 在import或 “加载” 模块时预处理文件&lt;/p&gt;
-&lt;p&gt;style-loader 讲css添加到dom 的内联样式标签style里&lt;/p&gt;
-&lt;p&gt;css-loader 允许讲css文件通过require的方式引入 并返回css代</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>说说你对promise的了解</title>
-    <link href="http://example.com/2018/07/05/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9promise%E7%9A%84%E4%BA%86%E8%A7%A3/"/>
-    <id>http://example.com/2018/07/05/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9promise%E7%9A%84%E4%BA%86%E8%A7%A3/</id>
-    <published>2018-07-04T16:00:00.000Z</published>
-    <updated>2022-10-10T08:35:22.101Z</updated>
-    
-    <content type="html"><![CDATA[<p>1.异步操作的解决方案</p><p>Promise 是一种异步操作的解决方案，将写法复杂的传统的回调函数和监听事件的异</p><p>步操作，用同步代码的形式表达出来。避免了多级异步操作的回调函数嵌套。</p><p>主要用于异步计算</p><p>\2. 作为对象，内部有三种状态</p><p>初始状态（ pending ）。</p><p>已完成（ resolve）：resolve 方法可以使 Promise 对象的状态改变成成功</p><p>已拒绝（ reject ）：reject 方法则是将 Promise 对象的状态改变为失败</p><p>3.常用的三种方法</p><p>第一种：then 表示异步成功执行后的数据状态变为 resolve</p><p>第二种：catch 表示异步失败后执行的数据状态变为 reject</p><p>第三种：all 表示把多个没有关系的 Promise 封装成一个 Promise 对象，使用</p><p>then 返回一个数组数据。</p><p>5.在哪里使用过</p><p>Ajax 异步请求的时候</p><p>函数嵌套层级多的时候使用 promise，优点在于，回调函数变成了链式写法，程序的</p><p>流程可以看得很清楚，而且有一整套的配套方法，可以实现许多强大的功能。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;1.异步操作的解决方案&lt;/p&gt;
-&lt;p&gt;Promise 是一种异步操作的解决方案，将写法复杂的传统的回调函数和监听事件的异&lt;/p&gt;
-&lt;p&gt;步操作，用同步代码的形式表达出来。避免了多级异步操作的回调函数嵌套。&lt;/p&gt;
-&lt;p&gt;主要用于异步计算&lt;/p&gt;
-&lt;p&gt;\2. 作为对象，内部</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>谈谈你对webpack的看法</title>
-    <link href="http://example.com/2018/07/03/%E8%B0%88%E8%B0%88%E4%BD%A0%E5%AF%B9webpack%E7%9A%84%E7%9C%8B%E6%B3%95/"/>
-    <id>http://example.com/2018/07/03/%E8%B0%88%E8%B0%88%E4%BD%A0%E5%AF%B9webpack%E7%9A%84%E7%9C%8B%E6%B3%95/</id>
-    <published>2018-07-02T16:00:00.000Z</published>
-    <updated>2022-10-10T08:20:46.213Z</updated>
-    
-    <content type="html"><![CDATA[<p>webpack是用来管理模块包的工具，在项目开发中可以打包模块依赖，对静态资源进行解析。在web开发过程中打包ht js css等静态资源，开发更加高效。对于不同类型的资源，webpack有模块加载器对模块包分析他们之间的依赖关系，最终优化合并为静态资源</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;webpack是用来管理模块包的工具，在项目开发中可以打包模块依赖，对静态资源进行解析。在web开发过程中打包ht js css等静态资源，开发更加高效。对于不同类型的资源，webpack有模块加载器对模块包分析他们之间的依赖关系，最终优化合并为静态资源&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XML和JSON的区别</title>
-    <link href="http://example.com/2018/07/02/29-XML%E5%92%8CJSON%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>http://example.com/2018/07/02/29-XML%E5%92%8CJSON%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
-    <published>2018-07-01T16:00:00.000Z</published>
-    <updated>2022-10-10T08:18:01.088Z</updated>
-    
-    <content type="html"><![CDATA[<p>XML和JSON的区别</p><p> XML是<a href="https://so.csdn.net/so/search?q=%E5%8F%AF%E6%89%A9%E5%B1%95%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80&spm=1001.2101.3001.7020">可扩展标记语言</a>，标记语言就是通过一个一个的标记来组织数据的一种语法格式。</p><p>JSON是一种轻量级的数据交换格式，可使人们很容易地进行阅读和编写，同时也方便了机器进行解析和生成。JSON适用于进行数据交互的场景，如网站前台与后台之间的数据交互。</p><p>数据交互 json比xml交互更好，容易被解析</p><p>传输速度 json比xml传输速度更快</p><p>数据描述 json比xml描述更细致</p><p>体积 json比xml体积小，传输速度快</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;XML和JSON的区别&lt;/p&gt;
-&lt;p&gt; XML是&lt;a href=&quot;https://so.csdn.net/so/search?q=%E5%8F%AF%E6%89%A9%E5%B1%95%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80&amp;spm=1001</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何解决跨域问题</title>
-    <link href="http://example.com/2018/06/30/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/"/>
-    <id>http://example.com/2018/06/30/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</id>
-    <published>2018-06-29T16:00:00.000Z</published>
-    <updated>2022-10-07T08:07:35.316Z</updated>
-    
-    <content type="html"><![CDATA[<p>代理跨域的原理 通过一些方法设置代理，在请求发送(接收)之前加入中间层，</p><p>客户端发送请求时</p><p>不直接到服务器</p><p>而是先到代理的中间层</p><p>再将请求发送到服务器</p><p>同理，当服务器返回数据的时候，也是先到代理的中间层</p><p> 出于浏览器的同源策略限制。同源策略（Sameoriginpolicy）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。</p><p>通过jsonp跨域</p><p>document.domain + iframe跨域</p><p>nginx代理跨域</p><p>nodejs中间件代理跨域</p><p>后端在头部信息里面设置安全域名</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;代理跨域的原理 通过一些方法设置代理，在请求发送(接收)之前加入中间层，&lt;/p&gt;
-&lt;p&gt;客户端发送请求时&lt;/p&gt;
-&lt;p&gt;不直接到服务器&lt;/p&gt;
-&lt;p&gt;而是先到代理的中间层&lt;/p&gt;
-&lt;p&gt;再将请求发送到服务器&lt;/p&gt;
-&lt;p&gt;同理，当服务器返回数据的时候，也是先到代理的中间层&lt;</summary>
-      
-    
-    
-    
-    <category term="-JS Vue" scheme="http://example.com/categories/JS-Vue/"/>
-    
-    
-    <category term="-JS Vue" scheme="http://example.com/tags/JS-Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>谈一谈箭头函数与普通函数的区别</title>
-    <link href="http://example.com/2018/06/21/%E8%B0%88%E4%B8%80%E8%B0%88%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E4%B8%8E%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>http://example.com/2018/06/21/%E8%B0%88%E4%B8%80%E8%B0%88%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E4%B8%8E%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
-    <published>2018-06-20T16:00:00.000Z</published>
-    <updated>2022-10-07T08:09:42.811Z</updated>
-    
-    <content type="html"><![CDATA[<p>1：写法不一样</p><p>2：普通函数存在变量提升的现象</p><p>3：箭头函数是匿名函数，不能作为构造函数使用，不能使用new。</p><p>匿名函数它是matlab中定义的一种函数形式，出现在matlab中，匿名函数不以文件形式驻留在文件夹上；他的生成方式最简捷，可在指令窗或任何函数体内通过指令直接生成。</p><p>匿名函数的作用主要是实现自己定义matlab中的函数，从而扩大函数的使用功能</p><p>4：两者this的指向不同</p><p>5：箭头函数的arguments指向它的父级函数所在作用域的arguments</p><p>6：箭头函数没有new.target</p><p>箭头函数</p><p>箭头函数的this指向父级作用域的this，</p><p>箭头函数没有prototype原型.</p><p>箭头函数不能作为构造函数。</p><p>普通函数的this</p><p>1、普通函数最终指向调用它的对象，也就是说谁调用就指向谁。</p><p>2、没有被对象调用的函数默认指向windows</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;1：写法不一样&lt;/p&gt;
-&lt;p&gt;2：普通函数存在变量提升的现象&lt;/p&gt;
-&lt;p&gt;3：箭头函数是匿名函数，不能作为构造函数使用，不能使用new。&lt;/p&gt;
-&lt;p&gt;匿名函数它是matlab中定义的一种函数形式，出现在matlab中，匿名函数不以文件形式驻留在文件夹上；他的生成方式最简</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript 代码中的use strict;是什么意思</title>
-    <link href="http://example.com/2018/06/20/javascript-%E4%BB%A3%E7%A0%81%E4%B8%AD%E7%9A%84use-strict-%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/"/>
-    <id>http://example.com/2018/06/20/javascript-%E4%BB%A3%E7%A0%81%E4%B8%AD%E7%9A%84use-strict-%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/</id>
-    <published>2018-06-19T16:00:00.000Z</published>
-    <updated>2022-10-07T08:04:36.016Z</updated>
-    
-    <content type="html"><![CDATA[<p>use strict是es5中的严格模式，利用严格模式使代码编写更加规范，避免不合理的语法，和一些异常操作</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;use strict是es5中的严格模式，利用严格模式使代码编写更加规范，避免不合理的语法，和一些异常操作&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>new操作符具体干了什么</title>
-    <link href="http://example.com/2018/06/16/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/"/>
-    <id>http://example.com/2018/06/16/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/</id>
-    <published>2018-06-15T16:00:00.000Z</published>
-    <updated>2022-10-07T08:05:22.048Z</updated>
-    
-    <content type="html"><![CDATA[<p>创建一个新对象 作为返回的实列对象</p><p>将空对象的原型proto指向构造函数的prototype属性</p><p>对象连接到构造函数原型上 并绑定this （this指向新对象）</p><p>执行构造函数代码（为这个新对象添加属性）</p><p>返回新对象</p><p>（1）首先创建一个新的对象</p><p>（2）设置原型 将对象的原型设置为函数的prototype对象</p><p>（3） 让函数的this指向这个对象 执行构造函数的代码（为这个新对象添加属性）</p><p>(4) 判断函数的返回值类型 ，如果是值类型 返回创建的对象 如果是引用数据类型 就返回</p><p>这个引用数据类型</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;创建一个新对象 作为返回的实列对象&lt;/p&gt;
-&lt;p&gt;将空对象的原型proto指向构造函数的prototype属性&lt;/p&gt;
-&lt;p&gt;对象连接到构造函数原型上 并绑定this （this指向新对象）&lt;/p&gt;
-&lt;p&gt;执行构造函数代码（为这个新对象添加属性）&lt;/p&gt;
-&lt;p&gt;返回新对象&lt;</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>谈谈This对象的理解</title>
-    <link href="http://example.com/2018/06/15/%E8%B0%88%E8%B0%88This%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/"/>
-    <id>http://example.com/2018/06/15/%E8%B0%88%E8%B0%88This%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</id>
-    <published>2018-06-14T16:00:00.000Z</published>
-    <updated>2022-10-07T08:09:34.815Z</updated>
-    
-    <content type="html"><![CDATA[<p>在浏览器里，在全局范围内 指向window对象；</p><p>在函数中，this永远指向最后调用他的那个对象；</p><p>构造函数中，this指向new出来的那个新的对象；</p><p>call、apply、bind中的this被强绑定在指定的那个对象上；</p><p>箭头函数中this比较特殊,箭头函数this为父作用域的this，而箭头函数的this指向是静态的,声明的时候就确定了下来；</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;在浏览器里，在全局范围内 指向window对象；&lt;/p&gt;
-&lt;p&gt;在函数中，this永远指向最后调用他的那个对象；&lt;/p&gt;
-&lt;p&gt;构造函数中，this指向new出来的那个新的对象；&lt;/p&gt;
-&lt;p&gt;call、apply、bind中的this被强绑定在指定的那个对象上；&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>什么是事件代理</title>
-    <link href="http://example.com/2018/06/14/%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E4%BB%B6%E4%BB%A3%E7%90%86/"/>
-    <id>http://example.com/2018/06/14/%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E4%BB%B6%E4%BB%A3%E7%90%86/</id>
-    <published>2018-06-13T16:00:00.000Z</published>
-    <updated>2022-10-07T08:08:25.973Z</updated>
-    
-    <content type="html"><![CDATA[<p>事件代理（Event Delegation），又称之为事件委托。是 JavaScript 中常用绑定事件的常用技巧。顾名思义，“事件代理”即是把原本需要绑定的事件 委托给父元素，让父元素担当事件监听的职务。事件代理的原理是DOM元素的事件冒泡。</p><p>使用事件代理的好处是可以提高性能可以大量节省内存占用，减少事件注册</p><p>可以实现当新增子对象时无需再次对其绑定</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;事件代理（Event Delegation），又称之为事件委托。是 JavaScript 中常用绑定事件的常用技巧。顾名思义，“事件代理”即是把原本需要绑定的事件 委托给父元素，让父元素担当事件监听的职务。事件代理的原理是DOM元素的事件冒泡。&lt;/p&gt;
-&lt;p&gt;使用事件代理的</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript原型，原型链 ? 有什么特点？</title>
-    <link href="http://example.com/2018/06/13/JavaScript%E5%8E%9F%E5%9E%8B%EF%BC%8C%E5%8E%9F%E5%9E%8B%E9%93%BE-%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9%EF%BC%9F/"/>
-    <id>http://example.com/2018/06/13/JavaScript%E5%8E%9F%E5%9E%8B%EF%BC%8C%E5%8E%9F%E5%9E%8B%E9%93%BE-%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9%EF%BC%9F/</id>
-    <published>2018-06-12T16:00:00.000Z</published>
-    <updated>2022-10-07T08:04:44.456Z</updated>
-    
-    <content type="html"><![CDATA[<p><em><strong>*原型：*</strong></em></p><p>JavaScript的所有对象中都包含了一个 [<strong>proto</strong>] 内部属性，这个属性所对应的就是该对象的原型</p><p>JavaScript的函数对象，除了原型 [<strong>proto</strong>] 之外，还预置了 prototype 属性</p><p>当函数对象作为构造函数创建实例时，该 prototype 属性值将被作为实例对象的原型 [<strong>proto</strong>]。</p><p><em><strong>*原型链：*</strong></em></p><p>当一个对象调用的属性/方法自身不存在时，就会去自己 [<strong>proto</strong>] 关联的前辈 prototype 对象上去找</p><p>如果没找到，就会去该 prototype 原型 [<strong>proto</strong>] 关联的前辈 prototype 去找。依次类推，直到找到属性/方法或 undefined 为止。从而形成了所谓的“原型链”</p><p><em><strong>*原型特点：*</strong></em></p><p>JavaScript对象是通过引用来传递的，当修改原型时，与之相关的对象也会继承这一改变</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;*原型：*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;JavaScript的所有对象中都包含了一个 [&lt;strong&gt;proto&lt;/strong&gt;] 内部属性，这个属性所对应的就是该对象的原型&lt;/p&gt;
-&lt;p&gt;JavaScript的函数对象，除了原型 </summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>说说你对作用域的理解</title>
-    <link href="http://example.com/2018/06/13/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E7%90%86%E8%A7%A3/"/>
-    <id>http://example.com/2018/06/13/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E7%90%86%E8%A7%A3/</id>
-    <published>2018-06-12T16:00:00.000Z</published>
-    <updated>2022-10-07T08:09:23.295Z</updated>
-    
-    <content type="html"><![CDATA[<p>作用域就是变量 变量又称上下文 </p><p>简单来说 作用域的就是变量和函数的可访问行 即控制着 变量和函数的可见性和生命周期</p><p>在Es5 之间 作用域分为俩种 全局作用域和函数作用域</p><p>全局作用域：全局作用域中的对象在代码中的任何一个地方都可以被访问到</p><p>函数作用域：就是在函数内部定义变量和参数 且只能在函数内部被访问到</p><p>块级作用域：就是被有段大括号包裹的一段代码 比如：函数  判断语句 循环语句  </p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;作用域就是变量 变量又称上下文 &lt;/p&gt;
-&lt;p&gt;简单来说 作用域的就是变量和函数的可访问行 即控制着 变量和函数的可见性和生命周期&lt;/p&gt;
-&lt;p&gt;在Es5 之间 作用域分为俩种 全局作用域和函数作用域&lt;/p&gt;
-&lt;p&gt;全局作用域：全局作用域中的对象在代码中的任何一个地方都可以</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>通过js判断数组</title>
-    <link href="http://example.com/2018/06/12/%E9%80%9A%E8%BF%87js%E5%88%A4%E6%96%AD%E6%95%B0%E7%BB%84/"/>
-    <id>http://example.com/2018/06/12/%E9%80%9A%E8%BF%87js%E5%88%A4%E6%96%AD%E6%95%B0%E7%BB%84/</id>
-    <published>2018-06-11T16:00:00.000Z</published>
-    <updated>2022-10-07T08:09:51.158Z</updated>
-    
-    <content type="html"><![CDATA[<p>1.Es5 新增的方法IsArray（）、</p><p>2.Instanceof 方法 是用来检测一个对象是否在其原型链原型构造函数的属性  </p><p>​    用于检验构造函数的prototype属性是否出现在对象的原型链中的属性</p><ol start="3"><li>Constructor 方法 返回对创建此对象的数组函数的引用 就是返回对象对应的构造函数</li><li>JQuery 正在使用的 object.protype.tostring.call（）返回数据类型的方法</li><li></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;1.Es5 新增的方法IsArray（）、&lt;/p&gt;
-&lt;p&gt;2.Instanceof 方法 是用来检测一个对象是否在其原型链原型构造函数的属性  &lt;/p&gt;
-&lt;p&gt;​    用于检验构造函数的prototype属性是否出现在对象的原型链中的属性&lt;/p&gt;
-&lt;ol start=&quot;3</summary>
-      
-    
-    
-    
-    <category term="-JS" scheme="http://example.com/categories/JS/"/>
-    
-    
-    <category term="-JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
